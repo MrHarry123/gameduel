@@ -1,113 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Breathe">
-<meta name="theme-color" content="#000000">
-<link rel="apple-touch-icon" href="icon.png">
-<link rel="manifest" href="manifest.json">
-<title>Breathe</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
-    overflow: hidden;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  #dot {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #D1FAFF;
-    cursor: pointer;
-    transition: width 5s linear, height 5s linear, background-color 5s linear;
-  }
-  #dot.expanded {
-    width: 200px;
-    height: 200px;
-    background: #11BCFF;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Quiz Duel</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Quiz Duel" />
+  <meta name="theme-color" content="#1e1b4b" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div id="dot"></div>
-<script>
-  const dot = document.getElementById('dot');
-  let running = false;
-  let cancelled = false;
+  <div id="app">
 
-  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    <!-- Startscherm -->
+    <section id="start-screen" class="screen">
+      <h1>Quiz Duel</h1>
+      <p class="subtitle">Speel om de beurt. Geef de telefoon door na elke vraag.</p>
 
-  function beep() {
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-    osc.frequency.value = 440;
-    gain.gain.value = 0.3;
-    osc.start();
-    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.15);
-    osc.stop(audioCtx.currentTime + 0.15);
-  }
+      <div class="input-group">
+        <label for="player1">Speler 1</label>
+        <input type="text" id="player1" placeholder="Naam speler 1" value="Speler 1" />
+      </div>
 
-  function vibrate() {
-    beep();
-    if (navigator.vibrate) navigator.vibrate(100);
-  }
+      <div class="input-group">
+        <label for="player2">Speler 2</label>
+        <input type="text" id="player2" placeholder="Naam speler 2" value="Speler 2" />
+      </div>
 
-  function sleep(ms) {
-    return new Promise(r => {
-      const id = setTimeout(r, ms);
-      sleepTimer = id;
-    });
-  }
+      <button id="start-btn" class="primary-btn">Verder</button>
 
-  let sleepTimer = null;
+      <div class="rules">
+        <h3>Spelregels</h3>
+        <ul>
+          <li>Je stelt om de beurt een vraag aan de ander.</li>
+          <li>Beantwoord in 1 keer goed: <strong>5 punten</strong>.</li>
+          <li>Elke hint die je gebruikt kost <strong>1 punt</strong>.</li>
+          <li>Niet beantwoord? Geen punten.</li>
+        </ul>
+      </div>
+    </section>
 
-  function reset() {
-    cancelled = true;
-    clearTimeout(sleepTimer);
-    dot.classList.remove('expanded');
-    // Remove transition briefly so it snaps back instantly
-    dot.style.transition = 'none';
-    dot.offsetWidth;
-    dot.style.transition = '';
-    running = false;
-  }
+    <!-- Spelselectie -->
+    <section id="select-screen" class="screen">
+      <header class="select-header">
+        <h1>Kies een spel</h1>
+        <p class="subtitle" id="select-subtitle">—</p>
+      </header>
 
-  async function cycle() {
-    dot.classList.add('expanded');
-    await sleep(5000);
-    if (cancelled) return;
-    vibrate();
-    dot.classList.remove('expanded');
-    await sleep(5000);
-    if (!cancelled) beep();
-  }
+      <div class="games-grid" id="games-grid">
+        <!-- spelkaarten worden hier ingevoegd -->
+      </div>
 
-  async function start() {
-    if (running) { reset(); return; }
-    if (audioCtx.state === 'suspended') await audioCtx.resume();
-    running = true;
-    cancelled = false;
+      <div class="select-actions">
+        <button id="change-players-btn" class="secondary-btn">Wijzig spelers</button>
+        <button id="reset-all-btn" class="danger-btn">Opnieuw starten</button>
+      </div>
+    </section>
 
-    for (let i = 0; i < 3; i++) {
-      await cycle();
-      if (cancelled) return;
-    }
+    <!-- Doorgeefscherm -->
+    <section id="pass-screen" class="screen">
+      <div class="pass-content">
+        <div class="phone-icon">📱</div>
+        <h2>Geef de telefoon aan</h2>
+        <h1 id="pass-name">—</h1>
+        <p>Hij/zij stelt nu de volgende vraag.</p>
+        <button id="pass-btn" class="primary-btn">Ik ben er klaar voor</button>
+      </div>
+    </section>
 
-    running = false;
-  }
+    <!-- Quizscherm -->
+    <section id="quiz-screen" class="screen">
+      <header class="quiz-header">
+        <div class="score-box">
+          <span class="score-label" id="asker-label">Vrager</span>
+          <span class="score-value" id="asker-score">0</span>
+        </div>
+        <div class="turn-info">
+          <div class="turn-text">
+            <span id="asker-name">—</span> vraagt aan <span id="answerer-name">—</span>
+          </div>
+          <div class="question-counter" id="question-counter">Vraag 1 / 1</div>
+        </div>
+        <div class="score-box">
+          <span class="score-label" id="answerer-label">Antwoorder</span>
+          <span class="score-value" id="answerer-score">0</span>
+        </div>
+      </header>
 
-  dot.addEventListener('click', start);
-</script>
+      <main class="quiz-main">
+        <div class="question-card">
+          <span class="card-label">Vraag</span>
+          <h2 id="question-text">—</h2>
+        </div>
+
+        <div class="answer-card">
+          <div class="answer-row">
+            <button id="correct-btn" class="judge-btn correct" title="Goed">✓</button>
+            <div class="answer-content">
+              <span class="card-label">Antwoord</span>
+              <h2 id="answer-text">—</h2>
+            </div>
+            <button id="wrong-btn" class="judge-btn wrong" title="Fout">✗</button>
+          </div>
+        </div>
+
+        <div class="hints-section">
+          <div class="hints-header">
+            <span class="card-label">Hints</span>
+            <span class="possible-points">Mogelijke punten: <strong id="possible-points">5</strong></span>
+          </div>
+          <div class="hints-grid" id="hints-grid">
+            <!-- hints worden hier ingevoegd -->
+          </div>
+        </div>
+
+        <button id="back-to-select-btn" class="secondary-btn">Pauzeer & terug naar overzicht</button>
+      </main>
+    </section>
+
+    <!-- Eindscherm -->
+    <section id="end-screen" class="screen">
+      <div class="end-game-badge" id="end-game-badge">—</div>
+      <h1>Einde van het spel!</h1>
+      <div class="final-scores">
+        <div class="final-score-card" id="final-card-1">
+          <div class="final-name" id="final-name-1">—</div>
+          <div class="final-points" id="final-points-1">0</div>
+          <div class="final-label">punten</div>
+        </div>
+        <div class="final-score-card" id="final-card-2">
+          <div class="final-name" id="final-name-2">—</div>
+          <div class="final-points" id="final-points-2">0</div>
+          <div class="final-label">punten</div>
+        </div>
+      </div>
+      <h2 id="winner-text">—</h2>
+      <div class="end-actions">
+        <button id="replay-btn" class="secondary-btn">Speel opnieuw</button>
+        <button id="back-from-end-btn" class="primary-btn">Terug naar overzicht</button>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
