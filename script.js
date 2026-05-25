@@ -101,8 +101,15 @@ function gameStatus(game) {
 
 /* ====== Startscherm ====== */
 function initStartScreen() {
-  document.getElementById("player1").value = state.saved.players[0];
-  document.getElementById("player2").value = state.saved.players[1];
+  const p1 = document.getElementById("player1");
+  const p2 = document.getElementById("player2");
+  if (state.saved.namesConfirmed) {
+    p1.value = state.saved.players[0];
+    p2.value = state.saved.players[1];
+  } else {
+    p1.value = "";
+    p2.value = "";
+  }
 }
 
 function submitNames() {
