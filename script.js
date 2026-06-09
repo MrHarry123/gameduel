@@ -198,6 +198,7 @@ function startTurn() {
     `Vraag ${gs.currentIndex + 1} / ${gs.shuffledOrder.length}`;
 
   document.getElementById("question-text").textContent = question.question;
+  document.getElementById("fullscreen-question-text").textContent = question.question;
   document.getElementById("answer-text").textContent = question.answer;
 
   renderHints(question.hints);
@@ -331,6 +332,25 @@ document.getElementById("wrong-btn").addEventListener("click", () => judgeAnswer
 document.getElementById("back-to-select-btn").addEventListener("click", backToSelect);
 document.getElementById("replay-btn").addEventListener("click", replayGame);
 document.getElementById("back-from-end-btn").addEventListener("click", backToSelect);
+
+/* ====== Fullscreen vraag-overlay ====== */
+const fullscreenEl = document.getElementById("question-fullscreen");
+function openQuestionFullscreen() {
+  fullscreenEl.classList.add("active");
+  fullscreenEl.setAttribute("aria-hidden", "false");
+}
+function closeQuestionFullscreen() {
+  fullscreenEl.classList.remove("active");
+  fullscreenEl.setAttribute("aria-hidden", "true");
+}
+document.getElementById("question-card").addEventListener("click", openQuestionFullscreen);
+document.getElementById("question-card").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    openQuestionFullscreen();
+  }
+});
+fullscreenEl.addEventListener("click", closeQuestionFullscreen);
 
 /* ====== Service worker ====== */
 if ("serviceWorker" in navigator) {

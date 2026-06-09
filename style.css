@@ -433,6 +433,19 @@ body::before {
 
 .question-card {
   text-align: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.1s, background 0.15s;
+  position: relative;
+}
+
+.question-card:hover {
+  background: var(--bg-card-2);
+}
+
+.question-card:active {
+  transform: scale(0.99);
 }
 
 .question-card .card-label {
@@ -443,6 +456,58 @@ body::before {
 .question-card h2 {
   font-size: 1.5rem;
   line-height: 1.4;
+}
+
+.tap-hint {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+/* ===== Fullscreen vraag-overlay ===== */
+.question-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  padding-top: max(40px, env(safe-area-inset-top));
+  padding-bottom: max(40px, env(safe-area-inset-bottom));
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.question-fullscreen.active {
+  display: flex;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.fullscreen-question {
+  font-size: clamp(1.6rem, 6vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+  text-align: center;
+  max-width: 900px;
+}
+
+.fullscreen-dismiss {
+  position: absolute;
+  bottom: max(28px, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0.6;
 }
 
 .answer-row {

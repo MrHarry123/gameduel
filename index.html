@@ -94,9 +94,10 @@
       </header>
 
       <main class="quiz-main">
-        <div class="question-card">
+        <div class="question-card" id="question-card" role="button" tabindex="0">
           <span class="card-label">Vraag</span>
           <h2 id="question-text">—</h2>
+          <span class="tap-hint">Tik om groot te tonen</span>
         </div>
 
         <div class="answer-card">
@@ -146,6 +147,12 @@
         <button id="back-from-end-btn" class="primary-btn">Terug naar overzicht</button>
       </div>
     </section>
+
+    <!-- Fullscreen vraag-overlay -->
+    <div id="question-fullscreen" class="question-fullscreen" role="dialog" aria-hidden="true">
+      <p class="fullscreen-question" id="fullscreen-question-text">—</p>
+      <span class="fullscreen-dismiss">Tik om te sluiten</span>
+    </div>
 
   </div>
 
