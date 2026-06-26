@@ -1,0 +1,308 @@
+{
+  "id": "pakket-2",
+  "title": "Pakket 2",
+  "emoji": "🎯",
+  "questions": [
+    {
+      "question": "Wat is de chemische formule van water?",
+      "answer": "H2O",
+      "hints": [
+        "Het bestaat uit twee elementen.",
+        "Eén is waterstof, de ander zuurstof.",
+        "Er zitten twee atomen waterstof in.",
+        "De letter H komt erin voor."
+      ]
+    },
+    {
+      "question": "Welk orgaan pompt bloed door het lichaam?",
+      "answer": "Het hart",
+      "hints": [
+        "Het zit in je borst.",
+        "Het klopt continu.",
+        "Het heeft vier kamers.",
+        "De naam heeft 4 letters."
+      ]
+    },
+    {
+      "question": "Wie was de leider van de Sovjet-Unie tijdens de Tweede Wereldoorlog?",
+      "answer": "Stalin",
+      "hints": [
+        "Hij had een snor.",
+        "Zijn naam betekent 'staal' in het Russisch.",
+        "Hij volgde Lenin op.",
+        "De naam begint met S."
+      ]
+    },
+    {
+      "question": "Welke Nederlandse voetballer wordt 'De Zwarte Tulp' genoemd?",
+      "answer": "Ruud Gullit",
+      "hints": [
+        "Hij speelde voor het Nederlands elftal.",
+        "Hij won het EK in 1988.",
+        "Hij had dreadlocks.",
+        "Zijn voornaam is Ruud."
+      ]
+    },
+    {
+      "question": "Welke band schreef 'Hey Jude'?",
+      "answer": "The Beatles",
+      "hints": [
+        "Het is een Britse band.",
+        "Ze komen uit Liverpool.",
+        "John Lennon en Paul McCartney waren leden.",
+        "De naam betekent kevers in het Engels."
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Zuid-Korea?",
+      "answer": "Seoul",
+      "hints": [
+        "Het ligt in Oost-Azië.",
+        "Het is een van de grootste steden ter wereld.",
+        "Hier werden de Olympische Spelen van 1988 gehouden.",
+        "De naam heeft 5 letters."
+      ]
+    },
+    {
+      "question": "Welke watervallen vormen de grens tussen de VS en Canada?",
+      "answer": "Niagara",
+      "hints": [
+        "Het zijn beroemde watervallen.",
+        "Ze zijn een populaire huwelijksreisbestemming.",
+        "Ze liggen bij de Grote Meren.",
+        "De naam begint met N."
+      ]
+    },
+    {
+      "question": "Welk dier heeft de hersenen het meest gelijk aan die van mensen?",
+      "answer": "Chimpansee",
+      "hints": [
+        "Het is een primaat.",
+        "Hij leeft in Afrika.",
+        "Hij deelt 98% van zijn DNA met de mens.",
+        "De naam begint met een C."
+      ]
+    },
+    {
+      "question": "Welke stad is bekend om zijn drijvende markten en kanalen in Italië?",
+      "answer": "Venetië",
+      "hints": [
+        "Het ligt aan de Adriatische Zee.",
+        "Het heeft gondels.",
+        "Het wordt langzaam overstroomd.",
+        "De naam begint met V."
+      ]
+    },
+    {
+      "question": "Wat is het lichtste element op het periodiek systeem?",
+      "answer": "Waterstof",
+      "hints": [
+        "Het heeft atoomnummer 1.",
+        "Het symbool is H.",
+        "Het komt veel voor in sterren.",
+        "Het zit in water."
+      ]
+    },
+    {
+      "question": "Hoeveel poten heeft een spin?",
+      "answer": "8",
+      "hints": [
+        "Het is een even getal.",
+        "Het is meer dan een insect (6).",
+        "Het is minder dan 10.",
+        "Hetzelfde aantal als een octopus."
+      ]
+    },
+    {
+      "question": "Welke twee landen worden gescheiden door de Pyreneeën?",
+      "answer": "Frankrijk en Spanje",
+      "hints": [
+        "Het zijn Europese landen.",
+        "Beide grenzen aan de Middellandse Zee.",
+        "Beide spreken Romaanse talen.",
+        "Een tussen Parijs en Madrid."
+      ]
+    },
+    {
+      "question": "Welke berg is de hoogste ter wereld?",
+      "answer": "Mount Everest",
+      "hints": [
+        "Hij ligt in de Himalaya.",
+        "Hij is meer dan 8.000 meter hoog.",
+        "Hij ligt op de grens van Nepal en Tibet.",
+        "Hij is vernoemd naar George Everest."
+      ]
+    },
+    {
+      "question": "Welke zee ligt tussen Europa en Afrika?",
+      "answer": "De Middellandse Zee",
+      "hints": [
+        "Het is een binnenzee.",
+        "Hij grenst aan Italië, Spanje en Griekenland.",
+        "Hij verbindt via de Straat van Gibraltar met de Atlantische Oceaan.",
+        "De naam verwijst naar het land dat in het midden ligt."
+      ]
+    },
+    {
+      "question": "Welke stad wordt 'De Eeuwige Stad' genoemd?",
+      "answer": "Rome",
+      "hints": [
+        "Het ligt in Italië.",
+        "Het is de hoofdstad.",
+        "Het is gebouwd op zeven heuvels.",
+        "De naam heeft 4 letters."
+      ]
+    },
+    {
+      "question": "Welke ster staat het dichtst bij de aarde?",
+      "answer": "De zon",
+      "hints": [
+        "Hij geeft licht en warmte.",
+        "Hij is overdag te zien.",
+        "We draaien er omheen.",
+        "De naam heeft 3 letters."
+      ]
+    },
+    {
+      "question": "Welk schip zonk in 1912 na een aanvaring met een ijsberg?",
+      "answer": "Titanic",
+      "hints": [
+        "Het was een passagiersschip.",
+        "Het maakte zijn eerste reis.",
+        "Er werd een beroemde film over gemaakt.",
+        "De naam begint met T."
+      ]
+    },
+    {
+      "question": "Welke film bevat het citaat 'May the Force be with you'?",
+      "answer": "Star Wars",
+      "hints": [
+        "Het is een sciencefiction-film.",
+        "George Lucas maakte hem.",
+        "Het gaat over Jedi-ridders.",
+        "De naam betekent 'sterrenoorlogen'."
+      ]
+    },
+    {
+      "question": "Welke zee is zo zout dat mensen erop kunnen drijven?",
+      "answer": "De Dode Zee",
+      "hints": [
+        "Hij ligt in het Midden-Oosten.",
+        "Hij grenst aan Israël en Jordanië.",
+        "Het is het laagste punt op aarde.",
+        "De naam verwijst naar de afwezigheid van leven."
+      ]
+    },
+    {
+      "question": "Wat is de grootste planeet in ons zonnestelsel?",
+      "answer": "Jupiter",
+      "hints": [
+        "Het is een gasreus.",
+        "Hij heeft een grote rode vlek.",
+        "Hij is vernoemd naar een Romeinse god.",
+        "De naam begint met een J."
+      ]
+    },
+    {
+      "question": "Hoeveel ringen heeft het olympisch logo?",
+      "answer": "5",
+      "hints": [
+        "Het is een oneven getal.",
+        "Ze hebben verschillende kleuren.",
+        "Elke ring symboliseert een continent.",
+        "Hetzelfde aantal als spelers in basketbal."
+      ]
+    },
+    {
+      "question": "Wat is de grootste woestijn ter wereld (geen poolwoestijn)?",
+      "answer": "Sahara",
+      "hints": [
+        "Hij ligt in Afrika.",
+        "Hij is zo groot als de VS.",
+        "Hij strekt zich uit over tien landen.",
+        "De naam begint met S."
+      ]
+    },
+    {
+      "question": "Hoeveel kamers heeft het menselijk hart?",
+      "answer": "4",
+      "hints": [
+        "Het is een even getal.",
+        "Het is minder dan 5.",
+        "Twee boven en twee onder.",
+        "Hetzelfde aantal als seizoenen."
+      ]
+    },
+    {
+      "question": "In welk jaar werd Nederland bevrijd in de Tweede Wereldoorlog?",
+      "answer": "1945",
+      "hints": [
+        "Het was in de jaren 40.",
+        "Het was op 5 mei.",
+        "Het was het einde van de oorlog in Europa.",
+        "Het jaar eindigt op 5."
+      ]
+    },
+    {
+      "question": "Welk land heeft de meeste meren ter wereld?",
+      "answer": "Canada",
+      "hints": [
+        "Het ligt in Noord-Amerika.",
+        "Het is het op één na grootste land.",
+        "Het heeft een rood-witte vlag met een esdoornblad.",
+        "De hoofdstad is Ottawa."
+      ]
+    },
+    {
+      "question": "In welk jaar viel de Berlijnse Muur?",
+      "answer": "1989",
+      "hints": [
+        "Het was in de jaren 80.",
+        "Het was in november.",
+        "Het was twee jaar voor het uiteenvallen van de Sovjet-Unie.",
+        "Het jaar eindigt op een 9."
+      ]
+    },
+    {
+      "question": "Hoeveel seconden zitten er in een minuut?",
+      "answer": "60",
+      "hints": [
+        "Het is een rond getal.",
+        "Hetzelfde aantal minuten zit in een uur.",
+        "Het is meer dan 50.",
+        "Het is minder dan 70."
+      ]
+    },
+    {
+      "question": "Welke kleur krijg je als je geel en blauw mengt?",
+      "answer": "Groen",
+      "hints": [
+        "Het is een kleur uit de natuur.",
+        "Het is de kleur van gras.",
+        "Het is een primaire mengkleur.",
+        "De naam begint met een G."
+      ]
+    },
+    {
+      "question": "Wat is de wetenschappelijke naam voor de mens?",
+      "answer": "Homo sapiens",
+      "hints": [
+        "Het is Latijns.",
+        "Het betekent 'wijze mens'.",
+        "Het begint met Homo.",
+        "Het eindigt op 'sapiens'."
+      ]
+    },
+    {
+      "question": "Welke Nederlandse koning werd in 2013 ingehuldigd?",
+      "answer": "Willem-Alexander",
+      "hints": [
+        "Hij is getrouwd met Máxima.",
+        "Hij volgde zijn moeder op.",
+        "Zijn moeder is Beatrix.",
+        "Zijn naam begint met Willem."
+      ]
+    }
+  ],
+  "mode": "classic"
+}

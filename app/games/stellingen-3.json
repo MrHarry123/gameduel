@@ -1,0 +1,278 @@
+{
+  "id": "stellingen-3",
+  "title": "Stellingen 3",
+  "emoji": "⚖️",
+  "mode": "statements",
+  "questions": [
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Een olifant kan niet springen",
+        "Giraffen slapen gemiddeld 12 uur per dag",
+        "Krokodillen kunnen hun tong uitsteken"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Honing kan duizenden jaren goed blijven",
+        "Tomaten zijn botanisch gezien een fruit",
+        "Witte chocolade bevat cacaopoeder"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Voetbal werd uitgevonden in Frankrijk",
+        "Een marathon is 42,195 kilometer lang",
+        "Tennis ontstond oorspronkelijk in Duitsland"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Pinguïns leven van nature op de Noordpool",
+        "Een octopus heeft drie harten",
+        "Slakken kunnen meerdere jaren slapen"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Bananen groeien aan bomen",
+        "Aardbeien zijn botanisch gezien geen bessen",
+        "Pinda's zijn een soort noten"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Het Nederlands elftal werd in 1988 Europees kampioen",
+        "Max Verstappen rijdt voor Red Bull Racing",
+        "Johan Cruijff speelde nooit voor Ajax"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Een vlinder proeft met zijn poten",
+        "Mieren slapen gemiddeld 10 uur per dag",
+        "Haaien hebben botten in hun lichaam"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Sushi komt oorspronkelijk uit Japan",
+        "Croissants zijn van origine een Franse uitvinding",
+        "Pizza Margherita is genoemd naar een Italiaanse koningin"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "IJshockey is een van de nationale sporten van Canada",
+        "Cricket is populairder in Amerika dan in India",
+        "Golf werd uitgevonden in Nederland"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Een kameel slaat water op in zijn bulten",
+        "Vossen behoren tot de hondachtigen",
+        "Dolfijnen zijn zoogdieren"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Het woord 'robot' komt uit het Tsjechisch",
+        "Het Engelse woord 'sandwich' komt uit Italië",
+        "Het woord 'pyjama' komt uit het Frans"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Komkommer bestaat voor ongeveer 95% uit water",
+        "Knoflook behoort tot de uienfamilie",
+        "Kaneel wordt gemaakt van gemalen bloemen"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Een groep leeuwen heet een troep",
+        "Een groep koeien heet een zwerm",
+        "Een groep vissen heet een kudde"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De Tour de France wordt jaarlijks gereden",
+        "Wielrenner Eddy Merckx komt uit België",
+        "Schaatsen is een typisch Spaanse sport"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Een struisvogel kan niet vliegen",
+        "Kolibries kunnen niet achteruit vliegen",
+        "Uilen kunnen hun ogen draaien in hun kassen"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Hagelslag is een typisch Nederlands broodbeleg",
+        "Stroopwafels komen oorspronkelijk uit Gouda",
+        "Bitterballen worden warm geserveerd met suiker"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Spaghetti komt oorspronkelijk uit China",
+        "De aardappel is van origine Europees",
+        "Chocolade wordt gemaakt van cacaobonen"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De olympische ringen stellen vijf werelddelen voor",
+        "Boksen kent verschillende gewichtsklassen",
+        "Bij darts is de bullseye altijd 100 punten"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Een vlieg heeft duizend ogen",
+        "Een bij sterft nadat hij iemand heeft gestoken",
+        "Spinnen zijn insecten"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De Eiffeltoren staat in Parijs",
+        "Het Nederlands kent meer klinkers dan het Engels",
+        "Het Spaans wordt in heel Zuid-Amerika gesproken als enige taal"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Een mensenhart klopt gemiddeld 100.000 keer per dag",
+        "Mensen hebben in totaal 150 botten",
+        "De tong is de sterkste spier van het lichaam"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Champagne komt alleen uit de Champagnestreek in Frankrijk",
+        "Camembert is een Franse kaas",
+        "Parmaham komt uit Duitsland"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Formule 1 wordt verreden met motorfietsen",
+        "Bij rugby mag je de bal naar voren gooien",
+        "Een hattrick is drie doelpunten in één wedstrijd"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Konijnen zijn knaagdieren",
+        "Een zeester kan een verloren arm terug laten groeien",
+        "Kikkers drinken water via hun huid"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Het woord 'alcohol' komt uit het Arabisch",
+        "Het woord 'koffie' komt uit het Spaans",
+        "Het woord 'paraplu' komt uit het Engels"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Wasabi is een soort mierikswortel",
+        "Rijst is wereldwijd een belangrijk basisvoedsel",
+        "Couscous is een soort vlees uit Marokko"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Een krokodil kan niet kauwen",
+        "Een kameleon verandert van kleur om zich te camoufleren",
+        "Een schildpad kan uit zijn schild stappen"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De Olympische Spelen vinden om de vier jaar plaats",
+        "Bij volleybal speel je met zes spelers per team",
+        "Een tenniswedstrijd duurt altijd precies twee uur"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Een octopus heeft blauw bloed",
+        "Walvissen zijn vissen",
+        "Vlinders leven gemiddeld vijf jaar"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De Mona Lisa hangt in het Louvre",
+        "Het Nederlands is een officiële taal in Suriname",
+        "De Chinese Muur is volledig met het blote oog vanuit de ruimte zichtbaar"
+      ],
+      "correctIndex": 2
+    }
+  ]
+}

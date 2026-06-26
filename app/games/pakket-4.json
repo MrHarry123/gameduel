@@ -1,0 +1,308 @@
+{
+  "id": "pakket-4",
+  "title": "Pakket 4",
+  "emoji": "🎪",
+  "questions": [
+    {
+      "question": "Welke sport wordt gespeeld met een schijf op ijs?",
+      "answer": "IJshockey",
+      "hints": [
+        "Het is een wintersport.",
+        "Spelers dragen schaatsen en sticks.",
+        "Canada is er erg goed in.",
+        "Het begint met 'IJs'."
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Italië?",
+      "answer": "Rome",
+      "hints": [
+        "Het ligt in Zuid-Europa.",
+        "Het Colosseum staat er.",
+        "Het is bekend om de paus en het Vaticaan.",
+        "De naam heeft 4 letters."
+      ]
+    },
+    {
+      "question": "Wat is het hoogste gebouw ter wereld?",
+      "answer": "Burj Khalifa",
+      "hints": [
+        "Het staat in het Midden-Oosten.",
+        "Het bevindt zich in Dubai.",
+        "Het is meer dan 800 meter hoog.",
+        "De naam begint met Burj."
+      ]
+    },
+    {
+      "question": "Welke wetenschapper ontdekte de penicilline?",
+      "answer": "Alexander Fleming",
+      "hints": [
+        "Het was een Schotse arts.",
+        "Hij ontdekte het bij toeval in 1928.",
+        "Hij won de Nobelprijs.",
+        "Zijn voornaam is Alexander."
+      ]
+    },
+    {
+      "question": "Wie was de eerste vrouwelijke premier van het Verenigd Koninkrijk?",
+      "answer": "Margaret Thatcher",
+      "hints": [
+        "Ze was bekend als de 'IJzeren Dame'.",
+        "Ze regeerde in de jaren 80.",
+        "Ze was lid van de Conservatieve Partij.",
+        "Haar voornaam is Margaret."
+      ]
+    },
+    {
+      "question": "Welk insect maakt zijden draden?",
+      "answer": "De zijderups",
+      "hints": [
+        "Het is een rups.",
+        "Hij eet moerbeibladeren.",
+        "Hij wordt vooral gekweekt in China.",
+        "De naam bevat het woord 'zijde'."
+      ]
+    },
+    {
+      "question": "Hoe heet het proces waarbij planten energie uit zonlicht halen?",
+      "answer": "Fotosynthese",
+      "hints": [
+        "Het gebeurt in de bladeren.",
+        "Het produceert zuurstof.",
+        "Chlorofyl speelt een rol.",
+        "Het woord begint met 'foto'."
+      ]
+    },
+    {
+      "question": "Wie was de eerste mens op de maan?",
+      "answer": "Neil Armstrong",
+      "hints": [
+        "Het was een Amerikaanse astronaut.",
+        "Het gebeurde in 1969.",
+        "Hij zei: 'One small step for man'.",
+        "Zijn voornaam is Neil."
+      ]
+    },
+    {
+      "question": "Hoeveel punten is een touchdown waard in American football?",
+      "answer": "6",
+      "hints": [
+        "Het is een even getal.",
+        "Het is meer dan 5.",
+        "Het is minder dan 7.",
+        "De helft van 12."
+      ]
+    },
+    {
+      "question": "Welk element heeft het symbool 'Au'?",
+      "answer": "Goud",
+      "hints": [
+        "Het is een edelmetaal.",
+        "Het wordt veel gebruikt in sieraden.",
+        "Het heeft een gele kleur.",
+        "Het Latijnse woord is 'aurum'."
+      ]
+    },
+    {
+      "question": "In welk land bevindt zich de stad Petra?",
+      "answer": "Jordanië",
+      "hints": [
+        "Het ligt in het Midden-Oosten.",
+        "De hoofdstad is Amman.",
+        "Het grenst aan Israël en Saudi-Arabië.",
+        "De naam begint met J."
+      ]
+    },
+    {
+      "question": "Wat is de officiële taal van Brazilië?",
+      "answer": "Portugees",
+      "hints": [
+        "Het is een Europese taal.",
+        "Andere Zuid-Amerikaanse landen spreken meestal Spaans.",
+        "De taal komt uit een land in Europa met dezelfde naam.",
+        "Het begint met een P."
+      ]
+    },
+    {
+      "question": "Welke kracht houdt ons op de aarde?",
+      "answer": "Zwaartekracht",
+      "hints": [
+        "Newton beschreef hem.",
+        "Hij wordt veroorzaakt door massa.",
+        "Hij zorgt dat dingen vallen.",
+        "Het woord begint met Z."
+      ]
+    },
+    {
+      "question": "Welke beweging in de Sovjet-Unie introduceerde Gorbatsjov?",
+      "answer": "Perestrojka",
+      "hints": [
+        "Het was in de jaren 80.",
+        "Het betekent 'herstructurering' in het Russisch.",
+        "Het ging samen met 'glasnost'.",
+        "De naam begint met P."
+      ]
+    },
+    {
+      "question": "Welk land heeft de meeste tijdzones?",
+      "answer": "Frankrijk",
+      "hints": [
+        "Dankzij overzeese gebieden.",
+        "Het heeft er 12.",
+        "Het ligt in Europa.",
+        "Een Romaanse taal wordt er gesproken."
+      ]
+    },
+    {
+      "question": "Wat is het grootste orgaan van het menselijk lichaam?",
+      "answer": "De huid",
+      "hints": [
+        "Het bedekt je hele lichaam.",
+        "Het beschermt je tegen bacteriën.",
+        "Het bestaat uit drie lagen.",
+        "Je ziet het elke dag in de spiegel."
+      ]
+    },
+    {
+      "question": "Welke tennisspeler heeft de meeste Grand Slam-titels gewonnen bij mannen?",
+      "answer": "Novak Djokovic",
+      "hints": [
+        "Hij komt uit Servië.",
+        "Hij speelde tegen Federer en Nadal.",
+        "Hij staat bekend om zijn flexibiliteit.",
+        "Zijn voornaam is Novak."
+      ]
+    },
+    {
+      "question": "Welke beroemde Egyptische koningin pleegde zelfmoord met een slang?",
+      "answer": "Cleopatra",
+      "hints": [
+        "Ze leefde voor onze jaartelling.",
+        "Ze had relaties met Caesar en Marcus Antonius.",
+        "Ze was de laatste farao van Egypte.",
+        "De naam begint met een C."
+      ]
+    },
+    {
+      "question": "Welk natuurkundige eenheid wordt gebruikt voor kracht?",
+      "answer": "Newton",
+      "hints": [
+        "Het is vernoemd naar een wetenschapper.",
+        "De afkorting is N.",
+        "Hij ontdekte de zwaartekracht.",
+        "Hij heette Isaac van voren."
+      ]
+    },
+    {
+      "question": "Wie schreef het Communistisch Manifest?",
+      "answer": "Karl Marx",
+      "hints": [
+        "Hij was een Duitse filosoof.",
+        "Hij werkte samen met Friedrich Engels.",
+        "Hij leefde in de 19e eeuw.",
+        "Zijn voornaam is Karl."
+      ]
+    },
+    {
+      "question": "In welke stad worden de Olympische Spelen van 2024 gehouden?",
+      "answer": "Parijs",
+      "hints": [
+        "Het is een Europese hoofdstad.",
+        "Het ligt in Frankrijk.",
+        "De Eiffeltoren staat er.",
+        "De naam heeft 6 letters."
+      ]
+    },
+    {
+      "question": "Welke oorlog duurde van 1914 tot 1918?",
+      "answer": "De Eerste Wereldoorlog",
+      "hints": [
+        "Het was een wereldwijde oorlog.",
+        "Hij begon met de moord op aartshertog Franz Ferdinand.",
+        "Het werd ook wel de Grote Oorlog genoemd.",
+        "Hij kwam voor de Tweede van zijn soort."
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Nederland?",
+      "answer": "Amsterdam",
+      "hints": [
+        "Het is de grootste stad van het land.",
+        "De stad staat bekend om zijn grachten.",
+        "Het Rijksmuseum staat er.",
+        "De naam begint met een A."
+      ]
+    },
+    {
+      "question": "Wie was de Romeinse generaal die zei 'Veni, vidi, vici'?",
+      "answer": "Julius Caesar",
+      "hints": [
+        "Hij leefde voor onze jaartelling.",
+        "Hij werd vermoord op de Iden van Maart.",
+        "Een salade is naar hem vernoemd.",
+        "Zijn voornaam is Julius."
+      ]
+    },
+    {
+      "question": "In welk land staat de Eiffeltoren?",
+      "answer": "Frankrijk",
+      "hints": [
+        "Het ligt in Europa.",
+        "De hoofdstad is Parijs.",
+        "Ze spreken er Frans.",
+        "De vlag is blauw-wit-rood."
+      ]
+    },
+    {
+      "question": "Hoeveel kleuren heeft een regenboog?",
+      "answer": "7",
+      "hints": [
+        "Het is een oneven getal.",
+        "Het is minder dan 10.",
+        "Onder andere rood, oranje en geel.",
+        "Het is meer dan 6."
+      ]
+    },
+    {
+      "question": "In welk land is de sport sumo ontstaan?",
+      "answer": "Japan",
+      "hints": [
+        "Het ligt in Azië.",
+        "Het bestaat uit eilanden.",
+        "Hun nationale sport is dit.",
+        "De hoofdstad is Tokyo."
+      ]
+    },
+    {
+      "question": "Welke acteur speelt Jack Sparrow in Pirates of the Caribbean?",
+      "answer": "Johnny Depp",
+      "hints": [
+        "Hij is een Amerikaanse acteur.",
+        "Hij speelde ook in Edward Scissorhands.",
+        "Hij was getrouwd met Amber Heard.",
+        "Zijn voornaam is Johnny."
+      ]
+    },
+    {
+      "question": "Hoeveel zijden heeft een achthoek?",
+      "answer": "8",
+      "hints": [
+        "Het is meer dan 6.",
+        "Een stopbord heeft deze vorm.",
+        "Het is een even getal.",
+        "Het is meer dan 7."
+      ]
+    },
+    {
+      "question": "Wat is de valuta van Japan?",
+      "answer": "Yen",
+      "hints": [
+        "Het is een Aziatische munteenheid.",
+        "Het symbool is ¥.",
+        "Het woord heeft maar drie letters.",
+        "Het begint met een Y."
+      ]
+    }
+  ],
+  "mode": "classic"
+}

@@ -1,0 +1,278 @@
+{
+  "id": "stellingen-1",
+  "title": "Stellingen 1",
+  "emoji": "🎭",
+  "mode": "statements",
+  "questions": [
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "De Berlijnse Muur viel in 1989",
+        "Napoleon werd verbannen naar IJsland",
+        "De Tweede Wereldoorlog eindigde in 1947"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Water bestaat uit waterstof en zuurstof",
+        "De zon is een ster",
+        "Goud is een gas bij kamertemperatuur"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Australië grenst aan China",
+        "De Nijl stroomt door Egypte",
+        "Spanje ligt in Zuid-Amerika"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Mount Everest ligt in de Himalaya",
+        "De Stille Oceaan is de grootste oceaan",
+        "De Sahara is een tropisch regenwoud"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Julius Caesar was een Egyptische farao",
+        "Cleopatra regeerde over Griekenland",
+        "Het Romeinse Rijk viel in 476 na Christus"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Mensen hebben 206 botten als volwassene",
+        "Het hart heeft vier kamers",
+        "De lever produceert insuline"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Tokyo is de hoofdstad van China",
+        "Canberra is de hoofdstad van Australië",
+        "Rio de Janeiro is de hoofdstad van Brazilië"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De Eerste Wereldoorlog begon in 1914",
+        "Hitler werd geboren in Duitsland",
+        "De geallieerden landden in Normandië in 1944"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Licht reist sneller dan geluid",
+        "Geluid kan reizen door vacuüm",
+        "De maan produceert zijn eigen licht"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "België grenst aan Nederland",
+        "Portugal grenst aan Spanje",
+        "Zwitserland grenst aan de Atlantische Oceaan"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Christoffel Columbus bereikte Amerika in 1492",
+        "Vasco da Gama ontdekte Australië",
+        "Marco Polo was een Spaanse koning"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Jupiter is de grootste planeet van ons zonnestelsel",
+        "Mars wordt de rode planeet genoemd",
+        "Saturnus heeft geen ringen"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "De Amazone is een van de langste rivieren ter wereld",
+        "De Donau stroomt door Engeland",
+        "De Rijn ontspringt in Italië"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Albert Einstein ontwikkelde de relativiteitstheorie",
+        "Isaac Newton ontdekte de zwaartekracht",
+        "Charles Darwin vond de stoommachine uit"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "De Tachtigjarige Oorlog duurde van 1568 tot 1648",
+        "Willem van Oranje werd vermoord in Amsterdam",
+        "De VOC werd opgericht in 1700"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "IJsland ligt in de Atlantische Oceaan",
+        "Madagaskar ligt voor de kust van Afrika",
+        "Groenland is kleiner dan Nederland"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Honden hebben 42 tanden als volwassen dier",
+        "Vissen ademen door longen",
+        "Vleermuizen zijn vogels"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De Eiffeltoren staat in Parijs",
+        "Het Colosseum staat in Rome",
+        "De Akropolis staat in Madrid"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Diamant is een vorm van koolstof",
+        "IJzer is lichter dan aluminium",
+        "Kwik is vast bij kamertemperatuur"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De Franse Revolutie begon in 1789",
+        "Napoleon verloor de Slag bij Waterloo",
+        "Lodewijk XIV was de eerste president van Frankrijk"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "De zon bestaat voornamelijk uit ijzer",
+        "Aarde is de derde planeet vanaf de zon",
+        "Pluto is officieel nog steeds een planeet sinds 2006"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Rusland is het grootste land ter wereld qua oppervlakte",
+        "Vaticaanstad is het kleinste land ter wereld",
+        "India is groter dan China qua oppervlakte"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "De Maya's leefden in Midden-Amerika",
+        "De Vikingen kwamen uit Spanje",
+        "Het Ottomaanse Rijk lag in Zuid-Amerika"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Een jaar op aarde duurt ongeveer 365 dagen",
+        "De aarde draait om haar eigen as in 24 uur",
+        "De maan draait niet om de aarde"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Kameroen ligt in Azië",
+        "Brazilië is het grootste land van Zuid-Amerika",
+        "Mexico ligt in Europa"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Penicilline werd ontdekt door Alexander Fleming",
+        "Marie Curie won twee Nobelprijzen",
+        "Thomas Edison vond de telefoon uit"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Plantencellen bevatten chloroplasten",
+        "Mensen hebben drie longen",
+        "Bloed is groen door hemoglobine"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De Muur van Hadrianus werd gebouwd door de Romeinen",
+        "De piramides van Gizeh staan in Egypte",
+        "De Chinese Muur werd in één jaar gebouwd"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "De Dode Zee ligt tussen Israël en Jordanië",
+        "Het Baikalmeer ligt in Afrika",
+        "Het Victoriameer ligt in Europa"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Een vlinder begint zijn leven als rups",
+        "Een kikker begint als kikkervisje",
+        "Slangen hebben acht poten"
+      ],
+      "correctIndex": 2
+    }
+  ]
+}

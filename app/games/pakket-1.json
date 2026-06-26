@@ -1,0 +1,308 @@
+{
+  "id": "pakket-1",
+  "title": "Pakket 1",
+  "emoji": "🎲",
+  "questions": [
+    {
+      "question": "Welke wetenschapper formuleerde de relativiteitstheorie?",
+      "answer": "Albert Einstein",
+      "hints": [
+        "Hij had wild haar.",
+        "Hij was geboren in Duitsland.",
+        "Zijn formule is E=mc².",
+        "Zijn voornaam is Albert."
+      ]
+    },
+    {
+      "question": "Welke film won de Oscar voor Beste Film in 1998?",
+      "answer": "Titanic",
+      "hints": [
+        "Het is een ramp-romantische film.",
+        "Leonardo DiCaprio en Kate Winslet speelden mee.",
+        "Het gaat over een schip.",
+        "De naam begint met T."
+      ]
+    },
+    {
+      "question": "Welke rivier stroomt door Parijs?",
+      "answer": "De Seine",
+      "hints": [
+        "Het is een Franse rivier.",
+        "Hij stroomt door het centrum van de stad.",
+        "Hij mondt uit in het Kanaal.",
+        "De naam heeft 5 letters."
+      ]
+    },
+    {
+      "question": "In welke sport wordt 'love' gebruikt voor nul punten?",
+      "answer": "Tennis",
+      "hints": [
+        "Het wordt gespeeld met een racket.",
+        "Er is een net.",
+        "Wimbledon is een toernooi.",
+        "De naam begint met T."
+      ]
+    },
+    {
+      "question": "Welk reptiel staat bekend om zijn extreem hoge leeftijd?",
+      "answer": "Schildpad",
+      "hints": [
+        "Het is een reptiel.",
+        "Het draagt zijn huis op zijn rug.",
+        "Sommige soorten worden meer dan 150 jaar.",
+        "De naam begint met S."
+      ]
+    },
+    {
+      "question": "Hoeveel chromosomen heeft een mens?",
+      "answer": "46",
+      "hints": [
+        "Het is een even getal.",
+        "Het zijn er 23 paar.",
+        "Het is meer dan 40.",
+        "Het is minder dan 50."
+      ]
+    },
+    {
+      "question": "Welke acteur speelde James Bond in de jaren 60 voor het eerst?",
+      "answer": "Sean Connery",
+      "hints": [
+        "Hij was een Schotse acteur.",
+        "Hij speelde Bond in Dr. No.",
+        "Hij is overleden in 2020.",
+        "Zijn voornaam is Sean."
+      ]
+    },
+    {
+      "question": "Wie was de keizer van Frankrijk die verbannen werd naar Elba?",
+      "answer": "Napoleon",
+      "hints": [
+        "Hij leefde rond 1800.",
+        "Hij verloor de slag bij Waterloo.",
+        "Hij was klein van postuur.",
+        "De naam begint met een N."
+      ]
+    },
+    {
+      "question": "In welk jaar kreeg Nederland zijn eerste grondwet?",
+      "answer": "1815",
+      "hints": [
+        "Het was in de 19e eeuw.",
+        "Het was na de val van Napoleon.",
+        "Willem I werd koning.",
+        "Het jaar eindigt op 15."
+      ]
+    },
+    {
+      "question": "Welke muur scheidde Oost- en West-Berlijn?",
+      "answer": "De Berlijnse Muur",
+      "hints": [
+        "Hij stond in Duitsland.",
+        "Hij werd gebouwd in 1961.",
+        "Hij viel in 1989.",
+        "Hij is vernoemd naar de stad."
+      ]
+    },
+    {
+      "question": "Welk gas ademen planten in en wij uit?",
+      "answer": "Koolstofdioxide",
+      "hints": [
+        "Het is een verbinding van twee elementen.",
+        "De chemische formule is CO2.",
+        "Het wordt door fotosynthese gebruikt.",
+        "De naam begint met K."
+      ]
+    },
+    {
+      "question": "Wat is de grootste oceaan ter wereld?",
+      "answer": "Stille Oceaan",
+      "hints": [
+        "Hij ligt tussen Azië en Amerika.",
+        "Hij wordt ook Pacific genoemd.",
+        "Hij beslaat ongeveer een derde van de aarde.",
+        "Het begint met 'Stille'."
+      ]
+    },
+    {
+      "question": "Welke planeet staat het dichtst bij de zon?",
+      "answer": "Mercurius",
+      "hints": [
+        "Het is een rotsachtige planeet.",
+        "De naam komt uit de Romeinse mythologie.",
+        "Het is de kleinste planeet van ons zonnestelsel.",
+        "De naam begint met de letter M."
+      ]
+    },
+    {
+      "question": "Welke acteur speelt Iron Man in de Marvel-films?",
+      "answer": "Robert Downey Jr.",
+      "hints": [
+        "Hij is een Amerikaanse acteur.",
+        "Hij speelde ook Sherlock Holmes.",
+        "Zijn vader heette ook Robert.",
+        "Zijn voornaam is Robert."
+      ]
+    },
+    {
+      "question": "Welk land bestaat uit meer dan 17.000 eilanden?",
+      "answer": "Indonesië",
+      "hints": [
+        "Het ligt in Azië.",
+        "Het heeft de grootste moslimbevolking ter wereld.",
+        "De hoofdstad is Jakarta.",
+        "De naam begint met I."
+      ]
+    },
+    {
+      "question": "In welk jaar begon de Tweede Wereldoorlog?",
+      "answer": "1939",
+      "hints": [
+        "Het was in de jaren 30.",
+        "Duitsland viel Polen binnen.",
+        "Het was op 1 september.",
+        "Het jaar eindigt op 9."
+      ]
+    },
+    {
+      "question": "Hoeveel holes heeft een standaard golfbaan?",
+      "answer": "18",
+      "hints": [
+        "Het is een even getal.",
+        "Het is meer dan 15.",
+        "Het is minder dan 20.",
+        "Het is 9 plus 9."
+      ]
+    },
+    {
+      "question": "Welk muziekinstrument heeft 88 toetsen?",
+      "answer": "De piano",
+      "hints": [
+        "Het is een toetsinstrument.",
+        "Het heeft witte en zwarte toetsen.",
+        "Het wordt vaak gebruikt in klassieke muziek.",
+        "De naam begint met een P."
+      ]
+    },
+    {
+      "question": "Welke wetenschapper ontwikkelde de evolutietheorie?",
+      "answer": "Charles Darwin",
+      "hints": [
+        "Hij was een Britse natuuronderzoeker.",
+        "Hij reisde op de Beagle.",
+        "Hij bezocht de Galapagos-eilanden.",
+        "Zijn voornaam is Charles."
+      ]
+    },
+    {
+      "question": "In welk jaar ontdekte Columbus Amerika?",
+      "answer": "1492",
+      "hints": [
+        "Het was in de 15e eeuw.",
+        "Het was aan het einde van de Middeleeuwen.",
+        "Hij voer in opdracht van Spanje.",
+        "Het jaar eindigt op 92."
+      ]
+    },
+    {
+      "question": "Welk land heeft de vorm van een laars?",
+      "answer": "Italië",
+      "hints": [
+        "Het ligt in Zuid-Europa.",
+        "Het steekt uit in de Middellandse Zee.",
+        "Sicilië ligt bij de 'punt' van de laars.",
+        "De hoofdstad is Rome."
+      ]
+    },
+    {
+      "question": "Welke zanger staat bekend als 'The King of Pop'?",
+      "answer": "Michael Jackson",
+      "hints": [
+        "Hij was een Amerikaanse zanger.",
+        "Hij zong 'Thriller'.",
+        "Hij deed de moonwalk.",
+        "Zijn voornaam is Michael."
+      ]
+    },
+    {
+      "question": "Hoeveel tanden heeft een volwassen mens normaal?",
+      "answer": "32",
+      "hints": [
+        "Het is een even getal.",
+        "Het is meer dan 30.",
+        "Het is minder dan 35.",
+        "Inclusief de verstandskiezen."
+      ]
+    },
+    {
+      "question": "Welk voetbalclub speelt thuiswedstrijden in Camp Nou?",
+      "answer": "FC Barcelona",
+      "hints": [
+        "Het is een Spaanse club.",
+        "Hun aartsrivaal is Real Madrid.",
+        "Lionel Messi speelde er lang.",
+        "De stad heet ook zo."
+      ]
+    },
+    {
+      "question": "Welke band schreef het liedje 'Bohemian Rhapsody'?",
+      "answer": "Queen",
+      "hints": [
+        "Het is een Britse rockband.",
+        "Freddie Mercury was de zanger.",
+        "Hun naam betekent koningin.",
+        "De naam heeft 5 letters."
+      ]
+    },
+    {
+      "question": "Welke Disney-prinses heeft een glazen muiltje?",
+      "answer": "Assepoester",
+      "hints": [
+        "Ze moest schoonmaken voor haar stiefmoeder.",
+        "Ze gaat naar een bal.",
+        "De pompoen wordt een koets.",
+        "In het Engels is het Cinderella."
+      ]
+    },
+    {
+      "question": "Hoeveel botten heeft een volwassen mens?",
+      "answer": "206",
+      "hints": [
+        "Het is meer dan 200.",
+        "Het is minder dan 210.",
+        "Baby's worden met meer botten geboren (ongeveer 270).",
+        "Het getal eindigt op een 6."
+      ]
+    },
+    {
+      "question": "Welke beweging streed voor de rechten van zwarte Amerikanen in de jaren 60?",
+      "answer": "Burgerrechtenbeweging",
+      "hints": [
+        "Martin Luther King was een leider.",
+        "Het ging om gelijke rechten.",
+        "Rosa Parks was er onderdeel van.",
+        "De beweging begon eind jaren 50 en piekte in de jaren 60."
+      ]
+    },
+    {
+      "question": "Welke regisseur maakte de film 'Jaws'?",
+      "answer": "Steven Spielberg",
+      "hints": [
+        "Hij is Amerikaans.",
+        "Hij maakte ook E.T.",
+        "Hij regisseerde Jurassic Park.",
+        "Zijn voornaam is Steven."
+      ]
+    },
+    {
+      "question": "In welk land staat de Taj Mahal?",
+      "answer": "India",
+      "hints": [
+        "Het ligt in Azië.",
+        "Het gebouw is een mausoleum.",
+        "Het is wit van kleur.",
+        "De hoofdstad is New Delhi."
+      ]
+    }
+  ],
+  "mode": "classic"
+}

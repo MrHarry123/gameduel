@@ -34,16 +34,6 @@
       </div>
 
       <button id="start-btn" class="primary-btn">Verder</button>
-
-      <div class="rules">
-        <h3>Spelregels</h3>
-        <ul>
-          <li>Je stelt om de beurt een vraag aan de ander.</li>
-          <li>Beantwoord in 1 keer goed: <strong>5 punten</strong>.</li>
-          <li>Elke hint die je gebruikt kost <strong>1 punt</strong>.</li>
-          <li>Niet beantwoord? Geen punten.</li>
-        </ul>
-      </div>
     </section>
 
     <!-- Spelselectie -->
@@ -53,8 +43,26 @@
         <p class="subtitle" id="select-subtitle">—</p>
       </header>
 
-      <div class="games-grid" id="games-grid">
-        <!-- spelkaarten worden hier ingevoegd -->
+      <div id="games-container">
+        <section class="games-section" id="games-section-classic" hidden>
+          <h2 class="games-section-title">Klassiek</h2>
+          <ul class="games-section-rules">
+            <li>Je stelt om de beurt een vraag aan de ander.</li>
+            <li>Beantwoord in 1 keer goed: <strong>5 punten</strong>.</li>
+            <li>Elke hint die je gebruikt kost <strong>1 punt</strong>.</li>
+            <li>Niet beantwoord? Geen punten.</li>
+          </ul>
+          <div class="games-grid" id="games-grid-classic"></div>
+        </section>
+        <section class="games-section" id="games-section-statements" hidden>
+          <h2 class="games-section-title">Stellingen</h2>
+          <ul class="games-section-rules">
+            <li>Je krijgt om de beurt 3 stellingen.</li>
+            <li>Kies de uitspraak die <strong>waar</strong> is — of juist <strong>niet waar</strong>, afhankelijk van de vraag.</li>
+            <li>Goed gekozen? <strong>1 punt</strong>. Mis: 0 punten.</li>
+          </ul>
+          <div class="games-grid" id="games-grid-statements"></div>
+        </section>
       </div>
 
       <div class="select-actions">
@@ -75,7 +83,7 @@
     </section>
 
     <!-- Quizscherm -->
-    <section id="quiz-screen" class="screen">
+    <section id="quiz-screen" class="screen" data-mode="classic">
       <header class="quiz-header">
         <div class="score-box">
           <span class="score-label" id="asker-label">Vrager</span>
@@ -94,31 +102,46 @@
       </header>
 
       <main class="quiz-main">
-        <div class="question-card" id="question-card" role="button" tabindex="0">
-          <span class="card-label">Vraag</span>
-          <h2 id="question-text">—</h2>
-          <span class="tap-hint">Tik om groot te tonen</span>
-        </div>
+        <!-- Klassieke modus -->
+        <div class="classic-content">
+          <div class="question-card" id="question-card" role="button" tabindex="0">
+            <span class="card-label">Vraag</span>
+            <h2 id="question-text">—</h2>
+            <span class="tap-hint">Tik om groot te tonen</span>
+          </div>
 
-        <div class="answer-card">
-          <div class="answer-row">
-            <button id="correct-btn" class="judge-btn correct" title="Goed">✓</button>
-            <div class="answer-content">
-              <span class="card-label">Antwoord</span>
-              <h2 id="answer-text">—</h2>
+          <div class="answer-card">
+            <div class="answer-row">
+              <button id="correct-btn" class="judge-btn correct" title="Goed">✓</button>
+              <div class="answer-content">
+                <span class="card-label">Antwoord</span>
+                <h2 id="answer-text">—</h2>
+              </div>
+              <button id="wrong-btn" class="judge-btn wrong" title="Fout">✗</button>
             </div>
-            <button id="wrong-btn" class="judge-btn wrong" title="Fout">✗</button>
+          </div>
+
+          <div class="hints-section">
+            <div class="hints-header">
+              <span class="card-label">Hints</span>
+              <span class="possible-points">Mogelijke punten: <strong id="possible-points">5</strong></span>
+            </div>
+            <div class="hints-grid" id="hints-grid">
+              <!-- hints worden hier ingevoegd -->
+            </div>
           </div>
         </div>
 
-        <div class="hints-section">
-          <div class="hints-header">
-            <span class="card-label">Hints</span>
-            <span class="possible-points">Mogelijke punten: <strong id="possible-points">5</strong></span>
+        <!-- Stellingen-modus -->
+        <div class="statements-content">
+          <div class="question-card statements-prompt">
+            <span class="card-label">Stelling</span>
+            <h2 id="statements-prompt-text">—</h2>
           </div>
-          <div class="hints-grid" id="hints-grid">
-            <!-- hints worden hier ingevoegd -->
+          <div class="statements-list" id="statements-list">
+            <!-- stellingen worden hier ingevoegd -->
           </div>
+          <button id="statements-next-btn" class="primary-btn" hidden>Volgende</button>
         </div>
 
         <button id="back-to-select-btn" class="secondary-btn">Pauzeer & terug naar overzicht</button>

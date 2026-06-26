@@ -56,8 +56,11 @@ function persist() {
 }
 
 async function loadGames() {
-  const response = await fetch("games.json");
-  state.games = await response.json();
+  const indexResp = await fetch("games/index.json");
+  const files = await indexResp.json();
+  state.games = await Promise.all(
+    files.map((file) => fetch(`games/${file}`).then((r) => r.json()))
+  );
 }
 
 function ensureGameState(game) {
@@ -68,7 +71,7 @@ function ensureGameState(game) {
       shuffledOrder: shuffle(indices),
       currentIndex: 0,
       scores: [0, 0],
-      askerIndex: 0,
+      askerIndex: Math.random() < 0.5 ? 0 : 1,
       completed: false,
       winner: null,
     };
@@ -127,8 +130,10 @@ function renderSelectScreen() {
   const [p1, p2] = state.saved.players;
   document.getElementById("select-subtitle").textContent = `${p1} vs ${p2}`;
 
-  const grid = document.getElementById("games-grid");
-  grid.innerHTML = "";
+  const gridClassic = document.getElementById("games-grid-classic");
+  const gridStatements = document.getElementById("games-grid-statements");
+  gridClassic.innerHTML = "";
+  gridStatements.innerHTML = "";
 
   state.games.forEach((game) => {
     const status = gameStatus(game);
@@ -137,18 +142,26 @@ function renderSelectScreen() {
       ? `${state.saved.players[0]} ${gs.scores[0]} — ${gs.scores[1]} ${state.saved.players[1]}`
       : "";
 
+    const mode = game.mode || "classic";
+    const itemLabel = mode === "statements" ? "stellingen" : "vragen";
+    const modeLabel = mode === "statements" ? "Stellingen" : "Klassiek";
+
     const card = document.createElement("button");
     card.className = `game-card status-${status.state}`;
     card.innerHTML = `
       <div class="game-emoji">${game.emoji || "❓"}</div>
       <div class="game-title">${game.title}</div>
-      <div class="game-meta">${game.questions.length} vragen</div>
+      <div class="game-mode-badge mode-${mode}">${modeLabel}</div>
+      <div class="game-meta">${game.questions.length} ${itemLabel}</div>
       <div class="game-status">${status.label}</div>
       ${scoreLine ? `<div class="game-score">${scoreLine}</div>` : ""}
     `;
     card.addEventListener("click", () => selectGame(game));
-    grid.appendChild(card);
+    (mode === "statements" ? gridStatements : gridClassic).appendChild(card);
   });
+
+  document.getElementById("games-section-classic").hidden = gridClassic.children.length === 0;
+  document.getElementById("games-section-statements").hidden = gridStatements.children.length === 0;
 }
 
 function selectGame(game) {
@@ -181,30 +194,79 @@ function startTurn() {
   const game = state.currentGame;
   const gs = state.saved.games[game.id];
   const questionIndex = gs.shuffledOrder[gs.currentIndex];
-  const question = game.questions[questionIndex];
+  const item = game.questions[questionIndex];
+  const mode = game.mode || "classic";
 
   const [p1, p2] = state.saved.players;
   const askerIndex = gs.askerIndex;
-  const answererIndex = 1 - askerIndex;
 
   document.getElementById("asker-name").textContent = state.saved.players[askerIndex];
-  document.getElementById("answerer-name").textContent = state.saved.players[answererIndex];
+  document.getElementById("answerer-name").textContent = state.saved.players[1 - askerIndex];
   document.getElementById("asker-label").textContent = p1;
   document.getElementById("answerer-label").textContent = p2;
   document.getElementById("asker-score").textContent = gs.scores[0];
   document.getElementById("answerer-score").textContent = gs.scores[1];
 
+  const counterLabel = mode === "statements" ? "Ronde" : "Vraag";
   document.getElementById("question-counter").textContent =
-    `Vraag ${gs.currentIndex + 1} / ${gs.shuffledOrder.length}`;
+    `${counterLabel} ${gs.currentIndex + 1} / ${gs.shuffledOrder.length}`;
 
-  document.getElementById("question-text").textContent = question.question;
-  document.getElementById("fullscreen-question-text").textContent = question.question;
-  document.getElementById("answer-text").textContent = question.answer;
+  const quizScreen = document.getElementById("quiz-screen");
+  quizScreen.setAttribute("data-mode", mode);
 
-  renderHints(question.hints);
-  updatePossiblePoints();
+  if (mode === "statements") {
+    document.getElementById("statements-prompt-text").textContent = item.prompt;
+    renderStatements(item);
+  } else {
+    document.getElementById("question-text").textContent = item.question;
+    document.getElementById("fullscreen-question-text").textContent = item.question;
+    document.getElementById("answer-text").textContent = item.answer;
+    renderHints(item.hints);
+    updatePossiblePoints();
+  }
 
   showScreen("quiz");
+}
+
+function renderStatements(item) {
+  const list = document.getElementById("statements-list");
+  list.innerHTML = "";
+  state.turn.statementJudged = false;
+  state.turn.statementCorrect = false;
+  document.getElementById("statements-next-btn").hidden = true;
+  item.statements.forEach((text, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "statement-btn";
+    btn.innerHTML = `<span class="statement-number">${idx + 1}</span><span class="statement-text">${text}</span>`;
+    btn.addEventListener("click", () => handleStatementTap(idx, item.correctIndex));
+    list.appendChild(btn);
+  });
+}
+
+function handleStatementTap(tappedIndex, correctIndex) {
+  if (state.turn.statementJudged) return;
+  state.turn.statementJudged = true;
+  state.turn.statementCorrect = tappedIndex === correctIndex;
+
+  const buttons = document.querySelectorAll(".statement-btn");
+  buttons.forEach((b, i) => {
+    b.setAttribute("disabled", "");
+    if (i === correctIndex) b.classList.add("correct");
+    else if (i === tappedIndex) b.classList.add("wrong");
+    else b.classList.add("dimmed");
+  });
+
+  document.getElementById("statements-next-btn").hidden = false;
+}
+
+function judgeStatement(correct) {
+  const gs = state.saved.games[state.currentGame.id];
+  const answererIndex = 1 - gs.askerIndex;
+  if (correct) gs.scores[answererIndex] += 1;
+  gs.currentIndex++;
+  gs.askerIndex = 1 - gs.askerIndex;
+  persist();
+  showPassScreen();
 }
 
 function renderHints(hints) {
@@ -332,6 +394,9 @@ document.getElementById("wrong-btn").addEventListener("click", () => judgeAnswer
 document.getElementById("back-to-select-btn").addEventListener("click", backToSelect);
 document.getElementById("replay-btn").addEventListener("click", replayGame);
 document.getElementById("back-from-end-btn").addEventListener("click", backToSelect);
+document.getElementById("statements-next-btn").addEventListener("click", () => {
+  judgeStatement(state.turn.statementCorrect === true);
+});
 
 /* ====== Fullscreen vraag-overlay ====== */
 const fullscreenEl = document.getElementById("question-fullscreen");
@@ -375,5 +440,5 @@ loadGames()
   })
   .catch((err) => {
     console.error("Kon spellen niet laden:", err);
-    alert("Kon games.json niet laden. Zorg dat je de app via een lokale server draait (bijv. 'python3 -m http.server').");
+    alert("Kon de spellen niet laden. Zorg dat je de app via een lokale server draait (bijv. 'python3 -m http.server').");
   });

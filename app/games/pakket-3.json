@@ -1,0 +1,308 @@
+{
+  "id": "pakket-3",
+  "title": "Pakket 3",
+  "emoji": "🃏",
+  "questions": [
+    {
+      "question": "Wat is de hoofdstad van Australië?",
+      "answer": "Canberra",
+      "hints": [
+        "Het is niet Sydney of Melbourne.",
+        "De stad ligt tussen Sydney en Melbourne in.",
+        "De naam begint met een C.",
+        "De stad heeft ongeveer 400.000 inwoners."
+      ]
+    },
+    {
+      "question": "In welk jaar werd de Republiek der Verenigde Nederlanden uitgeroepen?",
+      "answer": "1588",
+      "hints": [
+        "Het was in de 16e eeuw.",
+        "Het was tijdens de Tachtigjarige Oorlog.",
+        "Het was na de Akte van Verlatinghe.",
+        "Het jaar eindigt op 88."
+      ]
+    },
+    {
+      "question": "Welk dier wordt het 'koning der dieren' genoemd?",
+      "answer": "De leeuw",
+      "hints": [
+        "Het is een groot roofdier.",
+        "Hij leeft in Afrika.",
+        "Het mannetje heeft een manen.",
+        "De naam begint met een L."
+      ]
+    },
+    {
+      "question": "Welke sport wordt gespeeld op Wimbledon?",
+      "answer": "Tennis",
+      "hints": [
+        "Het wordt op gras gespeeld.",
+        "Het is een Grand Slam-toernooi.",
+        "Het ligt in Engeland.",
+        "De naam begint met T."
+      ]
+    },
+    {
+      "question": "Welke beschaving bouwde Machu Picchu?",
+      "answer": "De Inca's",
+      "hints": [
+        "Ze leefden in Zuid-Amerika.",
+        "Hun rijk lag in het Andesgebergte.",
+        "Hun hoofdstad was Cuzco in het huidige Peru.",
+        "De naam begint met I."
+      ]
+    },
+    {
+      "question": "Welke serie speelt zich af in Westeros en Essos?",
+      "answer": "Game of Thrones",
+      "hints": [
+        "Het is gebaseerd op boeken van George R.R. Martin.",
+        "Er zijn draken in.",
+        "Het werd uitgezonden op HBO.",
+        "Het gaat over een ijzeren troon."
+      ]
+    },
+    {
+      "question": "Wat is het hardste natuurlijke materiaal op aarde?",
+      "answer": "Diamant",
+      "hints": [
+        "Het is een edelsteen.",
+        "Het bestaat uit koolstof.",
+        "Het wordt gebruikt in sieraden.",
+        "De naam begint met een D."
+      ]
+    },
+    {
+      "question": "Welk gas vormt het grootste deel van de atmosfeer?",
+      "answer": "Stikstof",
+      "hints": [
+        "Het is geen zuurstof.",
+        "Het maakt 78% van de lucht uit.",
+        "Het symbool is N.",
+        "De naam begint met S."
+      ]
+    },
+    {
+      "question": "Welke voetballer staat bekend als 'CR7'?",
+      "answer": "Cristiano Ronaldo",
+      "hints": [
+        "Hij komt uit Portugal.",
+        "Hij heeft de Gouden Bal vijf keer gewonnen.",
+        "Hij speelde voor Real Madrid en Manchester United.",
+        "Zijn voornaam is Cristiano."
+      ]
+    },
+    {
+      "question": "Welke bloedgroep is de universele donor?",
+      "answer": "O-negatief",
+      "hints": [
+        "Het is een veelvoorkomende bloedgroep.",
+        "Het heeft geen rhesusfactor.",
+        "De letter is een O.",
+        "Het is negatief in plaats van positief."
+      ]
+    },
+    {
+      "question": "Wie was de eerste president van de Verenigde Staten?",
+      "answer": "George Washington",
+      "hints": [
+        "Hij leefde in de 18e eeuw.",
+        "Een staat in de VS is naar hem vernoemd.",
+        "Hij staat op het 1-dollar biljet.",
+        "Zijn voornaam is George."
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Noorwegen?",
+      "answer": "Oslo",
+      "hints": [
+        "Het ligt in Scandinavië.",
+        "Het ligt aan een fjord.",
+        "De Nobelprijs voor de Vrede wordt er uitgereikt.",
+        "De naam heeft 4 letters."
+      ]
+    },
+    {
+      "question": "Wie schreef het boek 'Harry Potter'?",
+      "answer": "J.K. Rowling",
+      "hints": [
+        "Het is een Britse schrijfster.",
+        "Ze gebruikt initialen in haar auteursnaam.",
+        "Haar voornaam is Joanne.",
+        "Haar achternaam begint met R."
+      ]
+    },
+    {
+      "question": "Hoeveel spelers staan er bij voetbal in één team op het veld?",
+      "answer": "11",
+      "hints": [
+        "Het is een oneven getal.",
+        "Het is meer dan 10.",
+        "Het is minder dan 12.",
+        "Eén van de spelers is de keeper."
+      ]
+    },
+    {
+      "question": "Wie schilderde 'De Nachtwacht'?",
+      "answer": "Rembrandt",
+      "hints": [
+        "Hij was een Nederlandse schilder.",
+        "Hij leefde in de Gouden Eeuw.",
+        "Het schilderij hangt in het Rijksmuseum.",
+        "Zijn naam begint met R."
+      ]
+    },
+    {
+      "question": "Welke zangeres zong 'Like a Virgin'?",
+      "answer": "Madonna",
+      "hints": [
+        "Ze is een Amerikaanse popster.",
+        "Ze wordt de Queen of Pop genoemd.",
+        "Ze was actief vanaf de jaren 80.",
+        "Haar naam verwijst naar Maagd Maria."
+      ]
+    },
+    {
+      "question": "Welk land is bekend om zijn fjorden?",
+      "answer": "Noorwegen",
+      "hints": [
+        "Het ligt in Scandinavië.",
+        "De hoofdstad is Oslo.",
+        "Het heeft een lange kustlijn.",
+        "De naam begint met N."
+      ]
+    },
+    {
+      "question": "Welk verdrag beëindigde de Eerste Wereldoorlog?",
+      "answer": "Verdrag van Versailles",
+      "hints": [
+        "Het werd getekend in 1919.",
+        "Het werd getekend in een Frans paleis.",
+        "Het stelde zware sancties op aan Duitsland.",
+        "Het paleis ligt bij Parijs."
+      ]
+    },
+    {
+      "question": "Hoeveel ronden duurt een standaard boksgevecht?",
+      "answer": "12",
+      "hints": [
+        "Het is een even getal.",
+        "Het is hetzelfde aantal als maanden in een jaar.",
+        "Een ronde duurt 3 minuten.",
+        "Het is meer dan 10."
+      ]
+    },
+    {
+      "question": "Welke rivier stroomt door Londen?",
+      "answer": "De Theems",
+      "hints": [
+        "Hij ligt in Engeland.",
+        "De Tower Bridge staat erover.",
+        "Hij mondt uit in de Noordzee.",
+        "De naam begint met een T."
+      ]
+    },
+    {
+      "question": "In welk land ligt de stad Marrakech?",
+      "answer": "Marokko",
+      "hints": [
+        "Het ligt in Noord-Afrika.",
+        "Het grenst aan de Atlantische Oceaan en Middellandse Zee.",
+        "De hoofdstad is Rabat.",
+        "De naam begint met M."
+      ]
+    },
+    {
+      "question": "Hoeveel spelers heeft een basketbalteam op het veld?",
+      "answer": "5",
+      "hints": [
+        "Het is een oneven getal.",
+        "Het is minder dan 6.",
+        "Het is meer dan 4.",
+        "Een hand heeft hetzelfde aantal vingers."
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Canada?",
+      "answer": "Ottawa",
+      "hints": [
+        "Het is niet Toronto of Montreal.",
+        "Het ligt in de provincie Ontario.",
+        "De naam komt van een inheemse stam.",
+        "De naam begint met een O."
+      ]
+    },
+    {
+      "question": "Welke zee scheidt het Verenigd Koninkrijk van het Europese vasteland?",
+      "answer": "Het Kanaal",
+      "hints": [
+        "Het wordt ook Engelse Kanaal genoemd.",
+        "Er rijdt een trein onderdoor.",
+        "Het verbindt de Atlantische Oceaan met de Noordzee.",
+        "De naam in het Frans is La Manche."
+      ]
+    },
+    {
+      "question": "Hoe heet de aantrekkingskracht tussen tegengestelde polen?",
+      "answer": "Magnetisme",
+      "hints": [
+        "Het heeft te maken met ijzer.",
+        "Een kompas werkt erop.",
+        "Het heeft een noord- en zuidpool.",
+        "Het woord begint met M."
+      ]
+    },
+    {
+      "question": "In welk land vind je de Grote Muur?",
+      "answer": "China",
+      "hints": [
+        "Het ligt in Oost-Azië.",
+        "Het is meer dan 21.000 km lang.",
+        "Het werd gebouwd om vijanden buiten te houden.",
+        "De hoofdstad is Beijing."
+      ]
+    },
+    {
+      "question": "Welke landen vormen Scandinavië?",
+      "answer": "Noorwegen, Zweden en Denemarken",
+      "hints": [
+        "Het zijn drie Noord-Europese landen.",
+        "Ze grenzen aan de Oostzee of Noordzee.",
+        "Ze spreken verwante Germaanse talen.",
+        "Hun namen beginnen met N, Z en D."
+      ]
+    },
+    {
+      "question": "Wat is het nationale gerecht van Nederland?",
+      "answer": "Stamppot",
+      "hints": [
+        "Het is een warm wintergerecht.",
+        "Aardappelen zijn een hoofdingrediënt.",
+        "Vaak gegeten met rookworst.",
+        "De naam begint met S."
+      ]
+    },
+    {
+      "question": "Wat is het kookpunt van water in graden Celsius op zeeniveau?",
+      "answer": "100",
+      "hints": [
+        "Het is een rond getal.",
+        "Het is 10 in het kwadraat.",
+        "Het is een driecijferig getal.",
+        "Het is een 1 gevolgd door twee nullen."
+      ]
+    },
+    {
+      "question": "Welke oceaan grenst aan de oostkust van de VS?",
+      "answer": "Atlantische Oceaan",
+      "hints": [
+        "Hij ligt tussen Amerika en Europa.",
+        "De Titanic zonk erin.",
+        "Hij is de tweede grootste oceaan.",
+        "De naam begint met A."
+      ]
+    }
+  ],
+  "mode": "classic"
+}

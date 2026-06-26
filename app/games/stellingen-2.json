@@ -1,0 +1,278 @@
+{
+  "id": "stellingen-2",
+  "title": "Stellingen 2",
+  "emoji": "🔍",
+  "mode": "statements",
+  "questions": [
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Vincent van Gogh verkocht tijdens zijn leven slechts één schilderij",
+        "Picasso schilderde Guernica als reactie op de Eerste Wereldoorlog",
+        "Rembrandt werd geboren in Amsterdam"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "De Nachtwacht hangt in het Rijksmuseum",
+        "De Nachtwacht is geschilderd door Rembrandt",
+        "De Nachtwacht speelt zich oorspronkelijk af bij nacht"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Harry Potter is geschreven door Roald Dahl",
+        "J.K. Rowling schreef het eerste Harry Potter-boek grotendeels in cafés",
+        "Het eerste Harry Potter-boek werd in 1975 gepubliceerd"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "The Beatles kwamen uit Liverpool",
+        "John Lennon werd doodgeschoten in New York",
+        "Paul McCartney was de drummer van The Beatles"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Anne Frank schreef haar dagboek in het Engels",
+        "Anne Frank kreeg haar dagboek voor haar dertiende verjaardag",
+        "Het Achterhuis werd voor het eerst uitgegeven in 1960"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Titanic uit 1997 werd geregisseerd door James Cameron",
+        "Leonardo DiCaprio speelde Jack in Titanic",
+        "Titanic won de Oscar voor Beste Originele Scenario"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Mozart componeerde meer dan 600 werken",
+        "Beethoven componeerde de opera Don Giovanni",
+        "Bach werd geboren in Oostenrijk"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Friends speelt zich af in New York",
+        "Friends liep van 1994 tot 2004",
+        "Jennifer Aniston speelde Monica in Friends"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Salvador Dalí stond bekend als kubist",
+        "De smeltende klokken komen voor in een schilderij van Dalí",
+        "Dalí was een Italiaanse kunstenaar"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Shakespeare schreef Romeo en Julia",
+        "Shakespeare werd geboren in Stratford-upon-Avon",
+        "Shakespeare schreef de roman Oliver Twist"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Elvis Presley stierf in 1977",
+        "Elvis Presley werd geboren in Texas",
+        "Elvis Presley won vier Grammy Awards voor rock-'n-roll"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Pulp Fiction werd geregisseerd door Quentin Tarantino",
+        "John Travolta speelt in Pulp Fiction",
+        "Pulp Fiction won de Oscar voor Beste Film"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Michelangelo schilderde het plafond van de Sixtijnse Kapel",
+        "Michelangelo werd geboren in Frankrijk",
+        "Michelangelo's David staat in Rome"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Madonna brak door in de jaren 80",
+        "Madonna heeft het nummer Like a Virgin gezongen",
+        "Madonna werd geboren in Engeland"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Don Quichot werd geschreven door Miguel de Cervantes",
+        "Don Quichot is oorspronkelijk een Frans verhaal",
+        "Don Quichot vecht in het boek tegen reuzen die echt bestaan"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "The Lord of the Rings werd geschreven door J.R.R. Tolkien",
+        "De films werden geregisseerd door Peter Jackson",
+        "Het boek bestaat uit twee delen"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "ABBA komt uit Noorwegen",
+        "ABBA won het Eurovisie Songfestival met Waterloo",
+        "ABBA bestond uit vijf leden"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Andy Warhol maakte het beroemde Campbell's Soup-werk",
+        "Andy Warhol was een sleutelfiguur in de popart",
+        "Andy Warhol was een Britse kunstenaar"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Sherlock Holmes werd bedacht door Agatha Christie",
+        "Sherlock Holmes woont op Baker Street 221B",
+        "Sherlock Holmes is een politieagent bij Scotland Yard"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Breaking Bad speelt zich af in Albuquerque",
+        "Bryan Cranston speelt Walter White",
+        "Breaking Bad telt tien seizoenen"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Frida Kahlo was getrouwd met Diego Rivera",
+        "Frida Kahlo kwam uit Spanje",
+        "Frida Kahlo schilderde vooral landschappen"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Bohemian Rhapsody is een nummer van Queen",
+        "Freddie Mercury was de zanger van Queen",
+        "Queen werd opgericht in de jaren 90"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "De roman 1984 werd geschreven door George Orwell",
+        "1984 werd in 1984 voor het eerst gepubliceerd",
+        "De hoofdpersoon van 1984 heet Big Brother"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Steven Spielberg regisseerde Jurassic Park",
+        "Jaws werd ook geregisseerd door Spielberg",
+        "Spielberg regisseerde de eerste Star Wars-film"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Het schilderij De Schreeuw is gemaakt door Edvard Munch",
+        "De Schreeuw is een Frans werk",
+        "De Schreeuw bestaat uit slechts één versie"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "Michael Jackson stond bekend als de King of Pop",
+        "Thriller is een album van Michael Jackson",
+        "Michael Jackson begon zijn carrière als solo-artiest"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Roald Dahl schreef Sjakie en de Chocoladefabriek",
+        "Roald Dahl was een Amerikaanse schrijver",
+        "Roald Dahl schreef vooral romans voor volwassenen"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "The Simpsons wordt uitgezonden sinds 1989",
+        "Homer Simpson werkt in een kerncentrale",
+        "The Simpsons speelt zich af in de stad Shelbyville"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "prompt": "Welke uitspraak is waar?",
+      "statements": [
+        "Johannes Vermeer schilderde Het Meisje met de Parel",
+        "Vermeer kwam uit Antwerpen",
+        "Vermeer schilderde voornamelijk veldslagen"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "prompt": "Welke uitspraak is NIET waar?",
+      "statements": [
+        "The Godfather werd geregisseerd door Francis Ford Coppola",
+        "Marlon Brando speelde Vito Corleone",
+        "The Godfather is gebaseerd op een boek van Stephen King"
+      ],
+      "correctIndex": 2
+    }
+  ]
+}

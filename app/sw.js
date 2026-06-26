@@ -1,15 +1,26 @@
-const CACHE_NAME = "quiz-duel-v12";
+const CACHE_NAME = "quiz-duel-v24";
 
 const ASSETS = [
   "./",
   "./index.html",
   "./style.css",
   "./script.js",
-  "./games.json",
   "./manifest.json",
   "./icons/icon-180.png",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
+  "./games/index.json",
+  "./games/pakket-1.json",
+  "./games/pakket-2.json",
+  "./games/pakket-3.json",
+  "./games/pakket-4.json",
+  "./games/pakket-5.json",
+  "./games/stellingen-1.json",
+  "./games/stellingen-2.json",
+  "./games/stellingen-3.json",
+  "./games/pakket-6.json",
+  "./games/pakket-7.json",
+  "./games/pakket-8.json",
 ];
 
 self.addEventListener("install", (event) => {

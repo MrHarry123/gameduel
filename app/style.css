@@ -232,6 +232,59 @@ body::before {
   margin-bottom: 4px;
 }
 
+#games-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.games-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.games-section-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-left: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+
+.games-section-rules {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 4px 4px;
+  margin: 0;
+}
+
+.games-section-rules li {
+  padding-left: 18px;
+  position: relative;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.games-section-rules li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+.games-section-rules strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .games-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -271,6 +324,25 @@ body::before {
 .game-meta {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.game-mode-badge {
+  display: inline-block;
+  align-self: center;
+  margin-top: 4px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: var(--bg-card-2);
+  color: var(--text-muted);
+}
+
+.game-mode-badge.mode-statements {
+  background: rgba(99, 102, 241, 0.18);
+  color: var(--primary);
 }
 
 .game-status {
@@ -758,4 +830,106 @@ body::before {
   #start-screen h1 {
     font-size: 2.2rem;
   }
+}
+
+/* ===== Quiz modus-toggle (klassiek vs stellingen) ===== */
+#quiz-screen[data-mode="classic"] .statements-content {
+  display: none;
+}
+
+#quiz-screen[data-mode="statements"] .classic-content {
+  display: none;
+}
+
+.classic-content,
+.statements-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== Stellingen-modus quizscherm ===== */
+.statements-prompt {
+  cursor: default;
+}
+
+.statements-prompt:hover {
+  background: var(--bg-card);
+}
+
+.statements-prompt:active {
+  transform: none;
+}
+
+.statements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.statement-btn {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  color: var(--text);
+  padding: 18px 18px 18px 16px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.4;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: border-color 0.15s, background 0.15s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.statement-btn:hover:not([disabled]) {
+  border-color: var(--primary);
+  background: var(--bg-card-2);
+}
+
+.statement-btn:active:not([disabled]) {
+  transform: scale(0.99);
+}
+
+.statement-btn .statement-number {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.statement-btn[disabled] {
+  cursor: default;
+}
+
+.statement-btn.correct {
+  border-color: var(--correct);
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.statement-btn.correct .statement-number {
+  background: var(--correct);
+}
+
+.statement-btn.wrong {
+  border-color: var(--wrong);
+  background: rgba(239, 68, 68, 0.12);
+}
+
+.statement-btn.wrong .statement-number {
+  background: var(--wrong);
+}
+
+.statement-btn.dimmed {
+  opacity: 0.5;
 }
