@@ -880,23 +880,18 @@ body::before {
   border-radius: 14px;
   font-size: 1rem;
   font-family: inherit;
-  cursor: pointer;
   text-align: left;
   line-height: 1.4;
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  transition: border-color 0.15s, background 0.15s, transform 0.1s;
-  -webkit-tap-highlight-color: transparent;
 }
 
-.statement-btn:hover:not([disabled]) {
-  border-color: var(--primary);
-  background: var(--bg-card-2);
-}
-
-.statement-btn:active:not([disabled]) {
-  transform: scale(0.99);
+.statements-judge {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 4px;
 }
 
 .statement-btn .statement-number {

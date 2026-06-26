@@ -137,6 +137,13 @@ def validate_pakket(path):
         err(pakket_id, "questions is leeg of geen array")
         return
 
+    # Even-aantal check — zonder even aantal kan het spel oneerlijk eindigen
+    if len(questions) % 2 != 0:
+        warn(
+            pakket_id,
+            f"oneven aantal items ({len(questions)}) — voor fairness wordt het laatste item bij elke ronde geskipt; voeg 1 item toe of verwijder er 1."
+        )
+
     seen_questions = set()
     for idx, item in enumerate(questions):
         if mode == "statements":

@@ -232,32 +232,13 @@ function startTurn() {
 function renderStatements(item) {
   const list = document.getElementById("statements-list");
   list.innerHTML = "";
-  state.turn.statementJudged = false;
-  state.turn.statementCorrect = false;
-  document.getElementById("statements-next-btn").hidden = true;
   item.statements.forEach((text, idx) => {
-    const btn = document.createElement("button");
-    btn.className = "statement-btn";
-    btn.innerHTML = `<span class="statement-number">${idx + 1}</span><span class="statement-text">${text}</span>`;
-    btn.addEventListener("click", () => handleStatementTap(idx, item.correctIndex));
-    list.appendChild(btn);
+    const el = document.createElement("div");
+    el.className = "statement-btn";
+    if (idx === item.correctIndex) el.classList.add("correct");
+    el.innerHTML = `<span class="statement-number">${String.fromCharCode(65 + idx)}</span><span class="statement-text">${text}</span>`;
+    list.appendChild(el);
   });
-}
-
-function handleStatementTap(tappedIndex, correctIndex) {
-  if (state.turn.statementJudged) return;
-  state.turn.statementJudged = true;
-  state.turn.statementCorrect = tappedIndex === correctIndex;
-
-  const buttons = document.querySelectorAll(".statement-btn");
-  buttons.forEach((b, i) => {
-    b.setAttribute("disabled", "");
-    if (i === correctIndex) b.classList.add("correct");
-    else if (i === tappedIndex) b.classList.add("wrong");
-    else b.classList.add("dimmed");
-  });
-
-  document.getElementById("statements-next-btn").hidden = false;
 }
 
 function judgeStatement(correct) {
@@ -395,9 +376,8 @@ document.getElementById("wrong-btn").addEventListener("click", () => judgeAnswer
 document.getElementById("back-to-select-btn").addEventListener("click", backToSelect);
 document.getElementById("replay-btn").addEventListener("click", replayGame);
 document.getElementById("back-from-end-btn").addEventListener("click", backToSelect);
-document.getElementById("statements-next-btn").addEventListener("click", () => {
-  judgeStatement(state.turn.statementCorrect === true);
-});
+document.getElementById("statements-correct-btn").addEventListener("click", () => judgeStatement(true));
+document.getElementById("statements-wrong-btn").addEventListener("click", () => judgeStatement(false));
 
 /* ====== Fullscreen vraag-overlay ====== */
 const fullscreenEl = document.getElementById("question-fullscreen");
