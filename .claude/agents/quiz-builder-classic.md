@@ -13,9 +13,9 @@ Voer onderstaande stappen uit. Stop niet halverwege.
 ### Stap 1 — Inventariseer bestaande content
 
 1. Lees `app/games/index.json` om de bestaande pakket-bestanden te zien.
-2. Lees alle bestaande klassieke pakketten (bestanden die NIET met `stellingen-` beginnen).
-3. Verzamel alle huidige antwoorden in een lijst — die gebruik je in stap 2 om duplicaten te voorkomen.
-4. Bepaal het volgende beschikbare nummer. Bij `pakket-1` t/m `pakket-5` worden nieuwe pakketten `pakket-6`, `pakket-7`, `pakket-8`.
+2. Lees **alleen de laatste 1 à 2 klassieke pakketten** (het meest recent toegevoegde) om hun antwoorden te zien.
+3. Verzamel die antwoorden in een korte "liever niet"-lijst. **Cross-pakket overlap is acceptabel** — spelers spelen 1-2 pakketten per avond, niet alles tegelijk. Probeer alleen herhaling met het laatste pakket te vermijden.
+4. Bepaal het volgende beschikbare nummer.
 
 ### Stap 2 — Genereer 3 pakketten
 
@@ -74,16 +74,11 @@ Goede equivalenten:
 - "Hoeveel..." → hints die het getal vernauwen (groter/kleiner dan X, vergelijking met bekend aantal).
 - "Welk dier/plant/element..." → hints over kenmerken die dit specifieke ding onderscheiden van vergelijkbare alternatieven.
 
-### Verboden bij dedup-conflicten (KRITIEK)
+### Dedup-regels
 
-Als het natuurlijke antwoord op je vraag in de vermijd-lijst staat (uit stap 1), is er maar één geldige reactie: **kies een ander onderwerp**. Verboden workarounds:
-
-- Antwoorden als `"De acteur met initialen J.D."`, `"Schilder uit Zundert"`, `"De band met Freddie Mercury"` — niet doen. Geef altijd een **gewone naam/term** als antwoord.
-- Vragen herformuleren tot meta-vragen zoals `"Wie schreef niet X maar wel Y?"` of `"Welke film is geen sequel van Z?"` — niet doen.
-- Hints invullen met `"x"`, `"Geen"`, `"TBD"`, `"Geen geldige hint"`, `"Vraag al beantwoord eerder"` of vergelijkbare placeholder-tekst — verboden.
-- Antwoorden met varianten zoals `"Rembrandt van Rijn"` als `"Rembrandt"` al gebruikt is — telt nog steeds als duplicaat.
-
-Als je een vraag bedacht maar het antwoord blijkt verboden: dump die vraag, denk een ander onderwerp.
+- **Binnen je pakket**: alle 30 antwoorden moeten uniek zijn. Strict.
+- **Tussen pakketten**: probeer overlap met het *laatste* pakket te vermijden. Overlap met oudere pakketten = OK.
+- **Geen workarounds**: als je een goede vraag bedenkt en het antwoord blijkt al recent gebruikt, kies een ander onderwerp. Verboden om met workaround-antwoorden te komen zoals `"De acteur met initialen J.D."`, `"Schilder uit Zundert"`, varianten als `"Rembrandt van Rijn"` ipv `"Rembrandt"`, of meta-vragen `"Wie schreef X niet maar wel Y?"`. Hints invullen met `"x"`, `"Geen"`, `"TBD"` of placeholder-tekst is verboden.
 
 ### Self-check vóór je het bestand schrijft
 
@@ -92,7 +87,7 @@ Loop je 30 rondes één voor één na en check op:
 1. **Placeholder-tekst** in vragen/antwoorden/hints (`x`, `Geen`, `...`, `TBD`). Als je dit ziet → vervang de hele ronde.
 2. **Antwoorden met workaround-vorm** (begint met "De acteur", "De zanger", "De stad", gevolgd door initialen of vage verwijzing). Als je dit ziet → vervang de hele ronde.
 3. **30 unieke antwoorden** binnen je pakket — geen duplicaten met jezelf.
-4. **Geen antwoord uit de vermijd-lijst** — exacte string en duidelijke varianten (Rembrandt = Rembrandt van Rijn).
+4. **Voorkom herhaling met het laatste pakket** — overlap met oudere pakketten is OK.
 5. **Vraag-formulering**: geen meta-vragen ("X niet maar Y wel"), geen dubbele werkwoorden, één vraagteken.
 6. **Antwoord-relevantie van elke hint** (de Columbus-test): voor elke van de 4 hints, vraag jezelf "zou deze hint nog steeds waar zijn als het antwoord iets anders was geweest binnen dit onderwerp?". Zo ja → vervang de hint door iets dat wél naar het specifieke antwoord wijst. Speciaal bij jaartal-vragen: hints zoals "Hij voer voor Spanje" zijn ongeldig — hints moeten temporeel zijn.
 
@@ -143,7 +138,7 @@ Geef een compact verslag:
 
 ## Belangrijke instructies
 
-- **Locked pakketten met rust laten**: pakketten met `"locked": true` mogen NIET worden aangepast (er kunnen spelers met opgeslagen voortgang zijn). Lees ze wél in stap 1 om hun antwoorden in de vermijd-lijst op te nemen.
+- **Locked pakketten met rust laten**: pakketten met `"locked": true` mogen NIET worden aangepast (er kunnen spelers met opgeslagen voortgang zijn). Je hoeft ze niet te lezen voor dedup.
 - **Nieuwe pakketten worden NIET gelockt** — geen `locked` veld toevoegen. De gebruiker beslist later of/wanneer een nieuw pakket vergrendeld wordt.
 - **Output in het Nederlands** — content, hints, rapport.
 - **Niet liegen**: elk antwoord moet feitelijk juist zijn. Bij onzekerheid: kies een ander onderwerp.

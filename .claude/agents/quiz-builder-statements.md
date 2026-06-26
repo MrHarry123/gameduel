@@ -13,9 +13,9 @@ Voer onderstaande stappen uit. Stop niet halverwege.
 ### Stap 1 — Inventariseer bestaande content
 
 1. Lees `app/games/index.json` om de bestaande pakket-bestanden te zien.
-2. Lees alle bestaande stellingen-pakketten (bestanden die met `stellingen-` beginnen).
-3. Verzamel alle huidige stelling-tripletten (set van 3 statements per ronde) zodat je geen rondes dupliceert.
-4. Bepaal het volgende beschikbare nummer. Bij `stellingen-1` t/m `stellingen-3` worden nieuwe pakketten `stellingen-4`, `stellingen-5`, `stellingen-6`.
+2. Lees **alleen het laatste stellingen-pakket** dat je vindt (het meest recente). Verzamel de stelling-onderwerpen om herhaling met dat pakket te vermijden.
+3. Cross-pakket overlap met OUDERE stellingen-pakketten is acceptabel. **Binnen je eigen pakket** moeten alle 30 stelling-sets uniek zijn.
+4. Bepaal het volgende beschikbare nummer.
 
 ### Stap 2 — Genereer 3 pakketten
 

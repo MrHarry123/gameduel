@@ -1,0 +1,348 @@
+{
+  "id": "pakket-9",
+  "title": "Pakket 9",
+  "emoji": "🎢",
+  "mode": "classic",
+  "questions": [
+    {
+      "question": "Welke Romeinse keizer stak volgens overlevering Rome in brand?",
+      "answer": "Nero",
+      "hints": [
+        "Romeinse oudheid, eerste eeuw na Christus",
+        "Hij regeerde van 54 tot 68 na Christus",
+        "Niet Caligula of Claudius, maar zijn opvolger",
+        "Vier letters, begint met een N"
+      ]
+    },
+    {
+      "question": "In welk jaar werd de Berlijnse luchtbrug opgezet?",
+      "answer": "1948",
+      "hints": [
+        "Vlak na de Tweede Wereldoorlog",
+        "Begin van de Koude Oorlog",
+        "Hetzelfde jaar als de oprichting van Israël",
+        "Eindigt op een 8"
+      ]
+    },
+    {
+      "question": "Welk land heeft Helsinki als hoofdstad?",
+      "answer": "Finland",
+      "hints": [
+        "Land in Noord-Europa",
+        "Grenst aan Rusland, Zweden en Noorwegen",
+        "Bekend om sauna's en duizenden meren",
+        "Zeven letters, begint met een F"
+      ]
+    },
+    {
+      "question": "Wie schreef het toneelstuk Faust?",
+      "answer": "Goethe",
+      "hints": [
+        "Duitse schrijver uit de achttiende en negentiende eeuw",
+        "Boegbeeld van de Sturm und Drang",
+        "Werd geboren in Frankfurt",
+        "Voornaam Johann Wolfgang"
+      ]
+    },
+    {
+      "question": "Welke berg is de hoogste vulkaan van Europa?",
+      "answer": "Etna",
+      "hints": [
+        "Ligt op een Italiaans eiland",
+        "Te vinden op Sicilië",
+        "Niet de Stromboli of de Vesuvius",
+        "Vier letters, begint met een E"
+      ]
+    },
+    {
+      "question": "Welk continent ligt grotendeels onder de evenaar en herbergt de Kalahari?",
+      "answer": "Afrika",
+      "hints": [
+        "Tweede grootste continent qua oppervlakte",
+        "Wieg van de mensheid",
+        "Bevat landen als Kenia en Botswana",
+        "Zes letters, begint met een A"
+      ]
+    },
+    {
+      "question": "Welk dier heeft drie harten en blauw bloed?",
+      "answer": "Inktvis",
+      "hints": [
+        "Een weekdier uit zee",
+        "Spuit inkt als verdediging",
+        "Een familielid heeft acht armen",
+        "Begint met een I"
+      ]
+    },
+    {
+      "question": "Welke Nederlandse provincie heeft Middelburg als hoofdstad?",
+      "answer": "Zeeland",
+      "hints": [
+        "Een zuidwestelijke provincie",
+        "Bestaat grotendeels uit eilanden",
+        "Bekend van de Deltawerken",
+        "Zeven letters, begint met een Z"
+      ]
+    },
+    {
+      "question": "Welk orgaan filtert het bloed en produceert urine?",
+      "answer": "Nieren",
+      "hints": [
+        "Mensen hebben er meestal twee van",
+        "Liggen aan weerszijden van de wervelkolom",
+        "Niet de blaas maar het orgaan ervoor",
+        "Vijf letters, begint met een N"
+      ]
+    },
+    {
+      "question": "Welke Nederlandse koning was de eerste van het huis Oranje-Nassau op de troon?",
+      "answer": "Willem I",
+      "hints": [
+        "Regeerde vanaf 1815",
+        "Zoon van stadhouder Willem V",
+        "Werd verdreven na de Belgische Opstand",
+        "Naam plus een Romeins cijfer"
+      ]
+    },
+    {
+      "question": "Welke woestijn in Zuid-Amerika geldt als de droogste niet-polaire woestijn?",
+      "answer": "Atacama",
+      "hints": [
+        "Ligt in het noorden van Chili",
+        "Klemt zich tegen de Andes",
+        "Bekend om sterrenkijken en lithium",
+        "Zeven letters, begint met een A"
+      ]
+    },
+    {
+      "question": "Welke Italiaanse ontdekkingsreiziger gaf zijn naam aan twee continenten?",
+      "answer": "Amerigo Vespucci",
+      "hints": [
+        "Leefde rond 1500",
+        "Was cartograaf en koopman uit Florence",
+        "Niet Columbus, hoewel ze tijdgenoten waren",
+        "Voornaam begint met een A"
+      ]
+    },
+    {
+      "question": "Welk eiland staat bekend om zijn moai-beelden?",
+      "answer": "Paaseiland",
+      "hints": [
+        "Ligt in de Stille Oceaan",
+        "Behoort tot Chili",
+        "Polynesische cultuur",
+        "Vernoemd naar een christelijke feestdag"
+      ]
+    },
+    {
+      "question": "Welk Nederlands woord betekent letterlijk wat de term tsunami omschrijft?",
+      "answer": "Vloedgolf",
+      "hints": [
+        "Een natuurverschijnsel op zee",
+        "Veroorzaakt door zeebevingen of vulkanen",
+        "Kan kustgebieden verwoesten",
+        "Samengesteld woord van twee delen"
+      ]
+    },
+    {
+      "question": "Welke Russische tsaar opende Rusland naar het Westen en stichtte Sint-Petersburg?",
+      "answer": "Peter de Grote",
+      "hints": [
+        "Regeerde rond 1700",
+        "Stond bekend om zijn lengte van ruim twee meter",
+        "Reisde incognito door Nederland",
+        "Regeerde van 1682 tot 1725"
+      ]
+    },
+    {
+      "question": "Welk vitamine maakt de huid aan onder invloed van zonlicht?",
+      "answer": "Vitamine D",
+      "hints": [
+        "Belangrijk voor sterke botten",
+        "Tekort kan rachitis veroorzaken",
+        "Zit ook in vette vis",
+        "Aangeduid met de vierde letter van het alfabet"
+      ]
+    },
+    {
+      "question": "Welke Griekse god is de god van de oorlog?",
+      "answer": "Ares",
+      "hints": [
+        "Een Olympische godheid",
+        "Zoon van Zeus en Hera",
+        "Het Romeinse equivalent is een planeetnaam",
+        "Vier letters, begint met een A"
+      ]
+    },
+    {
+      "question": "Welk land was het eerste ter wereld waar vrouwen mochten stemmen?",
+      "answer": "Nieuw-Zeeland",
+      "hints": [
+        "Een eilandstaat in Oceanië",
+        "Hoofdstad is Wellington",
+        "Voerde vrouwenkiesrecht in in 1893",
+        "Bekend om kiwi's en de All Blacks"
+      ]
+    },
+    {
+      "question": "Welke schilder uit de Lage Landen maakte het werk De Tuin der Lusten?",
+      "answer": "Jheronimus Bosch",
+      "hints": [
+        "Een schilder uit de Lage Landen rond 1500.",
+        "Bekend om fantastische taferelen met monsters en hel.",
+        "Werkte vanuit Brabant, niet uit Spanje.",
+        "Zijn naam verwijst naar een stad in Noord-Brabant."
+      ]
+    },
+    {
+      "question": "Welke voetballer scoorde de Hand van God-goal in 1986?",
+      "answer": "Diego Maradona",
+      "hints": [
+        "Een Zuid-Amerikaanse voetballer.",
+        "Hij speelde clubvoetbal in Napels.",
+        "Het doelpunt viel tegen Engeland op het WK in Mexico.",
+        "Voornaam telt vijf letters."
+      ]
+    },
+    {
+      "question": "Welke Italiaanse componist schreef de opera La Traviata?",
+      "answer": "Giuseppe Verdi",
+      "hints": [
+        "Een 19e-eeuws operacomponist.",
+        "Hij schreef ook Aida en Rigoletto.",
+        "Niet Puccini, maar zijn voorganger.",
+        "Zijn achternaam betekent groen in het Italiaans."
+      ]
+    },
+    {
+      "question": "Welke Nederlandse schrijver schreef Het Diner?",
+      "answer": "Herman Koch",
+      "hints": [
+        "Een hedendaagse Nederlandse romanschrijver.",
+        "Het boek werd vertaald in meer dan veertig talen.",
+        "Hij speelde ook in de tv-serie Jiskefet.",
+        "Zijn voornaam telt zes letters."
+      ]
+    },
+    {
+      "question": "Welke Belgische schilder maakte De Verraderlijkheid van Beelden met een pijp?",
+      "answer": "René Magritte",
+      "hints": [
+        "Een 20e-eeuwse surrealistische schilder.",
+        "Onder de pijp staat de zin Dit is geen pijp.",
+        "Hij droeg vaak een bolhoed op zijn zelfportretten.",
+        "Zijn voornaam telt vier letters."
+      ]
+    },
+    {
+      "question": "Welke Britse actrice speelde Hermione Granger in de Harry Potter-films?",
+      "answer": "Emma Watson",
+      "hints": [
+        "Een actrice geboren in 1990.",
+        "Ze studeerde later aan Brown University in de VS.",
+        "Ze speelde ook Belle in de live-action Beauty and the Beast.",
+        "Voornaam telt vier letters."
+      ]
+    },
+    {
+      "question": "Welke tennisster won 23 grandslamtitels in het enkelspel?",
+      "answer": "Serena Williams",
+      "hints": [
+        "Een Amerikaanse tennisster.",
+        "Ze heeft een oudere zus die ook prof was.",
+        "Ze won vaak op Wimbledon en de Australian Open.",
+        "Haar voornaam telt zes letters."
+      ]
+    },
+    {
+      "question": "Welk dier is het symbool van de Republikeinse partij in de VS?",
+      "answer": "De olifant",
+      "hints": [
+        "Een groot zoogdier met grote oren.",
+        "Het symbool werd populair door een cartoon van Thomas Nast.",
+        "De Democraten hebben een ezel als tegenhanger.",
+        "Heeft een lange slurf."
+      ]
+    },
+    {
+      "question": "Welke Italiaanse stad is bekend om de scheve toren?",
+      "answer": "Pisa",
+      "hints": [
+        "Een stad in Toscane.",
+        "De toren is de klokkentoren van de naastgelegen kathedraal.",
+        "De stad ligt aan de rivier de Arno.",
+        "De naam telt vier letters."
+      ]
+    },
+    {
+      "question": "Welke Nederlandse wielrenner won als eerste de Tour de France?",
+      "answer": "Jan Janssen",
+      "hints": [
+        "Een renner uit de jaren 60.",
+        "Hij won de Tour in 1968 in de slottijdrit.",
+        "Hij droeg een opvallende bril tijdens het koersen.",
+        "Voor- en achternaam beginnen allebei met dezelfde letter."
+      ]
+    },
+    {
+      "question": "Welke Franse schrijver schreef De Drie Musketiers?",
+      "answer": "Alexandre Dumas",
+      "hints": [
+        "Een 19e-eeuwse Franse romanschrijver.",
+        "Hij schreef ook De Graaf van Monte Cristo.",
+        "Zijn zoon was eveneens schrijver.",
+        "Zijn achternaam telt vijf letters."
+      ]
+    },
+    {
+      "question": "Welk land won het Eurovisie Songfestival in 2019 met Duncan Laurence?",
+      "answer": "Nederland",
+      "hints": [
+        "Een West-Europees land.",
+        "Het winnende lied heette Arcade.",
+        "De finale vond plaats in Tel Aviv.",
+        "De hoofdstad is bekend om grachten."
+      ]
+    },
+    {
+      "question": "In welke sport is een birdie een score onder par?",
+      "answer": "Golf",
+      "hints": [
+        "Een sport met stokken en een kleine bal.",
+        "Gespeeld op een baan met holes.",
+        "Bekende spelers zijn Tiger Woods en Rory McIlroy.",
+        "De naam telt vier letters."
+      ]
+    },
+    {
+      "question": "Welk Nederlands schilderij toont een meisje met een blauwe en gele hoofddoek en een parel in het oor?",
+      "answer": "Meisje met de parel",
+      "hints": [
+        "Een schilderij uit de Gouden Eeuw.",
+        "Het hangt in het Mauritshuis in Den Haag.",
+        "Wordt soms de Mona Lisa van het noorden genoemd.",
+        "De maker werkte in Delft."
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Argentinië?",
+      "answer": "Buenos Aires",
+      "hints": [
+        "Een grote stad in Zuid-Amerika.",
+        "Ligt aan de Río de la Plata.",
+        "Bekend om de tango en de wijk La Boca.",
+        "De naam betekent letterlijk goede lucht."
+      ]
+    },
+    {
+      "question": "Welke Nederlandse schaatsster won goud op de 1500 meter op de Spelen van 2018?",
+      "answer": "Ireen Wüst",
+      "hints": [
+        "Een Nederlandse langebaanschaatsster.",
+        "Geboren in Goirle, Noord-Brabant.",
+        "Won meerdere Olympische gouden medailles in haar carrière.",
+        "Haar achternaam heeft een umlaut op de u."
+      ]
+    }
+  ]
+}
