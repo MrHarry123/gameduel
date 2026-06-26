@@ -2,6 +2,8 @@
   "id": "pakket-4",
   "title": "Pakket 4",
   "emoji": "🎪",
+  "mode": "classic",
+  "locked": true,
   "questions": [
     {
       "question": "Welke sport wordt gespeeld met een schijf op ijs?",
@@ -303,6 +305,5 @@
         "Het begint met een Y."
       ]
     }
-  ],
-  "mode": "classic"
+  ]
 }

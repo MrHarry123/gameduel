@@ -2,6 +2,8 @@
   "id": "pakket-1",
   "title": "Pakket 1",
   "emoji": "🎲",
+  "mode": "classic",
+  "locked": true,
   "questions": [
     {
       "question": "Welke wetenschapper formuleerde de relativiteitstheorie?",
@@ -303,6 +305,5 @@
         "De hoofdstad is New Delhi."
       ]
     }
-  ],
-  "mode": "classic"
+  ]
 }

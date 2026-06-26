@@ -43,6 +43,36 @@ Voor elk pakket:
 - Geen vage hints ("Hij was beroemd", "Het is groot").
 - Geen feitelijke fouten.
 - Geen woord uit het antwoord (bv. bij antwoord "Schildpad" geen "schild" in een hint).
+- **Geen onderwerp-ware-maar-antwoord-irrelevante hints** (zie volgende sectie).
+
+### De "antwoord-relevantie"-test (KRITIEK)
+
+Vraag jezelf bij elke hint af: **"Als het antwoord iets anders was geweest binnen ditzelfde onderwerp, zou deze hint dan nog steeds waar zijn?"** Als ja → de hint is nutteloos en moet vervangen worden.
+
+Slechte voorbeelden:
+
+| Vraag | Slechte hint | Waarom slecht |
+|---|---|---|
+| "In welk jaar ontdekte Columbus Amerika?" | "Hij voer in opdracht van Spanje" | Antwoord is 1492 (jaar) — Spanje zegt niks over het jaar |
+| "Wie schilderde de Mona Lisa?" | "Het schilderij hangt in het Louvre" | Antwoord is Da Vinci — locatie van het werk zegt niks over de schilder |
+| "Hoeveel poten heeft een spin?" | "Spinnen maken webben" | Antwoord is 8 — webben maken zegt niks over het aantal |
+| "Welk land heeft de Eiffeltoren?" | "De toren is 330 meter hoog" | Antwoord is Frankrijk — hoogte zegt niks over het land |
+
+Goede equivalenten:
+
+| Vraag | Goede hint |
+|---|---|
+| "In welk jaar ontdekte Columbus Amerika?" | "In hetzelfde jaar werd Granada heroverd en eindigde de Reconquista" |
+| "Wie schilderde de Mona Lisa?" | "Hij was ook uitvinder en bedacht ontwerpen voor vliegmachines" |
+| "Hoeveel poten heeft een spin?" | "Twee meer dan een insect" |
+| "Welk land heeft de Eiffeltoren?" | "De officiële taal is een Romaanse taal" |
+
+**Hint-match per vraag-type:**
+- "In welk jaar / wanneer..." → hints moeten temporeel zijn (jaartallen, decennia, eeuwen, gelijktijdige gebeurtenissen). Een hint over de persoon, plaats of context die niets aan tijd vastmaakt is nutteloos.
+- "Wie..." → hints over de persoon (afkomst, beroep, andere werken, initialen).
+- "Welk land/stad..." → hints over geografische kenmerken (continent, taal, buurland, hoofdstad).
+- "Hoeveel..." → hints die het getal vernauwen (groter/kleiner dan X, vergelijking met bekend aantal).
+- "Welk dier/plant/element..." → hints over kenmerken die dit specifieke ding onderscheiden van vergelijkbare alternatieven.
 
 ### Verboden bij dedup-conflicten (KRITIEK)
 
@@ -64,6 +94,7 @@ Loop je 30 rondes één voor één na en check op:
 3. **30 unieke antwoorden** binnen je pakket — geen duplicaten met jezelf.
 4. **Geen antwoord uit de vermijd-lijst** — exacte string en duidelijke varianten (Rembrandt = Rembrandt van Rijn).
 5. **Vraag-formulering**: geen meta-vragen ("X niet maar Y wel"), geen dubbele werkwoorden, één vraagteken.
+6. **Antwoord-relevantie van elke hint** (de Columbus-test): voor elke van de 4 hints, vraag jezelf "zou deze hint nog steeds waar zijn als het antwoord iets anders was geweest binnen dit onderwerp?". Zo ja → vervang de hint door iets dat wél naar het specifieke antwoord wijst. Speciaal bij jaartal-vragen: hints zoals "Hij voer voor Spanje" zijn ongeldig — hints moeten temporeel zijn.
 
 Pas pas daarna schrijf je het bestand.
 
@@ -112,6 +143,8 @@ Geef een compact verslag:
 
 ## Belangrijke instructies
 
+- **Locked pakketten met rust laten**: pakketten met `"locked": true` mogen NIET worden aangepast (er kunnen spelers met opgeslagen voortgang zijn). Lees ze wél in stap 1 om hun antwoorden in de vermijd-lijst op te nemen.
+- **Nieuwe pakketten worden NIET gelockt** — geen `locked` veld toevoegen. De gebruiker beslist later of/wanneer een nieuw pakket vergrendeld wordt.
 - **Output in het Nederlands** — content, hints, rapport.
 - **Niet liegen**: elk antwoord moet feitelijk juist zijn. Bij onzekerheid: kies een ander onderwerp.
 - **Vermijd recente gebeurtenissen** (afgelopen 2 jaar) — die verouderen snel.

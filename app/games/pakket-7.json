@@ -4,29 +4,245 @@
   "emoji": "🎬",
   "mode": "classic",
   "questions": [
-    { "question": "Welke Spaanse schilder maakte het werk Guernica?", "answer": "Pablo Picasso", "hints": ["Spaanse kunstenaar van de 20e eeuw", "Medeoprichter van het kubisme", "Werkte lang in Frankrijk en niet in zijn geboorteland", "Voornaam Pablo"] },
-    { "question": "Wie schreef de roman Max Havelaar?", "answer": "Multatuli", "hints": ["19e-eeuws Nederlands schrijver", "Pseudoniem van Eduard Douwes Dekker", "Bekritiseerde het koloniale bestuur in Nederlands-Indië", "Zijn schrijversnaam betekent 'ik heb veel gedragen'"] },
-    { "question": "Welke band bracht het album The Dark Side of the Moon uit?", "answer": "Pink Floyd", "hints": ["Britse rockband opgericht in 1965", "Album uit 1973 met prisma op de hoes", "Leden waren onder andere Roger Waters en David Gilmour", "Naam verwijst naar een kleur en een vloeistof"] },
-    { "question": "Welke Italiaanse dichter schreef De Goddelijke Komedie?", "answer": "Dante Alighieri", "hints": ["Middeleeuws auteur uit Florence", "Werk uit het begin van de 14e eeuw", "Beschrijft een reis door hel, vagevuur en paradijs", "Voornaam Dante"] },
-    { "question": "Wie schilderde Het Meisje met de Parel?", "answer": "Johannes Vermeer", "hints": ["17e-eeuwse Nederlandse meester", "Geboren in Delft", "Schilderde vooral huiselijke taferelen met licht door een raam", "Voornaam Johannes"] },
-    { "question": "Welke Russische schrijver schreef Oorlog en Vrede?", "answer": "Lev Tolstoj", "hints": ["19e-eeuws Russisch romanschrijver", "Adellijke achtergrond uit Jasnaja Poljana", "Andere bekende roman is Anna Karenina", "Voornaam Lev"] },
-    { "question": "Welke acteur speelde Forrest Gump in de gelijknamige film?", "answer": "Tom Hanks", "hints": ["Amerikaanse acteur geboren in 1956", "Won twee opeenvolgende Oscars in de jaren 90", "Stem van Woody in een animatieserie", "Voornaam Tom"] },
-    { "question": "Wie componeerde de Negende Symfonie met Ode aan de Vreugde?", "answer": "Ludwig van Beethoven", "hints": ["Duits componist uit de klassieke en romantische periode", "Werd later in zijn leven doof", "Werkte vooral in Wenen", "Voornaam Ludwig"] },
-    { "question": "Welke Amerikaanse schrijver schreef The Old Man and the Sea?", "answer": "Ernest Hemingway", "hints": ["20e-eeuws Amerikaans auteur", "Won de Nobelprijs voor de Literatuur in 1954", "Woonde lang op Cuba", "Bijnaam Papa"] },
-    { "question": "Welke kunststroming wordt geassocieerd met Salvador Dalí?", "answer": "Surrealisme", "hints": ["Stroming uit de jaren 20 van de 20e eeuw", "Ontstaan in Parijs rond een manifest van André Breton", "Verbeeldt droombeelden en het onderbewuste", "Begint met de letter S"] },
-    { "question": "Welke serie volgt de chemieleraar Walter White?", "answer": "Breaking Bad", "hints": ["Amerikaanse dramaserie uit 2008-2013", "Speelt zich af in Albuquerque, New Mexico", "Bedacht door Vince Gilligan", "Twee woorden, eerste begint met B"] },
-    { "question": "Wie zong de hit Like a Rolling Stone uit 1965?", "answer": "Bob Dylan", "hints": ["Amerikaanse singer-songwriter", "Won in 2016 de Nobelprijs voor de Literatuur", "Geboren als Robert Zimmerman", "Achternaam ook een Welshe dichter"] },
-    { "question": "Welk Nederlands kinderboek heeft Pluk als hoofdpersoon?", "answer": "Pluk van de Petteflet", "hints": ["Boek van Annie M.G. Schmidt uit 1971", "Hoofdpersoon rijdt rond in een rood kraanwagentje", "Geïllustreerd door Fiep Westendorp", "Petteflet is een flatgebouw"] },
-    { "question": "Welk muziekinstrument bespeelde Louis Armstrong?", "answer": "Trompet", "hints": ["Koperblaasinstrument", "Heeft drie ventielen", "Klassiek in jazzbands", "Begint met de letter T"] },
-    { "question": "Welke Nederlandse schrijver schreef De Aanslag?", "answer": "Harry Mulisch", "hints": ["Een van de Grote Drie van de naoorlogse Nederlandse literatuur", "Geboren in Haarlem in 1927", "Andere roman is De Ontdekking van de Hemel", "Voornaam Harry"] },
-    { "question": "Welke Britse zangeres bracht het album 21 uit?", "answer": "Adele", "hints": ["Britse soul- en popzangeres", "Album uit 2011 met hits Rolling in the Deep en Someone Like You", "Won meerdere Grammy's", "Mononieme artiestennaam met 5 letters"] },
-    { "question": "Wie schreef het toneelstuk Een poppenhuis?", "answer": "Henrik Ibsen", "hints": ["19e-eeuws Noors toneelschrijver", "Stuk uit 1879 met hoofdpersoon Nora", "Geldt als grondlegger van het moderne drama", "Voornaam Henrik"] },
-    { "question": "Welke Franse impressionist schilderde reeksen waterlelies?", "answer": "Claude Monet", "hints": ["Frans schilder uit de 19e en vroege 20e eeuw", "Werkte in zijn tuin in Giverny", "De stroming is naar een van zijn schilderijen genoemd", "Voornaam Claude"] },
-    { "question": "Welke film uit 1972 begint met de zin 'I believe in America'?", "answer": "The Godfather", "hints": ["Misdaadfilm geregisseerd door Francis Ford Coppola", "Gebaseerd op een roman van Mario Puzo", "Hoofdrol gespeeld door Marlon Brando", "Gaat over de maffiafamilie Corleone"] },
-    { "question": "Welke Britse schrijfster schreef Trots en Vooroordeel?", "answer": "Jane Austen", "hints": ["Engelse romanschrijfster uit het begin van de 19e eeuw", "Hoofdpersoon van het boek is Elizabeth Bennet", "Schreef ook Emma en Sense and Sensibility", "Voornaam Jane"] },
-    { "question": "Welke Amerikaanse rockzanger werd 'The King' genoemd?", "answer": "Elvis Presley", "hints": ["Geboren in Tupelo, Mississippi in 1935", "Bekend om Heartbreak Hotel en Jailhouse Rock", "Woonde in Graceland", "Voornaam Elvis"] },
-    { "question": "Welke Spaanse opera componeerde Georges Bizet?", "answer": "Carmen", "hints": ["Opera uit 1875", "Speelt zich af in Sevilla", "Hoofdpersoon is een vurige zigeunerin die in een sigarenfabriek werkt", "Begint met de letter C"] },
-    { "question": "Welk gebouw in Parijs huisvest de Mona Lisa?", "answer": "Het Louvre", "hints": ["Voormalig koninklijk paleis", "Ligt aan de Seine", "Heeft een glazen piramide als ingang", "Begint met de letter L"] },
-    { "question": "Welke Nederlandse zanger zong Het is een nacht?", "answer": "Guus Meeuwis", "hints": ["Nederlandse zanger geboren in 1972", "Brak door als student in Tilburg", "Geeft jaarlijks concerten op het Philips Stadion", "Voornaam Guus"] }
+    {
+      "question": "Welke Spaanse schilder maakte het werk Guernica?",
+      "answer": "Pablo Picasso",
+      "hints": [
+        "Spaanse kunstenaar van de 20e eeuw",
+        "Medeoprichter van het kubisme",
+        "Werkte lang in Frankrijk en niet in zijn geboorteland",
+        "Voornaam Pablo"
+      ]
+    },
+    {
+      "question": "Wie schreef de roman Max Havelaar?",
+      "answer": "Multatuli",
+      "hints": [
+        "19e-eeuws Nederlands schrijver",
+        "Pseudoniem van Eduard Douwes Dekker",
+        "Bekritiseerde het koloniale bestuur in Nederlands-Indië",
+        "Zijn schrijversnaam betekent 'ik heb veel gedragen'"
+      ]
+    },
+    {
+      "question": "Welke band bracht het album The Dark Side of the Moon uit?",
+      "answer": "Pink Floyd",
+      "hints": [
+        "Britse rockband opgericht in 1965",
+        "Album uit 1973 met prisma op de hoes",
+        "Leden waren onder andere Roger Waters en David Gilmour",
+        "Naam verwijst naar een kleur en een vloeistof"
+      ]
+    },
+    {
+      "question": "Welke Italiaanse dichter schreef De Goddelijke Komedie?",
+      "answer": "Dante Alighieri",
+      "hints": [
+        "Middeleeuws auteur uit Florence",
+        "Werk uit het begin van de 14e eeuw",
+        "Beschrijft een reis door hel, vagevuur en paradijs",
+        "Voornaam Dante"
+      ]
+    },
+    {
+      "question": "Wie schilderde Het Meisje met de Parel?",
+      "answer": "Johannes Vermeer",
+      "hints": [
+        "17e-eeuwse Nederlandse meester",
+        "Geboren in Delft",
+        "Schilderde vooral huiselijke taferelen met licht door een raam",
+        "Voornaam Johannes"
+      ]
+    },
+    {
+      "question": "Welke Russische schrijver schreef Oorlog en Vrede?",
+      "answer": "Lev Tolstoj",
+      "hints": [
+        "19e-eeuws Russisch romanschrijver",
+        "Adellijke achtergrond uit Jasnaja Poljana",
+        "Andere bekende roman is Anna Karenina",
+        "Voornaam Lev"
+      ]
+    },
+    {
+      "question": "Welke acteur speelde Forrest Gump in de gelijknamige film?",
+      "answer": "Tom Hanks",
+      "hints": [
+        "Amerikaanse acteur geboren in 1956",
+        "Won twee opeenvolgende Oscars in de jaren 90",
+        "Stem van Woody in een animatieserie",
+        "Voornaam Tom"
+      ]
+    },
+    {
+      "question": "Wie componeerde de Negende Symfonie met Ode aan de Vreugde?",
+      "answer": "Ludwig van Beethoven",
+      "hints": [
+        "Duits componist uit de klassieke en romantische periode",
+        "Werd later in zijn leven doof",
+        "Werkte vooral in Wenen",
+        "Voornaam Ludwig"
+      ]
+    },
+    {
+      "question": "Welke Amerikaanse schrijver schreef The Old Man and the Sea?",
+      "answer": "Ernest Hemingway",
+      "hints": [
+        "20e-eeuws Amerikaans auteur",
+        "Schreef in korte, krachtige zinnen over oorlog en de zee.",
+        "Woonde lang op Cuba",
+        "Bijnaam Papa"
+      ]
+    },
+    {
+      "question": "Welke kunststroming wordt geassocieerd met Salvador Dalí?",
+      "answer": "Surrealisme",
+      "hints": [
+        "Stroming uit de jaren 20 van de 20e eeuw",
+        "Ontstaan in Parijs rond een manifest van André Breton",
+        "Verbeeldt droombeelden en het onderbewuste",
+        "Begint met de letter S"
+      ]
+    },
+    {
+      "question": "Welke serie volgt de chemieleraar Walter White?",
+      "answer": "Breaking Bad",
+      "hints": [
+        "Amerikaanse dramaserie uit 2008-2013",
+        "Speelt zich af in Albuquerque, New Mexico",
+        "Bedacht door Vince Gilligan",
+        "Twee woorden, eerste begint met B"
+      ]
+    },
+    {
+      "question": "Wie zong de hit Like a Rolling Stone uit 1965?",
+      "answer": "Bob Dylan",
+      "hints": [
+        "Amerikaanse singer-songwriter",
+        "Won in 2016 de Nobelprijs voor de Literatuur",
+        "Geboren als Robert Zimmerman",
+        "Achternaam ook een Welshe dichter"
+      ]
+    },
+    {
+      "question": "Welk Nederlands kinderboek heeft Pluk als hoofdpersoon?",
+      "answer": "Pluk van de Petteflet",
+      "hints": [
+        "Boek van Annie M.G. Schmidt uit 1971",
+        "Hoofdpersoon rijdt rond in een rood kraanwagentje",
+        "Geïllustreerd door Fiep Westendorp",
+        "Petteflet is een flatgebouw"
+      ]
+    },
+    {
+      "question": "Welk muziekinstrument bespeelde Louis Armstrong?",
+      "answer": "Trompet",
+      "hints": [
+        "Koperblaasinstrument",
+        "Heeft drie ventielen",
+        "Klassiek in jazzbands",
+        "Begint met de letter T"
+      ]
+    },
+    {
+      "question": "Welke Nederlandse schrijver schreef De Aanslag?",
+      "answer": "Harry Mulisch",
+      "hints": [
+        "Een van de Grote Drie van de naoorlogse Nederlandse literatuur",
+        "Geboren in Haarlem in 1927",
+        "Andere roman is De Ontdekking van de Hemel",
+        "Voornaam Harry"
+      ]
+    },
+    {
+      "question": "Welke Britse zangeres bracht het album 21 uit?",
+      "answer": "Adele",
+      "hints": [
+        "Britse soul- en popzangeres",
+        "Album uit 2011 met hits Rolling in the Deep en Someone Like You",
+        "Won meerdere Grammy's",
+        "Mononieme artiestennaam met 5 letters"
+      ]
+    },
+    {
+      "question": "Wie schreef het toneelstuk Een poppenhuis?",
+      "answer": "Henrik Ibsen",
+      "hints": [
+        "19e-eeuws Noors toneelschrijver",
+        "Stuk uit 1879 met hoofdpersoon Nora",
+        "Geldt als grondlegger van het moderne drama",
+        "Voornaam Henrik"
+      ]
+    },
+    {
+      "question": "Welke Franse impressionist schilderde reeksen waterlelies?",
+      "answer": "Claude Monet",
+      "hints": [
+        "Frans schilder uit de 19e en vroege 20e eeuw",
+        "Werkte in zijn tuin in Giverny",
+        "De stroming is naar een van zijn schilderijen genoemd",
+        "Voornaam Claude"
+      ]
+    },
+    {
+      "question": "Welke film uit 1972 begint met de zin 'I believe in America'?",
+      "answer": "The Godfather",
+      "hints": [
+        "Misdaadfilm geregisseerd door Francis Ford Coppola",
+        "Gebaseerd op een roman van Mario Puzo",
+        "Hoofdrol gespeeld door Marlon Brando",
+        "Gaat over de maffiafamilie Corleone"
+      ]
+    },
+    {
+      "question": "Welke Britse schrijfster schreef Trots en Vooroordeel?",
+      "answer": "Jane Austen",
+      "hints": [
+        "Engelse romanschrijfster uit het begin van de 19e eeuw",
+        "Hoofdpersoon van het boek is Elizabeth Bennet",
+        "Schreef ook Emma en Sense and Sensibility",
+        "Voornaam Jane"
+      ]
+    },
+    {
+      "question": "Welke Amerikaanse rockzanger werd 'The King' genoemd?",
+      "answer": "Elvis Presley",
+      "hints": [
+        "Geboren in Tupelo, Mississippi in 1935",
+        "Bekend om Heartbreak Hotel en Jailhouse Rock",
+        "Woonde in Graceland",
+        "Voornaam Elvis"
+      ]
+    },
+    {
+      "question": "Welke Spaanse opera componeerde Georges Bizet?",
+      "answer": "Carmen",
+      "hints": [
+        "Opera uit 1875",
+        "Speelt zich af in Sevilla",
+        "Hoofdpersoon is een vurige zigeunerin die in een sigarenfabriek werkt",
+        "Begint met de letter C"
+      ]
+    },
+    {
+      "question": "Welk gebouw in Parijs huisvest de Mona Lisa?",
+      "answer": "Het Louvre",
+      "hints": [
+        "Voormalig koninklijk paleis",
+        "Ligt aan de Seine",
+        "Heeft een glazen piramide als ingang",
+        "Begint met de letter L"
+      ]
+    },
+    {
+      "question": "Welke Nederlandse zanger zong Het is een nacht?",
+      "answer": "Guus Meeuwis",
+      "hints": [
+        "Nederlandse zanger geboren in 1972",
+        "Brak door als student in Tilburg",
+        "Geeft jaarlijks concerten op het Philips Stadion",
+        "Voornaam Guus"
+      ]
+    }
   ]
 }

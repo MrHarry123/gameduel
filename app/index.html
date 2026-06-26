@@ -38,6 +38,11 @@
 
     <!-- Spelselectie -->
     <section id="select-screen" class="screen">
+      <div class="select-actions">
+        <button id="change-players-btn" class="secondary-btn">Wijzig spelers</button>
+        <button id="reset-all-btn" class="danger-btn">Opnieuw starten</button>
+      </div>
+
       <header class="select-header">
         <h1>Kies een spel</h1>
         <p class="subtitle" id="select-subtitle">—</p>
@@ -45,7 +50,7 @@
 
       <div id="games-container">
         <section class="games-section" id="games-section-classic" hidden>
-          <h2 class="games-section-title">Klassiek</h2>
+          <h2 class="games-section-title">Hints</h2>
           <ul class="games-section-rules">
             <li>Je stelt om de beurt een vraag aan de ander.</li>
             <li>Beantwoord in 1 keer goed: <strong>5 punten</strong>.</li>
@@ -63,11 +68,6 @@
           </ul>
           <div class="games-grid" id="games-grid-statements"></div>
         </section>
-      </div>
-
-      <div class="select-actions">
-        <button id="change-players-btn" class="secondary-btn">Wijzig spelers</button>
-        <button id="reset-all-btn" class="danger-btn">Opnieuw starten</button>
       </div>
     </section>
 

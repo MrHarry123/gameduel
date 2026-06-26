@@ -2,6 +2,8 @@
   "id": "pakket-3",
   "title": "Pakket 3",
   "emoji": "🃏",
+  "mode": "classic",
+  "locked": true,
   "questions": [
     {
       "question": "Wat is de hoofdstad van Australië?",
@@ -303,6 +305,5 @@
         "De naam begint met A."
       ]
     }
-  ],
-  "mode": "classic"
+  ]
 }

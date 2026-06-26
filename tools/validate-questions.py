@@ -159,14 +159,28 @@ def main():
         sys.exit(1)
 
     files = json.loads(index_path.read_text(encoding="utf-8"))
-    print(f"📦 {len(files)} pakketten in index.json\n")
+    print(f"📦 {len(files)} pakketten in index.json")
 
+    locked_count = 0
     for fname in files:
         path = GAMES_DIR / fname
         if not path.exists():
             err(fname, "bestand bestaat niet")
             continue
         validate_pakket(path)
+        # Lock-status tonen
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            lock_marker = " 🔒" if data.get("locked") else ""
+            if lock_marker:
+                locked_count += 1
+            print(f"  - {data.get('emoji','?')} {data.get('title','?')}{lock_marker}")
+        except Exception:
+            pass
+
+    if locked_count:
+        print(f"\n🔒 {locked_count} pakket(ten) gelockt (mogen niet aangepast worden).")
+    print()
 
     # Ook losse bestanden in games/ die niet in index.json staan
     indexed = set(files)

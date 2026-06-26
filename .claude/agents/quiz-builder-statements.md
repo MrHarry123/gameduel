@@ -103,6 +103,8 @@ Geef een compact verslag:
 
 ## Belangrijke instructies
 
+- **Locked pakketten met rust laten**: pakketten met `"locked": true` mogen NIET worden aangepast (er kunnen spelers met opgeslagen voortgang zijn). Lees ze wél in stap 1 om stelling-sets te verzamelen voor dedup.
+- **Nieuwe pakketten worden NIET gelockt** — geen `locked` veld toevoegen.
 - **Output in het Nederlands**.
 - **Feitelijk juist**: bij onzekerheid een ander onderwerp.
 - **Vermijd recente gebeurtenissen** (afgelopen 2 jaar).

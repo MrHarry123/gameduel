@@ -144,17 +144,18 @@ function renderSelectScreen() {
 
     const mode = game.mode || "classic";
     const itemLabel = mode === "statements" ? "stellingen" : "vragen";
-    const modeLabel = mode === "statements" ? "Stellingen" : "Klassiek";
+    const newBadge = game.locked ? "" : `<span class="game-new-badge">Nieuw</span>`;
 
     const card = document.createElement("button");
     card.className = `game-card status-${status.state}`;
     card.innerHTML = `
       <div class="game-emoji">${game.emoji || "❓"}</div>
-      <div class="game-title">${game.title}</div>
-      <div class="game-mode-badge mode-${mode}">${modeLabel}</div>
-      <div class="game-meta">${game.questions.length} ${itemLabel}</div>
+      <div class="game-info">
+        <div class="game-title">${game.title}${newBadge}</div>
+        <div class="game-meta">${game.questions.length} ${itemLabel}</div>
+        ${scoreLine ? `<div class="game-score">${scoreLine}</div>` : ""}
+      </div>
       <div class="game-status">${status.label}</div>
-      ${scoreLine ? `<div class="game-score">${scoreLine}</div>` : ""}
     `;
     card.addEventListener("click", () => selectGame(game));
     (mode === "statements" ? gridStatements : gridClassic).appendChild(card);

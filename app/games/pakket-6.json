@@ -4,35 +4,305 @@
   "emoji": "🧩",
   "mode": "classic",
   "questions": [
-    { "question": "In welk jaar viel het Romeinse Rijk in het Westen?", "answer": "476", "hints": ["Het gebeurde in de vijfde eeuw na Christus.", "De laatste keizer heette Romulus Augustulus.", "Het was een Germaanse leider Odoaker die de macht greep.", "Het getal eindigt op zes en valt tussen 470 en 480."] },
-    { "question": "Wat is de hoofdstad van Hongarije?", "answer": "Boedapest", "hints": ["Een stad in Midden-Europa aan een grote rivier.", "De stad ligt aan de Donau.", "Het bestaat eigenlijk uit twee samengevoegde stadsdelen.", "Begint met een B en heeft acht letters."] },
-    { "question": "Welk metaal heeft het scheikundig symbool Fe?", "answer": "IJzer", "hints": ["Een veelgebruikt metaal in de bouw.", "Het roest als het in contact komt met zuurstof en water.", "Geeft zijn naam aan een heel tijdperk in de prehistorie.", "Begint met een dubbele letter, een lange ie-klank."] },
-    { "question": "Wie schilderde 'De Sterrennacht'?", "answer": "Vincent van Gogh", "hints": ["Een Nederlandse postimpressionist uit de 19e eeuw.", "Hij sneed een deel van zijn oor af.", "Hij stierf in Frankrijk, in Auvers-sur-Oise.", "Initialen V.v.G."] },
-    { "question": "Welk land wordt het Land van de Rijzende Zon genoemd?", "answer": "Japan", "hints": ["Een eilandstaat in Azië.", "Hoofdstad is Tokio.", "Bekend om sushi en kersenbloesem.", "Heeft vijf letters en eindigt op een N."] },
-    { "question": "Hoeveel botten heeft een volwassen menselijk lichaam ongeveer?", "answer": "206", "hints": ["Het getal ligt tussen 100 en 300.", "Een baby heeft er meer; veel botten vergroeien tijdens de groei.", "Het ligt iets boven de tweehonderd.", "Een drietal cijfers, eindigt op zes."] },
-    { "question": "Welke planeet staat het dichtst bij de aarde qua omvang?", "answer": "Venus", "hints": ["Een planeet in ons zonnestelsel.", "Hij staat tussen Mercurius en de aarde.", "Vernoemd naar de Romeinse godin van de liefde.", "Vijf letters, begint met een V."] },
-    { "question": "Welke rivier stroomt door Wenen, Boedapest en Belgrado?", "answer": "Donau", "hints": ["Een grote rivier in Europa.", "Hij ontspringt in het Zwarte Woud in Duitsland.", "Mondt uit in de Zwarte Zee.", "Vijf letters, begint met een D."] },
-    { "question": "Wie was de eerste president van Zuid-Afrika na de apartheid?", "answer": "Nelson Mandela", "hints": ["Een belangrijke 20e-eeuwse leider uit Afrika.", "Hij zat 27 jaar in de gevangenis.", "Won in 1993 de Nobelprijs voor de Vrede.", "Zijn bijnaam was Madiba."] },
-    { "question": "Welk orgaan produceert galvocht?", "answer": "De lever", "hints": ["Een groot orgaan in de buikholte.", "Het filtert giftige stoffen uit het bloed.", "Het ligt rechtsboven in de buik, onder het middenrif.", "Vijf letters, begint met een L."] },
-    { "question": "Welke kunstenaar sneed de Pieta uit marmer?", "answer": "Michelangelo", "hints": ["Een Italiaanse renaissancekunstenaar.", "Hij schilderde ook het plafond van de Sixtijnse Kapel.", "Maakte ook het beeld van David in Florence.", "Naam begint met een M en heeft elf letters."] },
-    { "question": "In welk jaar viel de muur tussen Oost- en West-Duitsland?", "answer": "1989", "hints": ["Eind 20e eeuw, vlak voor het einde van de Koude Oorlog.", "Het gebeurde in november.", "Een jaar later werd Duitsland herenigd.", "Eindigt op negenentachtig."] },
-    { "question": "Welke zee ligt tussen Saudi-Arabië en Afrika?", "answer": "De Rode Zee", "hints": ["Een smalle zee in het Midden-Oosten.", "Verbonden met de Indische Oceaan via Bab-el-Mandeb.", "Het Suezkanaal mondt er in het noorden in uit.", "Genoemd naar een kleur."] },
-    { "question": "Wie schreef het toneelstuk 'Wachten op Godot'?", "answer": "Samuel Beckett", "hints": ["Een 20e-eeuws Iers schrijver.", "Hij won in 1969 de Nobelprijs voor de Literatuur.", "Hij schreef veel werk oorspronkelijk in het Frans.", "Initialen S.B."] },
-    { "question": "Wat is de grootste woestijn op aarde?", "answer": "Antarctica", "hints": ["Het ligt niet in een warm gebied.", "Een woestijn wordt bepaald door neerslag, niet temperatuur.", "Het is een continent rond een pool.", "Begint met een A en eindigt op een A."] },
-    { "question": "Welke beroemde zangeres staat bekend als de Koningin van de Soul?", "answer": "Aretha Franklin", "hints": ["Een Amerikaanse artieste uit de 20e eeuw.", "Bekend van het nummer Respect.", "Werd opgenomen in de Rock and Roll Hall of Fame in 1987.", "Initialen A.F."] },
-    { "question": "Welke wetenschapper formuleerde de wetten van de erfelijkheid?", "answer": "Gregor Mendel", "hints": ["Een 19e-eeuwse monnik en wetenschapper.", "Hij deed onderzoek met erwtenplanten.", "Hij werkte in een klooster in Brno.", "Initialen G.M."] },
-    { "question": "Welk gas vormt ongeveer 21% van de aardatmosfeer?", "answer": "Zuurstof", "hints": ["Een gas dat onmisbaar is voor de meeste dieren.", "Symbool O.", "Komt vrij bij fotosynthese door planten.", "Acht letters, begint met een Z."] },
-    { "question": "In welk land vind je de oude stad Machu Picchu?", "answer": "Peru", "hints": ["Een land in Zuid-Amerika.", "Het ligt aan de Stille Oceaan.", "De hoofdstad is Lima.", "Vier letters, begint met een P."] },
-    { "question": "Welke Amerikaanse staat staat bekend als de Sunshine State?", "answer": "Florida", "hints": ["Een staat in het zuidoosten van de VS.", "Beroemd om zijn stranden en pretparken.", "Walt Disney World ligt er bij Orlando.", "Zeven letters, begint met een F."] },
-    { "question": "Wie schreef de roman 'Misdaad en Straf'?", "answer": "Fjodor Dostojevski", "hints": ["Een 19e-eeuwse Russische auteur.", "Hij schreef ook De Gebroeders Karamazov.", "Hij werd ooit ter dood veroordeeld maar op het laatste moment begenadigd.", "Initialen F.D."] },
-    { "question": "Welke sport beoefende Babe Ruth?", "answer": "Honkbal", "hints": ["Een populaire Amerikaanse balsport.", "Wordt gespeeld met een knuppel en negen spelers per team.", "Bekende teams zijn de Yankees en de Red Sox.", "Zeven letters, begint met een H."] },
-    { "question": "Welke president van de VS hield de Gettysburg Address?", "answer": "Abraham Lincoln", "hints": ["Een 19e-eeuwse Amerikaanse president.", "Hij leidde het land tijdens de burgeroorlog.", "Werd vermoord in een theater door John Wilkes Booth.", "Initialen A.L."] },
-    { "question": "Wat is het hardste materiaal van het menselijk lichaam?", "answer": "Tandglazuur", "hints": ["Het bevindt zich in de mond.", "Bedekt de buitenkant van een specifiek lichaamsdeel.", "Het is harder dan bot.", "Tien letters, begint met een T."] },
-    { "question": "Welk land heeft de meeste tijdzones ter wereld?", "answer": "Rusland", "hints": ["Een groot land op het noordelijk halfrond.", "Het strekt zich uit van Oost-Europa tot de Stille Oceaan.", "Heeft elf verschillende kloktijden.", "Zeven letters, begint met een R."] },
-    { "question": "Welke regisseur maakte de film 'Pulp Fiction'?", "answer": "Quentin Tarantino", "hints": ["Een Amerikaanse filmmaker bekend om geweld en dialoog.", "Hij regisseerde ook Kill Bill en Reservoir Dogs.", "Won een Oscar voor Beste Originele Scenario in 1995.", "Initialen Q.T."] },
-    { "question": "Wat is de chemische formule voor keukenzout?", "answer": "NaCl", "hints": ["Een verbinding van twee elementen.", "Bestaat uit natrium en chloor.", "Wordt gewonnen uit zeewater of mijnen.", "Vier tekens, twee letters dan twee letters."] },
-    { "question": "Welk eiland is het grootste ter wereld?", "answer": "Groenland", "hints": ["Een eiland op het noordelijk halfrond.", "Het hoort bij Denemarken.", "Het is grotendeels bedekt met ijs.", "Negen letters, begint met een G."] },
-    { "question": "Wie was de Griekse god van de zee?", "answer": "Poseidon", "hints": ["Een god uit de Griekse mythologie.", "Broer van Zeus en Hades.", "Wordt afgebeeld met een drietand.", "Acht letters, begint met een P."] },
-    { "question": "In welk jaar landde de mens voor het eerst op de maan?", "answer": "1969", "hints": ["Eind van de twintigste eeuw.", "Het was de Apollo 11-missie.", "Een paar maanden voor het nieuwe decennium.", "Eindigt op negenenzestig."] }
+    {
+      "question": "In welk jaar viel het Romeinse Rijk in het Westen?",
+      "answer": "476",
+      "hints": [
+        "Het gebeurde in de vijfde eeuw na Christus.",
+        "De laatste keizer heette Romulus Augustulus.",
+        "Het was een Germaanse leider Odoaker die de macht greep.",
+        "Het getal eindigt op zes en valt tussen 470 en 480."
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Hongarije?",
+      "answer": "Boedapest",
+      "hints": [
+        "Een stad in Midden-Europa aan een grote rivier.",
+        "De stad ligt aan de Donau.",
+        "Het bestaat eigenlijk uit twee samengevoegde stadsdelen.",
+        "Begint met een B en heeft acht letters."
+      ]
+    },
+    {
+      "question": "Welk metaal heeft het scheikundig symbool Fe?",
+      "answer": "IJzer",
+      "hints": [
+        "Een veelgebruikt metaal in de bouw.",
+        "Het roest als het in contact komt met zuurstof en water.",
+        "Geeft zijn naam aan een heel tijdperk in de prehistorie.",
+        "Begint met een dubbele letter, een lange ie-klank."
+      ]
+    },
+    {
+      "question": "Wie schilderde 'De Sterrennacht'?",
+      "answer": "Vincent van Gogh",
+      "hints": [
+        "Een Nederlandse postimpressionist uit de 19e eeuw.",
+        "Hij sneed een deel van zijn oor af.",
+        "Hij stierf in Frankrijk, in Auvers-sur-Oise.",
+        "Initialen V.v.G."
+      ]
+    },
+    {
+      "question": "Welk land wordt het Land van de Rijzende Zon genoemd?",
+      "answer": "Japan",
+      "hints": [
+        "Een eilandstaat in Azië.",
+        "Hoofdstad is Tokio.",
+        "Bekend om sushi en kersenbloesem.",
+        "Heeft vijf letters en eindigt op een N."
+      ]
+    },
+    {
+      "question": "Hoeveel botten heeft een volwassen menselijk lichaam ongeveer?",
+      "answer": "206",
+      "hints": [
+        "Het getal ligt tussen 100 en 300.",
+        "Een baby heeft er meer; veel botten vergroeien tijdens de groei.",
+        "Het ligt iets boven de tweehonderd.",
+        "Een drietal cijfers, eindigt op zes."
+      ]
+    },
+    {
+      "question": "Welke planeet staat het dichtst bij de aarde qua omvang?",
+      "answer": "Venus",
+      "hints": [
+        "Een planeet in ons zonnestelsel.",
+        "Wordt vaak de zusterplaneet van de aarde genoemd vanwege vergelijkbare grootte.",
+        "Vernoemd naar de Romeinse godin van de liefde.",
+        "Vijf letters, begint met een V."
+      ]
+    },
+    {
+      "question": "Welke rivier stroomt door Wenen, Boedapest en Belgrado?",
+      "answer": "Donau",
+      "hints": [
+        "Een grote rivier in Europa.",
+        "Hij ontspringt in het Zwarte Woud in Duitsland.",
+        "Mondt uit in de Zwarte Zee.",
+        "Vijf letters, begint met een D."
+      ]
+    },
+    {
+      "question": "Wie was de eerste president van Zuid-Afrika na de apartheid?",
+      "answer": "Nelson Mandela",
+      "hints": [
+        "Een belangrijke 20e-eeuwse leider uit Afrika.",
+        "Hij zat 27 jaar in de gevangenis.",
+        "Won in 1993 de Nobelprijs voor de Vrede.",
+        "Zijn bijnaam was Madiba."
+      ]
+    },
+    {
+      "question": "Welk orgaan produceert galvocht?",
+      "answer": "De lever",
+      "hints": [
+        "Een groot orgaan in de buikholte.",
+        "Het filtert giftige stoffen uit het bloed.",
+        "Het ligt rechtsboven in de buik, onder het middenrif.",
+        "Vijf letters, begint met een L."
+      ]
+    },
+    {
+      "question": "Welke kunstenaar sneed de Pieta uit marmer?",
+      "answer": "Michelangelo",
+      "hints": [
+        "Een Italiaanse renaissancekunstenaar.",
+        "Hij schilderde ook het plafond van de Sixtijnse Kapel.",
+        "Maakte ook het beeld van David in Florence.",
+        "Naam begint met een M en heeft elf letters."
+      ]
+    },
+    {
+      "question": "In welk jaar viel de muur tussen Oost- en West-Duitsland?",
+      "answer": "1989",
+      "hints": [
+        "Eind 20e eeuw, vlak voor het einde van de Koude Oorlog.",
+        "Het gebeurde in november.",
+        "Een jaar later werd Duitsland herenigd.",
+        "Eindigt op negenentachtig."
+      ]
+    },
+    {
+      "question": "Welke zee ligt tussen Saudi-Arabië en Afrika?",
+      "answer": "De Rode Zee",
+      "hints": [
+        "Een smalle zee in het Midden-Oosten.",
+        "Verbonden met de Indische Oceaan via Bab-el-Mandeb.",
+        "Aan de oostkust ligt Saoedi-Arabië, aan de westkust Egypte en Soedan.",
+        "Genoemd naar een kleur."
+      ]
+    },
+    {
+      "question": "Wie schreef het toneelstuk 'Wachten op Godot'?",
+      "answer": "Samuel Beckett",
+      "hints": [
+        "Een 20e-eeuws Iers schrijver.",
+        "Hij won in 1969 de Nobelprijs voor de Literatuur.",
+        "Hij schreef veel werk oorspronkelijk in het Frans.",
+        "Initialen S.B."
+      ]
+    },
+    {
+      "question": "Wat is de grootste woestijn op aarde?",
+      "answer": "Antarctica",
+      "hints": [
+        "Het ligt niet in een warm gebied.",
+        "Een woestijn wordt bepaald door neerslag, niet temperatuur.",
+        "Het is een continent rond een pool.",
+        "Tien letters, begint met een A."
+      ]
+    },
+    {
+      "question": "Welke beroemde zangeres staat bekend als de Koningin van de Soul?",
+      "answer": "Aretha Franklin",
+      "hints": [
+        "Een Amerikaanse artieste uit de 20e eeuw.",
+        "Bekend van het nummer Respect.",
+        "Werd opgenomen in de Rock and Roll Hall of Fame in 1987.",
+        "Initialen A.F."
+      ]
+    },
+    {
+      "question": "Welke wetenschapper formuleerde de wetten van de erfelijkheid?",
+      "answer": "Gregor Mendel",
+      "hints": [
+        "Een 19e-eeuwse monnik en wetenschapper.",
+        "Hij deed onderzoek met erwtenplanten.",
+        "Hij wordt gezien als de grondlegger van de moderne genetica.",
+        "Initialen G.M."
+      ]
+    },
+    {
+      "question": "Welk gas vormt ongeveer 21% van de aardatmosfeer?",
+      "answer": "Zuurstof",
+      "hints": [
+        "Een gas dat onmisbaar is voor de meeste dieren.",
+        "Symbool O.",
+        "Komt vrij bij fotosynthese door planten.",
+        "Acht letters, begint met een Z."
+      ]
+    },
+    {
+      "question": "In welk land vind je de oude stad Machu Picchu?",
+      "answer": "Peru",
+      "hints": [
+        "Een land in Zuid-Amerika.",
+        "Het ligt aan de Stille Oceaan.",
+        "De hoofdstad is Lima.",
+        "Vier letters, begint met een P."
+      ]
+    },
+    {
+      "question": "Welke Amerikaanse staat staat bekend als de Sunshine State?",
+      "answer": "Florida",
+      "hints": [
+        "Een staat in het zuidoosten van de VS.",
+        "Beroemd om zijn stranden en pretparken.",
+        "Walt Disney World ligt er bij Orlando.",
+        "Zeven letters, begint met een F."
+      ]
+    },
+    {
+      "question": "Wie schreef de roman 'Misdaad en Straf'?",
+      "answer": "Fjodor Dostojevski",
+      "hints": [
+        "Een 19e-eeuwse Russische auteur.",
+        "Hij schreef ook De Gebroeders Karamazov.",
+        "Hij werd ooit ter dood veroordeeld maar op het laatste moment begenadigd.",
+        "Initialen F.D."
+      ]
+    },
+    {
+      "question": "Welke sport beoefende Babe Ruth?",
+      "answer": "Honkbal",
+      "hints": [
+        "Een populaire Amerikaanse balsport.",
+        "Wordt gespeeld met een knuppel en negen spelers per team.",
+        "Bekende teams zijn de Yankees en de Red Sox.",
+        "Zeven letters, begint met een H."
+      ]
+    },
+    {
+      "question": "Welke president van de VS hield de Gettysburg Address?",
+      "answer": "Abraham Lincoln",
+      "hints": [
+        "Een 19e-eeuwse Amerikaanse president.",
+        "Hij leidde het land tijdens de burgeroorlog.",
+        "Werd vermoord in een theater door John Wilkes Booth.",
+        "Initialen A.L."
+      ]
+    },
+    {
+      "question": "Wat is het hardste materiaal van het menselijk lichaam?",
+      "answer": "Tandglazuur",
+      "hints": [
+        "Het bevindt zich in de mond.",
+        "Bedekt de buitenkant van een specifiek lichaamsdeel.",
+        "Het is harder dan bot.",
+        "Tien letters, begint met een T."
+      ]
+    },
+    {
+      "question": "Welk land heeft de meeste tijdzones ter wereld?",
+      "answer": "Rusland",
+      "hints": [
+        "Een groot land op het noordelijk halfrond.",
+        "Het strekt zich uit van Oost-Europa tot de Stille Oceaan.",
+        "Heeft elf verschillende kloktijden.",
+        "Zeven letters, begint met een R."
+      ]
+    },
+    {
+      "question": "Welke regisseur maakte de film 'Pulp Fiction'?",
+      "answer": "Quentin Tarantino",
+      "hints": [
+        "Een Amerikaanse filmmaker bekend om geweld en dialoog.",
+        "Hij regisseerde ook Kill Bill en Reservoir Dogs.",
+        "Won een Oscar voor Beste Originele Scenario in 1995.",
+        "Initialen Q.T."
+      ]
+    },
+    {
+      "question": "Wat is de chemische formule voor keukenzout?",
+      "answer": "NaCl",
+      "hints": [
+        "Een verbinding van twee elementen.",
+        "Bestaat uit natrium en chloor.",
+        "Wordt gewonnen uit zeewater of mijnen.",
+        "Vier tekens, beginnend met Na."
+      ]
+    },
+    {
+      "question": "Welk eiland is het grootste ter wereld?",
+      "answer": "Groenland",
+      "hints": [
+        "Een eiland op het noordelijk halfrond.",
+        "Het hoort bij Denemarken.",
+        "Het is grotendeels bedekt met ijs.",
+        "Negen letters, begint met een G."
+      ]
+    },
+    {
+      "question": "Wie was de Griekse god van de zee?",
+      "answer": "Poseidon",
+      "hints": [
+        "Een god uit de Griekse mythologie.",
+        "Broer van Zeus en Hades.",
+        "Wordt afgebeeld met een drietand.",
+        "Acht letters, begint met een P."
+      ]
+    },
+    {
+      "question": "In welk jaar landde de mens voor het eerst op de maan?",
+      "answer": "1969",
+      "hints": [
+        "Eind van de twintigste eeuw.",
+        "Het was de Apollo 11-missie.",
+        "Een paar maanden voor het nieuwe decennium.",
+        "Eindigt op negenenzestig."
+      ]
+    }
   ]
 }

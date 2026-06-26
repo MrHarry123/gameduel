@@ -169,7 +169,7 @@
     {
       "prompt": "Welke uitspraak is waar?",
       "statements": [
-        "Een vlieg heeft duizend ogen",
+        "Een vlieg heeft vier vleugels",
         "Een bij sterft nadat hij iemand heeft gestoken",
         "Spinnen zijn insecten"
       ],
@@ -242,7 +242,7 @@
       "prompt": "Welke uitspraak is waar?",
       "statements": [
         "Een krokodil kan niet kauwen",
-        "Een kameleon verandert van kleur om zich te camoufleren",
+        "Een kameleon heeft een korte, dikke tong",
         "Een schildpad kan uit zijn schild stappen"
       ],
       "correctIndex": 0

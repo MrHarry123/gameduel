@@ -2,6 +2,8 @@
   "id": "pakket-2",
   "title": "Pakket 2",
   "emoji": "🎯",
+  "mode": "classic",
+  "locked": true,
   "questions": [
     {
       "question": "Wat is de chemische formule van water?",
@@ -303,6 +305,5 @@
         "Zijn naam begint met Willem."
       ]
     }
-  ],
-  "mode": "classic"
+  ]
 }

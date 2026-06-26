@@ -2,6 +2,8 @@
   "id": "pakket-5",
   "title": "Pakket 5",
   "emoji": "🎨",
+  "mode": "classic",
+  "locked": true,
   "questions": [
     {
       "question": "Welke F1-coureur is zevenvoudig wereldkampioen?",
@@ -303,6 +305,5 @@
         "De naam heeft 5 letters."
       ]
     }
-  ],
-  "mode": "classic"
+  ]
 }

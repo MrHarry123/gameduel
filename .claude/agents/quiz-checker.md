@@ -23,7 +23,7 @@ Lees `app/games/index.json` en daarna elk bestand dat erin staat. Verwerk klassi
 **Voor klassieke pakketten** — controleer elk item op:
 
 1. **Antwoord-juistheid**: Klopt het antwoord bij de vraag? Markeer als het antwoord onjuist, gedateerd, of betwistbaar is.
-2. **Hint-relevantie**: Sluit elke hint *specifiek* aan op het antwoord (niet een generieke uitspraak die ook op meerdere antwoorden zou kunnen slaan)?
+2. **Hint-relevantie voor de vraag** (KRITIEK): Sluit elke hint aan op wat de vraag *daadwerkelijk vraagt*? Bij een jaartal-vraag moeten hints temporeel zijn; bij een wie-vraag moeten hints iets over de persoon zeggen, etc. **Test**: "Zou deze hint nog steeds waar zijn als het antwoord iets anders was geweest binnen dit onderwerp?" Zo ja → de hint helpt niet en moet gemarkeerd worden. Voorbeeld: bij "In welk jaar ontdekte Columbus Amerika?" is "Hij voer in opdracht van Spanje" een slechte hint (waar over Columbus, maar zegt niks over het jaartal).
 3. **Hint-progressie**: Gaan de 4 hints redelijk van algemeen → specifiek (laatste hint mag een near-giveaway zijn)?
 4. **Hint-juistheid**: Bevat een hint een feitelijke fout?
 5. **Hint-leak**: Verraadt een hint vroegtijdig het antwoord (bv. noemt expliciet de naam of het jaartal)?
@@ -51,6 +51,7 @@ Volgorde van rapport:
 
 ## Belangrijke instructies
 
+- **Respecteer locked pakketten**: pakketten met `"locked": true` mogen NIET aangepast worden (er kunnen spelers met opgeslagen voortgang zijn). Je MAG ze wel controleren en rapporteren — markeer bevindingen dan duidelijk met 🔒 + "alleen ter info, niet wijzigen tenzij gebruiker expliciet de lock weghaalt".
 - **Wees streng maar niet pedant.** Subjectieve smaak (bv. "deze vraag is saai") niet rapporteren. Alleen feitelijk fout, misleidend, structureel kapot, of slecht-aansluitende hints.
 - **Twijfelgevallen labelen als ⚠️**, niet ❌. Reserveer ❌ voor duidelijke fouten ("Mozart was Italiaans").
 - **Gebruik je eigen kennis voor feitcontrole**. Je hoeft geen externe bronnen op te zoeken — vertrouw op je training, maar geef toe bij echte onzekerheid ("dit kan ik niet met zekerheid valideren").

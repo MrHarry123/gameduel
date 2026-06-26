@@ -286,73 +286,80 @@ body::before {
 }
 
 .games-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .game-card {
   background: var(--bg-card);
   border: 2px solid var(--border);
-  border-radius: 16px;
-  padding: 20px 16px;
+  border-radius: 14px;
+  padding: 12px 14px;
   cursor: pointer;
-  text-align: center;
+  text-align: left;
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
   color: var(--text);
   font-family: inherit;
   transition: all 0.2s;
+  width: 100%;
 }
 
 .game-card:hover {
   border-color: var(--primary);
-  transform: translateY(-2px);
+  transform: translateX(2px);
 }
 
 .game-emoji {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1;
+  flex-shrink: 0;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
 }
 
 .game-title {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
 }
 
-.game-meta {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.game-mode-badge {
+.game-new-badge {
   display: inline-block;
-  align-self: center;
-  margin-top: 4px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  background: var(--accent);
+  color: #1a1a1a;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 5px;
   text-transform: uppercase;
-  background: var(--bg-card-2);
-  color: var(--text-muted);
+  letter-spacing: 0.6px;
+  vertical-align: 2px;
+  margin-left: 8px;
 }
 
-.game-mode-badge.mode-statements {
-  background: rgba(99, 102, 241, 0.18);
-  color: var(--primary);
+.game-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
 
 .game-status {
-  margin-top: 8px;
-  padding: 6px 10px;
+  padding: 5px 10px;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   background: var(--bg-card-2);
   color: var(--text-muted);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .game-card.status-progress {
@@ -380,9 +387,8 @@ body::before {
 }
 
 .game-score {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
-  margin-top: 4px;
 }
 
 .select-actions {
@@ -391,7 +397,6 @@ body::before {
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 8px;
 }
 
 /* ===== Doorgeefscherm ===== */
