@@ -587,6 +587,61 @@ body::before {
   opacity: 0.6;
 }
 
+.statements-fullscreen {
+  align-items: flex-start;
+  padding-top: max(60px, env(safe-area-inset-top));
+}
+
+.fullscreen-statements-content {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: auto 0;
+}
+
+.fullscreen-prompt {
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text);
+  text-align: center;
+}
+
+.fullscreen-statements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fullscreen-statement {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  color: var(--text);
+  padding: 18px;
+  border-radius: 14px;
+  font-size: clamp(1rem, 3.2vw, 1.25rem);
+  line-height: 1.4;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.fullscreen-statement .statement-number {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
 .answer-row {
   display: flex;
   align-items: center;
@@ -854,18 +909,6 @@ body::before {
 }
 
 /* ===== Stellingen-modus quizscherm ===== */
-.statements-prompt {
-  cursor: default;
-}
-
-.statements-prompt:hover {
-  background: var(--bg-card);
-}
-
-.statements-prompt:active {
-  transform: none;
-}
-
 .statements-list {
   display: flex;
   flex-direction: column;

@@ -134,9 +134,10 @@
 
         <!-- Stellingen-modus -->
         <div class="statements-content">
-          <div class="question-card statements-prompt">
+          <div class="question-card statements-prompt" id="statements-prompt-card" role="button" tabindex="0">
             <span class="card-label">Stelling</span>
             <h2 id="statements-prompt-text">—</h2>
+            <span class="tap-hint">Tik om groot te tonen</span>
           </div>
           <div class="statements-list" id="statements-list">
             <!-- stellingen worden hier ingevoegd -->
@@ -177,6 +178,15 @@
     <!-- Fullscreen vraag-overlay -->
     <div id="question-fullscreen" class="question-fullscreen" role="dialog" aria-hidden="true">
       <p class="fullscreen-question" id="fullscreen-question-text">—</p>
+      <span class="fullscreen-dismiss">Tik om te sluiten</span>
+    </div>
+
+    <!-- Fullscreen stelling-overlay -->
+    <div id="statements-fullscreen" class="question-fullscreen statements-fullscreen" role="dialog" aria-hidden="true">
+      <div class="fullscreen-statements-content">
+        <p class="fullscreen-prompt" id="fullscreen-prompt-text">—</p>
+        <div class="fullscreen-statements-list" id="fullscreen-statements-list"></div>
+      </div>
       <span class="fullscreen-dismiss">Tik om te sluiten</span>
     </div>
 

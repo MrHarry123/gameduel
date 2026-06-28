@@ -1,4 +1,4 @@
-const CACHE_NAME = "quiz-duel-v39";
+const CACHE_NAME = "quiz-duel-v40";
 
 const ASSETS = [
   "./",

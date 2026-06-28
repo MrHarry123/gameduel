@@ -215,6 +215,8 @@ function startTurn() {
   const quizScreen = document.getElementById("quiz-screen");
   quizScreen.setAttribute("data-mode", mode);
 
+  state.turn.currentItem = item;
+
   if (mode === "statements") {
     document.getElementById("statements-prompt-text").textContent = item.prompt;
     renderStatements(item);
@@ -397,6 +399,36 @@ document.getElementById("question-card").addEventListener("keydown", (e) => {
   }
 });
 fullscreenEl.addEventListener("click", closeQuestionFullscreen);
+
+/* ====== Fullscreen stelling-overlay ====== */
+const statementsFullscreenEl = document.getElementById("statements-fullscreen");
+function openStatementsFullscreen() {
+  const item = state.turn.currentItem;
+  if (!item || !item.statements) return;
+  document.getElementById("fullscreen-prompt-text").textContent = item.prompt;
+  const list = document.getElementById("fullscreen-statements-list");
+  list.innerHTML = "";
+  item.statements.forEach((text, idx) => {
+    const el = document.createElement("div");
+    el.className = "fullscreen-statement";
+    el.innerHTML = `<span class="statement-number">${String.fromCharCode(65 + idx)}</span><span class="statement-text">${text}</span>`;
+    list.appendChild(el);
+  });
+  statementsFullscreenEl.classList.add("active");
+  statementsFullscreenEl.setAttribute("aria-hidden", "false");
+}
+function closeStatementsFullscreen() {
+  statementsFullscreenEl.classList.remove("active");
+  statementsFullscreenEl.setAttribute("aria-hidden", "true");
+}
+document.getElementById("statements-prompt-card").addEventListener("click", openStatementsFullscreen);
+document.getElementById("statements-prompt-card").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    openStatementsFullscreen();
+  }
+});
+statementsFullscreenEl.addEventListener("click", closeStatementsFullscreen);
 
 /* ====== Service worker ====== */
 if ("serviceWorker" in navigator) {
