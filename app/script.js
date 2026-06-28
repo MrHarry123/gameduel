@@ -474,7 +474,22 @@ statementsFullscreenEl.addEventListener("click", closeStatementsFullscreen);
 /* ====== Service worker ====== */
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch((err) => {
+    navigator.serviceWorker.register("./sw.js").then((reg) => {
+      reg.addEventListener("updatefound", () => {
+        const newWorker = reg.installing;
+        if (!newWorker) return;
+        newWorker.addEventListener("statechange", () => {
+          if (newWorker.state === "activated" && navigator.serviceWorker.controller) {
+            // Nieuwe SW geactiveerd terwijl er al een actief was → pagina draait
+            // op oude assets. Eenmalig hard-refreshen zodat nieuwe versie laadt.
+            if (!sessionStorage.getItem("swReloaded")) {
+              sessionStorage.setItem("swReloaded", "1");
+              window.location.reload();
+            }
+          }
+        });
+      });
+    }).catch((err) => {
       console.warn("Service worker registration failed:", err);
     });
   });

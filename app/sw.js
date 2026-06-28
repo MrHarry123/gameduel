@@ -1,4 +1,13 @@
-const CACHE_NAME = "quiz-duel-v41";
+const CACHE_NAME = "quiz-duel-v42";
+
+// Bestanden die altijd vers gehaald moeten worden bij internet (app shell).
+// Bij offline: fallback naar cache. Zonder deze regel zie je in een iOS PWA
+// pas na meerdere launches een nieuwe versie.
+const NETWORK_FIRST_EXT = [".html", ".css", ".js"];
+function isAppShell(url) {
+  if (url.pathname === "/" || url.pathname.endsWith("/")) return true;
+  return NETWORK_FIRST_EXT.some((ext) => url.pathname.endsWith(ext));
+}
 
 const ASSETS = [
   "./",
@@ -55,18 +64,37 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Stale-while-revalidate: serveer uit cache, ververs op de achtergrond.
+// App shell (HTML/CSS/JS): network-first met cache-fallback.
+// Overig (JSON pakketten, icons, manifest): stale-while-revalidate.
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
   const url = new URL(event.request.url);
   if (url.origin !== location.origin) return;
 
+  const networkFirst = event.request.mode === "navigate" || isAppShell(url);
+
   event.respondWith(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
-      const cached = await cache.match(event.request);
 
+      if (networkFirst) {
+        try {
+          const fresh = await fetch(event.request);
+          if (fresh && fresh.ok) cache.put(event.request, fresh.clone());
+          return fresh;
+        } catch (_) {
+          const cached = await cache.match(event.request);
+          if (cached) return cached;
+          if (event.request.mode === "navigate") {
+            const shell = await cache.match("./index.html");
+            if (shell) return shell;
+          }
+          return new Response("Offline", { status: 503 });
+        }
+      }
+
+      const cached = await cache.match(event.request);
       const networkUpdate = fetch(event.request)
         .then((response) => {
           if (response.ok) cache.put(event.request, response.clone());
@@ -81,10 +109,6 @@ self.addEventListener("fetch", (event) => {
 
       const fresh = await networkUpdate;
       if (fresh) return fresh;
-
-      if (event.request.mode === "navigate") {
-        return cache.match("./index.html");
-      }
       return new Response("Offline", { status: 503 });
     })()
   );
