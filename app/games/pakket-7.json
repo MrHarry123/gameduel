@@ -11,7 +11,7 @@
         "Spaanse kunstenaar van de 20e eeuw",
         "Medeoprichter van het kubisme",
         "Werkte lang in Frankrijk en niet in zijn geboorteland",
-        "Voornaam Pablo"
+        "Achternaam telt 7 letters."
       ]
     },
     {
@@ -41,7 +41,7 @@
         "Middeleeuws auteur uit Florence",
         "Werk uit het begin van de 14e eeuw",
         "Beschrijft een reis door hel, vagevuur en paradijs",
-        "Voornaam Dante"
+        "Achternaam telt 9 letters."
       ]
     },
     {
@@ -51,7 +51,7 @@
         "17e-eeuwse Nederlandse meester",
         "Geboren in Delft",
         "Schilderde vooral huiselijke taferelen met licht door een raam",
-        "Voornaam Johannes"
+        "Achternaam telt 7 letters."
       ]
     },
     {
@@ -81,7 +81,7 @@
         "Duits componist uit de klassieke en romantische periode",
         "Werd later in zijn leven doof",
         "Werkte vooral in Wenen",
-        "Voornaam Ludwig"
+        "Achternaam begint met de letter B."
       ]
     },
     {
@@ -131,7 +131,7 @@
         "Boek van Annie M.G. Schmidt uit 1971",
         "Hoofdpersoon rijdt rond in een rood kraanwagentje",
         "Geïllustreerd door Fiep Westendorp",
-        "Petteflet is een flatgebouw"
+        "De titel bestaat uit vier woorden en eindigt op een verzonnen flatnaam."
       ]
     },
     {
@@ -151,7 +151,7 @@
         "Een van de Grote Drie van de naoorlogse Nederlandse literatuur",
         "Geboren in Haarlem in 1927",
         "Andere roman is De Ontdekking van de Hemel",
-        "Voornaam Harry"
+        "Initialen H.M."
       ]
     },
     {
@@ -171,7 +171,7 @@
         "19e-eeuws Noors toneelschrijver",
         "Stuk uit 1879 met hoofdpersoon Nora",
         "Geldt als grondlegger van het moderne drama",
-        "Voornaam Henrik"
+        "Achternaam telt 5 letters."
       ]
     },
     {
@@ -181,7 +181,7 @@
         "Frans schilder uit de 19e en vroege 20e eeuw",
         "Werkte in zijn tuin in Giverny",
         "De stroming is naar een van zijn schilderijen genoemd",
-        "Voornaam Claude"
+        "Achternaam telt 5 letters en begint met M."
       ]
     },
     {
@@ -201,7 +201,7 @@
         "Engelse romanschrijfster uit het begin van de 19e eeuw",
         "Hoofdpersoon van het boek is Elizabeth Bennet",
         "Schreef ook Emma en Sense and Sensibility",
-        "Voornaam Jane"
+        "Achternaam telt 6 letters."
       ]
     },
     {
@@ -211,7 +211,7 @@
         "Geboren in Tupelo, Mississippi in 1935",
         "Bekend om Heartbreak Hotel en Jailhouse Rock",
         "Woonde in Graceland",
-        "Voornaam Elvis"
+        "Achternaam telt 7 letters en begint met P."
       ]
     },
     {
@@ -241,7 +241,47 @@
         "Nederlandse zanger geboren in 1972",
         "Brak door als student in Tilburg",
         "Geeft jaarlijks concerten op het Philips Stadion",
-        "Voornaam Guus"
+        "Achternaam begint met M en eindigt op -wis."
+      ]
+    },
+    {
+      "question": "In welke sport is een birdie een score onder par?",
+      "answer": "Golf",
+      "hints": [
+        "Een sport met stokken en een kleine bal.",
+        "Gespeeld op een baan met holes.",
+        "Bekende spelers zijn Tiger Woods en Rory McIlroy.",
+        "De naam telt vier letters."
+      ]
+    },
+    {
+      "question": "Welk Nederlands schilderij uit de Gouden Eeuw toont een jonge vrouw met een blauw-gele hoofddoek en een sieraad in het oor?",
+      "answer": "Meisje met de parel",
+      "hints": [
+        "Een schilderij uit de Gouden Eeuw.",
+        "Het hangt in het Mauritshuis in Den Haag.",
+        "Wordt soms de Mona Lisa van het noorden genoemd.",
+        "De maker werkte in Delft."
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Argentinië?",
+      "answer": "Buenos Aires",
+      "hints": [
+        "Een grote stad in Zuid-Amerika.",
+        "Ligt aan de Río de la Plata.",
+        "Bekend om de tango en de wijk La Boca.",
+        "De naam betekent letterlijk goede lucht."
+      ]
+    },
+    {
+      "question": "Welke Nederlandse schaatsster won goud op de 1500 meter op de Spelen van 2018?",
+      "answer": "Ireen Wüst",
+      "hints": [
+        "Een Nederlandse langebaanschaatsster.",
+        "Geboren in Goirle, Noord-Brabant.",
+        "Won meerdere Olympische gouden medailles in haar carrière.",
+        "Haar achternaam heeft een umlaut op de u."
       ]
     }
   ]

@@ -30,14 +30,46 @@ Voor elk pakket:
 
 ### Ronde-vereisten
 
-- **Prompt**: gebruik EXACT één van deze twee, ongeveer 50/50 verdeeld:
+- **Prompt**: gebruik EXACT één van deze twee, ongeveer 50/50 verdeeld (mik op 15/15 op 30 rondes; validate waarschuwt bij scheveer dan 70/30):
   - `"Welke uitspraak is waar?"` → 2 leugens + 1 waarheid; `correctIndex` = positie van de **waarheid**.
   - `"Welke uitspraak is NIET waar?"` → 2 waarheden + 1 leugen; `correctIndex` = positie van de **leugen**.
 - **3 statements** per ronde, alle bondig (1 zin, max ~120 tekens).
-- **`correctIndex`**: 0, 1 of 2 — varieer over de 30 rondes (niet altijd 0).
+- **`correctIndex`**: 0, 1 of 2 — varieer over de 30 rondes (~10 per positie; validate waarschuwt als één positie >60% wordt gebruikt).
 - **Elke statement moet verifieerbaar waar of onwaar zijn**. Geen vage uitspraken, geen subjectieve smaak.
 - **Geen "trick" leugens** die in werkelijkheid grensgevallen zijn ("De zon gaat ongeveer in het westen onder" — flauw).
-- **Per ronde minimaal 2 verschillende onderwerpen** als de 2 verkeerde statements anders te makkelijk te elimineren zijn. Vaak werkt thematische samenhang wel goed (alle 3 over één persoon / onderwerp), maar zorg dat de keuze niet triviaal is.
+
+### Subject-spread (KRITIEK)
+
+De grootste valkuil bij stellingen: de drie statements gaan over zó verschillende onderwerpen dat de speler door uitsluiting het juiste antwoord vindt zonder écht na te denken.
+
+**Regel**: alle drie de statements moeten over **hetzelfde onderwerp/thema** gaan (één persoon, één gebeurtenis, één werk, één begrip). Het onderscheid moet zitten in het *feit*, niet in het *onderwerp*.
+
+❌ Slecht (subject-spread — speler kan uitsluiten zonder na te denken):
+```
+Welke uitspraak is NIET waar?
+1. Mozart componeerde meer dan 600 werken.       (over Mozart)
+2. Beethoven werd geboren in Bonn.               (over Beethoven)
+3. Bach kreeg twintig kinderen.                  (over Bach)
+```
+Wie toevallig één feit kent, weet meteen welke "anders" is — geen reflectie nodig.
+
+✅ Goed (alle drie over Mozart):
+```
+Welke uitspraak is NIET waar?
+1. Mozart componeerde meer dan 600 werken.
+2. Mozart werd geboren in Salzburg in 1756.
+3. Mozart leerde piano spelen van Beethoven.     (leugen — Beethoven was jonger)
+```
+
+✅ Goed (alle drie over D-Day / WO2 als thema):
+```
+Welke uitspraak is waar?
+1. D-Day vond plaats op 6 mei 1944.               (leugen — was 6 juni)
+2. De landing gebeurde aan de kust van Italië.    (leugen — Normandië)
+3. De codenaam van de operatie was Overlord.      (waar)
+```
+
+**Uitzondering**: als het thema *zelf* een vergelijking tussen drie dingen is (bv. "drie Europese hoofdsteden", "drie zoogdieren"), is variatie OK — maar dan moet de specifieke claim *binnen elk subject* het onderscheid maken, niet welke subject je überhaupt herkent.
 
 ### Stap 3 — Schrijf de bestanden
 
@@ -107,7 +139,7 @@ Geef een compact verslag:
 - **Nieuwe pakketten worden NIET gelockt** — geen `locked` veld toevoegen.
 - **Output in het Nederlands**.
 - **Feitelijk juist**: bij onzekerheid een ander onderwerp.
-- **Vermijd recente gebeurtenissen** (afgelopen 2 jaar).
+- **Vermijd gebeurtenissen van 2024 of later** — die kunnen snel verouderen of zijn nog niet algemeen bekend. Houd je aan feiten die minstens 2-3 jaar gevestigd zijn.
 - **Variatie**: niet 30 rondes over hetzelfde thema; mix domeinen.
 - **Geen meta-tekst** in de JSON.
 - Als de gebruiker een ander aantal noemt, pas je je daar op aan. Standaard = 3 pakketten van 30 rondes.

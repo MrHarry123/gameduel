@@ -24,9 +24,15 @@ Lees `app/games/index.json` en daarna elk bestand dat erin staat. Verwerk klassi
 
 1. **Antwoord-juistheid**: Klopt het antwoord bij de vraag? Markeer als het antwoord onjuist, gedateerd, of betwistbaar is.
 2. **Hint-relevantie voor de vraag** (KRITIEK): Sluit elke hint aan op wat de vraag *daadwerkelijk vraagt*? Bij een jaartal-vraag moeten hints temporeel zijn; bij een wie-vraag moeten hints iets over de persoon zeggen, etc. **Test**: "Zou deze hint nog steeds waar zijn als het antwoord iets anders was geweest binnen dit onderwerp?" Zo ja → de hint helpt niet en moet gemarkeerd worden. Voorbeeld: bij "In welk jaar ontdekte Columbus Amerika?" is "Hij voer in opdracht van Spanje" een slechte hint (waar over Columbus, maar zegt niks over het jaartal).
-3. **Hint-progressie**: Gaan de 4 hints redelijk van algemeen → specifiek (laatste hint mag een near-giveaway zijn)?
-4. **Hint-juistheid**: Bevat een hint een feitelijke fout?
-5. **Hint-leak**: Verraadt een hint vroegtijdig het antwoord (bv. noemt expliciet de naam of het jaartal)?
+3. **Subject vs antwoord** (KRITIEK): controleer of elke hint info geeft over het ANTWOORD (wat de speler moet raden), niet over het SUBJECT (wat al in de vraag genoemd staat).
+   - Bij "Welke sport speelt Tiger Woods?" is "Hij won Masters in Augusta" SLECHT — vertelt over Tiger (subject), niet over golf (antwoord).
+   - Bij "In welk land vind je Porto?" is "Porto ligt aan de Douro" SLECHT — vertelt over Porto, niet over Portugal.
+   - Bij "Wie componeerde de Negende Symfonie?" is "Het slotkoor is de EU-hymne" SLECHT — vertelt over de symfonie, niet over de componist.
+   Markeer als ⚠️ of ❌ afhankelijk van hoe nutteloos de hint is.
+4. **Hint 4 (near-giveaway) strikt**: hint 4 mag GEEN woord uit het antwoord bevatten. Alleen format-based ("begint met letter X", "heeft N letters", "initialen X.Y."). "Voornaam is William" voor antwoord "William Shakespeare" is ❌ — leakt halve naam.
+5. **Hint-progressie**: Gaan de 4 hints redelijk van algemeen → specifiek?
+6. **Hint-juistheid**: Bevat een hint een feitelijke fout?
+7. **Hint-leak**: Verraadt een eerdere hint (1-3) vroegtijdig het antwoord (bv. noemt expliciet de naam of het jaartal)?
 
 **Voor stellingen-pakketten** — controleer elk item op:
 
@@ -36,6 +42,7 @@ Lees `app/games/index.json` en daarna elk bestand dat erin staat. Verwerk klassi
 2. **Feitelijke juistheid** van elke statement: zou een wetenschapper / encyclopedie het ermee eens zijn?
 3. **Geen dubbele leugens / dubbele waarheden**: als de prompt vraagt om de leugen, moeten de andere twee echt waar zijn (en omgekeerd).
 4. **Geen vage / betwistbare** statements (bv. "het is een mooi land" — niet verifieerbaar).
+5. **Subject-spread** (KRITIEK): gaan de drie statements over hetzelfde onderwerp/thema, of springen ze tussen verschillende personen/onderwerpen waardoor de speler door uitsluiting kan kiezen zonder echt na te denken? Markeer ⚠️ als één statement duidelijk over een ander subject gaat dan de andere twee. Uitzondering: als het thema *zelf* een vergelijking is (drie hoofdsteden, drie dieren), is variatie OK mits het onderscheid in de claim zit.
 
 ### Stap 4 — Rapportage
 

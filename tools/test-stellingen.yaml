@@ -1,0 +1,181 @@
+# Test/referentie-batch van stellingen-rondes.
+# Per ronde wordt getoond:
+#   - de inhoud (prompt + 3 statements + correctIndex)
+#   - status: ✅ schoon / ⚠️ kleine smet / ❌ harde fout
+#   - welke regel(s) van de validatie hier op van toepassing zijn
+#
+# Regels die hier worden gedemonstreerd:
+#   - prompt-consistentie (correctIndex matcht prompt: waar = 1 waarheid, NIET waar = 1 leugen)
+#   - subject-spread: drie statements moeten over hetzelfde thema gaan
+#   - geen vage / subjectieve / niet-verifieerbare statements
+#   - geen cross-references ("zoals de vorige", "anders dan boven")
+#   - geen placeholders ("x", "Geen", "TBD")
+#   - feitelijke juistheid van elke statement
+#   - pakket-niveau: correctIndex moet variëren (niet alle 0/1/2), prompt-balans ~50/50
+#
+# Schoon: 9/15. Items 10-15 demonstreren bewust de regels.
+
+stellingen:
+
+  - n: 1
+    status: ✅
+    regel: alle 3 over Mozart (single subject), 1 leugen — schoon
+    prompt: Welke uitspraak is NIET waar?
+    statements:
+      - Mozart componeerde meer dan 600 werken in zijn leven.
+      - Mozart werd geboren in Salzburg in 1756.
+      - Mozart leerde piano spelen van Beethoven.   # leugen — Beethoven was jonger
+    correctIndex: 2
+
+  - n: 2
+    status: ✅
+    regel: alle 3 over de maanlanding/Apollo 11 (single subject), 1 waarheid
+    prompt: Welke uitspraak is waar?
+    statements:
+      - Neil Armstrong was de tweede man op de maan.   # leugen — was eerste
+      - De maanlanding van Apollo 11 vond plaats in 1968.   # leugen — 1969
+      - Tijdens Apollo 11 bleven drie astronauten in de buurt van de maan.   # waar
+    correctIndex: 2
+
+  - n: 3
+    status: ✅
+    regel: alle 3 over Het Concertgebouw of de Eiffeltoren? — alle 3 over de Eiffeltoren
+    prompt: Welke uitspraak is NIET waar?
+    statements:
+      - De Eiffeltoren werd gebouwd voor de wereldtentoonstelling van 1889.
+      - De Eiffeltoren is gemaakt van staal.   # leugen — ijzer (puddelijzer)
+      - De Eiffeltoren staat in het 7e arrondissement van Parijs.
+    correctIndex: 1
+
+  - n: 4
+    status: ✅
+    regel: thema = Het menselijk lichaam (vergelijkings-thema, OK)
+    prompt: Welke uitspraak is waar?
+    statements:
+      - Een volwassen mens heeft 212 botten.   # leugen — 206
+      - Het hart pompt ongeveer 5 liter bloed per minuut.   # waar
+      - De lever produceert insuline.   # leugen — alvleesklier
+    correctIndex: 1
+
+  - n: 5
+    status: ✅
+    regel: alle 3 over hetzelfde toneelstuk
+    prompt: Welke uitspraak is NIET waar?
+    statements:
+      - Hamlet is een Deense prins.
+      - Hamlet werd geschreven rond 1600.
+      - Hamlet is geschreven door Christopher Marlowe.   # leugen — Shakespeare
+    correctIndex: 2
+
+  - n: 6
+    status: ✅
+    regel: thema = Tweede Wereldoorlog gebeurtenissen
+    prompt: Welke uitspraak is waar?
+    statements:
+      - D-Day vond plaats op 6 mei 1944.   # leugen — was 6 juni
+      - Operatie Overlord werd geleid door generaal Patton.   # leugen — Eisenhower
+      - De landing in Normandië gebeurde op vijf stranden.   # waar
+    correctIndex: 2
+
+  - n: 7
+    status: ✅
+    regel: alle 3 over Van Gogh
+    prompt: Welke uitspraak is NIET waar?
+    statements:
+      - Vincent van Gogh sneed een deel van zijn linkeroor af.
+      - Vincent van Gogh verkocht in zijn leven meer dan honderd schilderijen.   # leugen — slechts één
+      - Vincent van Gogh stierf op 37-jarige leeftijd in Frankrijk.
+    correctIndex: 1
+
+  - n: 8
+    status: ✅
+    regel: alle 3 over de Stille Oceaan
+    prompt: Welke uitspraak is waar?
+    statements:
+      - De Stille Oceaan beslaat ongeveer een vijfde van het aardoppervlak.   # leugen — circa een derde
+      - De Stille Oceaan grenst aan vier continenten.   # leugen — vijf (Azië, Australië, NA, ZA, Antarctica)
+      - De diepste plek op aarde, de Marianentrog, ligt in de Stille Oceaan.   # waar
+    correctIndex: 2
+
+  - n: 9
+    status: ✅
+    regel: alle 3 over Pink Floyd
+    prompt: Welke uitspraak is NIET waar?
+    statements:
+      - Pink Floyd bracht The Dark Side of the Moon uit in 1973.
+      - De band werd opgericht in Liverpool.   # leugen — Londen
+      - Roger Waters was een van de oprichters van de band.
+    correctIndex: 1
+
+  # --- Items die bewust regels overtreden om de validatie te demonstreren ---
+
+  - n: 10
+    status: ❌
+    regel: subject-spread — drie verschillende componisten, speler kan uitsluiten
+    prompt: Welke uitspraak is NIET waar?
+    statements:
+      - Mozart componeerde meer dan 600 werken.       # over Mozart
+      - Beethoven werd geboren in Bonn.               # over Beethoven
+      - Bach werd in 1900 geboren.                    # over Bach — leugen
+    correctIndex: 2
+
+  - n: 11
+    status: ❌
+    regel: prompt-consistentie — alle 3 zijn WAAR maar prompt vraagt om de leugen
+    prompt: Welke uitspraak is NIET waar?
+    statements:
+      - De Eiffeltoren werd voltooid in 1889.
+      - De Eiffeltoren is hoger dan 300 meter.
+      - De Eiffeltoren staat in Parijs.
+    correctIndex: 0
+
+  - n: 12
+    status: ❌
+    regel: cross-reference — statement verwijst naar andere statement
+    prompt: Welke uitspraak is waar?
+    statements:
+      - De maan draait om de aarde.
+      - Anders dan de vorige uitspraak, draait de aarde om de maan.   # ❌ cross-reference
+      - De zon staat in het midden van het zonnestelsel.
+    correctIndex: 0
+
+  - n: 13
+    status: ❌
+    regel: vage / subjectieve statement (niet verifieerbaar)
+    prompt: Welke uitspraak is waar?
+    statements:
+      - Frankrijk is een mooi land om te bezoeken.   # ❌ subjectief
+      - Parijs is de hoofdstad van Frankrijk.
+      - Frankrijk grenst aan Spanje.
+    correctIndex: 1
+
+  - n: 14
+    status: ❌
+    regel: placeholder-statement
+    prompt: Welke uitspraak is NIET waar?
+    statements:
+      - Goud heeft het symbool Au.
+      - TBD
+      - Goud is een edelmetaal.
+    correctIndex: 1
+
+  - n: 15
+    status: ⚠️
+    regel: trick-leugen — grensgeval, te flauw
+    prompt: Welke uitspraak is NIET waar?
+    statements:
+      - Water bevriest bij 0 graden Celsius op zeeniveau.
+      - De zon komt op in het oosten.
+      - De zon gaat ongeveer in het westen onder.   # ⚠️ bedoeld als leugen, maar "ongeveer" maakt 'm feitelijk correct — flauwe trick
+    correctIndex: 2
+
+# --- Pakket-niveau checks (validate-questions.py) ---
+#
+# Als bovenstaande 15 rondes één pakket zouden vormen:
+#
+#   correctIndex-verdeling: 0 x 2, 1 x 5, 2 x 8  → positie 2 = 53%, OK (<60%)
+#   prompt-verdeling: waar? x 6, NIET waar? x 9   → 40/60, OK (binnen 30/70)
+#
+# Bij een echte 30-vragen-pakket mik je op:
+#   correctIndex ~10 per positie (validate warnt bij >60% in één positie)
+#   prompt ~15/15 (validate warnt bij scheever dan 70/30)

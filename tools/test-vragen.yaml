@@ -1,0 +1,251 @@
+# Test/referentie-batch van klassieke quiz-vragen.
+# Per item wordt getoond:
+#   - de inhoud (vraag, antwoord, 4 hints)
+#   - status: ✅ schoon / ⚠️ kleine smet / ❌ harde fout
+#   - welke regel(s) van de validatie hier op van toepassing zijn
+#
+# Geüpdatet voor de nieuwe regels (juni 2026):
+#   - hint 4 strikt: geen woord uit antwoord
+#   - partial-name leak: "(voor|achter)naam is X" met X uit antwoord
+#   - letter-count + begin/eind-letter verificatie
+#   - vage / te korte hints
+#   - subject-vs-antwoord (Columbus-test)
+#   - hint 4 mag geen "Hij/Zij was/is/werd ..." subject-info-zin zijn
+#
+# Schoon: 11/20 (55%). De nieuwe regels zijn strenger dan voorheen —
+# items 1, 4, 13 die eerst goedgekeurd waren leakken nu via "voornaam is".
+# Items 16-20 demonstreren bewust de nieuwe heuristieken.
+
+vragen:
+
+  - n: 1
+    status: ❌
+    regel: partial-name leak in hint 4 (was ✅ onder oude regels)
+    question: Wie schreef het toneelstuk Hamlet?
+    answer: William Shakespeare
+    hints:
+      - Een Engelse toneelschrijver uit de late 16e eeuw.
+      - Hij werd geboren in Stratford-upon-Avon in 1564.
+      - Hij schreef ook Romeo en Julia en Macbeth.
+      - Zijn voornaam is William.   # leakt halve naam — gebruik "Initialen W.S." of "Telt 19 letters"
+
+  - n: 2
+    status: ✅
+    regel: alle nieuwe regels OK — letter-count (6 ✓) + begin-letter (O ✓)
+    question: Wat is de hoofdstad van Canada?
+    answer: Ottawa
+    hints:
+      - Een Noord-Amerikaanse hoofdstad.
+      - De stad ligt in de provincie Ontario aan een rivier.
+      - Niet Toronto of Montreal, maar een kleinere stad gekozen als compromis.
+      - Begint met de letter O en heeft zes letters.
+
+  - n: 3
+    status: ❌
+    regel: chemische-formule leak in hint 4 (CO2 niet in vraag)
+    question: Welk gas ademen mensen uit?
+    answer: Koolstofdioxide
+    hints:
+      - Een veelvoorkomend gas in de atmosfeer.
+      - Planten gebruiken het bij fotosynthese.
+      - Het ontstaat bij verbranding en celademhaling.
+      - De chemische formule is CO2.
+
+  - n: 4
+    status: ❌
+    regel: partial-name leak in hint 4 (was ✅ onder oude regels)
+    question: Wie schilderde De Sterrennacht?
+    answer: Vincent van Gogh
+    hints:
+      - Een Nederlandse postimpressionist uit de 19e eeuw.
+      - Hij maakte het werk in 1889 in een psychiatrische inrichting in Saint-Rémy.
+      - Hij sneed eerder een deel van zijn oor af.
+      - Zijn voornaam is Vincent.   # leakt halve naam — gebruik "Initialen V.v.G." of "Heeft 15 letters"
+
+  - n: 5
+    status: ❌
+    regel: circulair — antwoord staat letterlijk in vraag
+    question: In welke film speelt het personage Forrest Gump?
+    answer: Forrest Gump
+    hints:
+      - Een Amerikaanse dramafilm uit 1994.
+      - De film won zes Oscars waaronder Beste Film.
+      - De regie was van Robert Zemeckis en de hoofdrolspeler at chocolaatjes op een bankje.
+      - De titel is de naam van het hoofdpersonage.
+
+  - n: 6
+    status: ⚠️
+    regel: subject-vs-antwoord — hints 2 en 3 gaan over het album/de hoes (subject), niet over de band (antwoord); hint 3 geeft alleen via beeld-associatie een hint
+    question: Welke band bracht het album The Dark Side of the Moon uit?
+    answer: Pink Floyd
+    hints:
+      - Een Britse rockband opgericht in de jaren zestig.
+      - Het album verscheen in 1973 en stond jarenlang in de hitlijsten.   # ⚠️ over album, niet over band
+      - De hoes toont een prisma met een lichtstraal.                      # ⚠️ over album-hoes
+      - De bandnaam bevat een kleur en een achternaam.
+    beter:
+      - Een Britse rockband opgericht in de jaren zestig.
+      - De bandleden Roger Waters en David Gilmour werkten samen aan dit album.
+      - De band stond bekend om psychedelische rock en spectaculaire live-shows.
+      - De bandnaam bevat een kleur en een achternaam.
+
+  - n: 7
+    status: ⚠️
+    regel: subject-vs-antwoord — hint 2 gaat over Tiger (subject) ipv golf (antwoord)
+    question: Welke sport speelt Tiger Woods?
+    answer: Golf
+    hints:
+      - Een sport gespeeld op een groot grasveld met holes.
+      - Hij won meerdere Masters-toernooien in Augusta.   # ⚠️ over Tiger, niet over Golf
+      - De sport wordt gespeeld met clubs en een klein wit balletje.
+      - De naam telt vier letters.   # 4 ✓
+
+  - n: 8
+    status: ✅
+    regel: cryptische hint 4 over de astronaut (antwoord), niet over de maanlanding (subject)
+    question: Wie was de eerste man op de maan?
+    answer: Neil Armstrong
+    hints:
+      - Een Amerikaanse astronaut uit de jaren zestig.
+      - Hij was commandant van de Apollo 11-missie.
+      - Hij sprak de beroemde woorden over een kleine stap voor een mens.
+      - Zijn achternaam betekent letterlijk 'sterke arm'.   # cryptisch — wijst naar Armstrong zonder het woord te noemen
+
+  - n: 9
+    status: ✅
+    regel: letter-count (5 ✓) + begin-letter (S ✓)
+    question: Welke rivier stroomt door Parijs?
+    answer: Seine
+    hints:
+      - Een Franse rivier die uitmondt in Het Kanaal.
+      - De rivier stroomt langs de Notre-Dame en de Eiffeltoren.
+      - Het is niet de Loire of de Rhône, maar wel de bekendste stadsrivier van Frankrijk.
+      - De naam telt vijf letters en begint met een S.
+
+  - n: 10
+    status: ✅
+    regel: letter-count (Anne = 4 ✓), geen partial-name leak want "telt" niet "is"
+    question: Wie schreef Het Achterhuis?
+    answer: Anne Frank
+    hints:
+      - Een Joods meisje dat tijdens de Tweede Wereldoorlog leefde.
+      - Ze schreef het dagboek tussen 1942 en 1944 in Amsterdam.
+      - Ze zat ondergedoken aan de Prinsengracht en stierf in Bergen-Belsen.
+      - Haar voornaam telt vier letters.
+
+  - n: 11
+    status: ✅
+    regel: begin-letter (R ✓)
+    question: Wat is het grootste land ter wereld qua oppervlakte?
+    answer: Rusland
+    hints:
+      - Een land dat zich uitstrekt over twee continenten.
+      - Het beslaat meer dan 17 miljoen vierkante kilometer.
+      - De hoofdstad is Moskou en het grenst aan China en Finland.
+      - De naam begint met een R.
+
+  - n: 12
+    status: ✅
+    regel: letter-count (Schildpad = 9 ✓)
+    question: Welk dier staat bekend als het langste levende landdier?
+    answer: Schildpad
+    hints:
+      - Een reptiel met een hard schild op de rug.
+      - Sommige soorten worden meer dan 150 jaar oud.
+      - De Galapagos-variant werd beroemd door Darwins onderzoek.
+      - Het Nederlandse woord telt negen letters.
+
+  - n: 13
+    status: ❌
+    regel: partial-name leak in hint 4 + subject-vs-antwoord in hint 3 (over symfonie, niet over componist)
+    question: Wie componeerde de Negende Symfonie met Ode an die Freude?
+    answer: Ludwig van Beethoven
+    hints:
+      - Een Duitse componist uit de klassieke en romantische periode.
+      - Hij voltooide het werk in 1824 toen hij al doof was.
+      - Het slotkoor is gebaseerd op een gedicht van Schiller en is nu de hymne van de EU.   # ❌ over symfonie, niet over componist
+      - Zijn voornaam is Ludwig.   # leakt halve naam — gebruik "Initialen L.v.B." of "Telt 17 letters"
+    beter:
+      - Een Duitse componist uit de klassieke en romantische periode.
+      - Hij voltooide zijn meest beroemde werk in 1824 toen hij al doof was.
+      - Hij overbrugde de overgang van de klassieke naar de romantische muziek en woonde lang in Wenen.
+      - Initialen L.v.B. en de achternaam telt negen letters.
+
+  - n: 14
+    status: ✅
+    regel: letter-count (Goud = 4 ✓)
+    question: Welk metaal heeft het scheikundig symbool Au?
+    answer: Goud
+    hints:
+      - Een edelmetaal dat al duizenden jaren wordt gebruikt.
+      - Het symbool Au komt van het Latijnse aurum.
+      - Het wordt verwerkt in sieraden en gebruikt als waardestandaard.
+      - De Nederlandse naam telt vier letters.
+
+  - n: 15
+    status: ✅
+    regel: cryptische hint 4 (begint met P, net als Porto) — geen direct leak
+    question: In welk Europees land vind je de stad Porto?
+    answer: Portugal
+    hints:
+      - Een land op het Iberisch Schiereiland.
+      - Dit land grenst alleen aan Spanje en de Atlantische Oceaan.
+      - De officiële taal is een Romaanse taal nauw verwant aan Galicisch.
+      - De landsnaam begint met dezelfde letters als de stad.
+
+  # --- Nieuw: items die specifiek de nieuwe heuristieken triggeren ---
+
+  - n: 16
+    status: ❌
+    regel: letter-count claim klopt niet (Boedapest = 9, niet 8) + hint 3 leakt het antwoord via samenvoeging (niet mechanisch gevangen)
+    question: Wat is de hoofdstad van Hongarije?
+    answer: Boedapest
+    hints:
+      - Een hoofdstad in Centraal-Europa.
+      - De stad wordt door de Donau in tweeën gesplitst.
+      - De twee oude stadsdelen Boeda en Pest fuseerden in 1873.   # ❌ "Boeda"+"Pest" = Boedapest; smell-check vangt dit nu nog niet
+      - De naam telt acht letters.   # ❌ — Boedapest heeft 9 letters
+
+  - n: 17
+    status: ❌
+    regel: begin-letter mismatch (Amsterdam begint met A, niet R)
+    question: Wat is de hoofdstad van Nederland?
+    answer: Amsterdam
+    hints:
+      - Een Europese hoofdstad bekend om zijn grachten.
+      - De stad telt meer dan 800.000 inwoners.
+      - Vernoemd naar een dam in de rivier de Amstel.
+      - Begint met de letter R.   # ❌ — moet A zijn
+
+  - n: 18
+    status: ❌
+    regel: vage hint (matcht VAGUE_HINT-patroon)
+    question: Welke planeet is het dichtst bij de zon?
+    answer: Mercurius
+    hints:
+      - Hij is bekend.   # ❌ "hij/zij/het + is/was + bekend/beroemd/..." patroon
+      - Het is de kleinste planeet van ons zonnestelsel.
+      - Een dag duurt langer dan een jaar op deze planeet.
+      - Begint met de letter M.
+
+  - n: 19
+    status: ❌
+    regel: hint 4 is subject-info-zin ipv format-based ("Hij was ...")
+    question: Wie schilderde De Nachtwacht?
+    answer: Rembrandt
+    hints:
+      - Een Nederlandse meester uit de Gouden Eeuw.
+      - Het werk hangt sinds 1885 in het Rijksmuseum.
+      - Hij maakte het schilderij in 1642 in opdracht van een schuttersgilde.
+      - Hij was een bekende portretschilder uit Leiden.   # ❌ subject-info, geen near-giveaway
+
+  - n: 20
+    status: ✅
+    regel: alle nieuwe regels OK — voorbeeld van een schone hint 4 voor multi-woord-antwoord
+    question: Wie ontwikkelde de relativiteitstheorie?
+    answer: Albert Einstein
+    hints:
+      - Een Duits-Joodse natuurkundige uit de 20e eeuw.
+      - Hij won in 1921 de Nobelprijs voor zijn werk aan het foto-elektrisch effect.
+      - Hij werkte als patentambtenaar in Bern toen hij zijn eerste artikelen publiceerde.
+      - Initialen A.E. en de achternaam telt acht letters.   # ✓ format-based, geen woord uit antwoord

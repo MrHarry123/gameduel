@@ -6,7 +6,9 @@ Detecteert structurele fouten, missende velden, lege strings, duplicaten.
 Gebruik:  python3 tools/validate-questions.py
 Exit 0 bij OK, exit 1 bij gevonden problemen.
 """
+import difflib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -17,6 +19,7 @@ errors = []
 warnings = []
 all_ids = {}
 all_classic_answers = {}  # normalized → (pakket_id, idx)
+all_classic_answers_list = []  # [(norm, pakket_id, idx)] voor near-dup check
 all_statements_keys = {}  # normalized → (pakket_id, idx)
 
 
@@ -55,7 +58,7 @@ def validate_classic(pakket_id, idx, item):
     for i, h in enumerate(hints):
         if not isinstance(h, str) or not h.strip():
             err(loc, f"hint {i+1} is leeg of geen string")
-    # Cross-pakket: duplicate answer
+    # Cross-pakket: duplicate answer (exact match) en near-dup detectie
     if isinstance(a, str) and a.strip():
         key = norm(a)
         if key in all_classic_answers:
@@ -63,6 +66,25 @@ def validate_classic(pakket_id, idx, item):
             warn(loc, f"antwoord '{a}' lijkt op antwoord bij {other[0]}[{other[1]}]")
         else:
             all_classic_answers[key] = (pakket_id, idx)
+        # Near-dup: word-bounded substring + ratio (catches "Rembrandt" vs "Rembrandt van Rijn"
+        # of "Tennis" vs "Lawn tennis"; mijdt false positives als "Groen" vs "Groenland")
+        if len(key) >= 5:
+            for prev_norm, prev_pakket, prev_idx in all_classic_answers_list:
+                if prev_pakket == pakket_id and prev_idx == idx:
+                    continue
+                if prev_norm == key:
+                    continue
+                if len(prev_norm) < 5:
+                    continue
+                shorter, longer = (key, prev_norm) if len(key) < len(prev_norm) else (prev_norm, key)
+                if re.search(r"\b" + re.escape(shorter) + r"\b", longer):
+                    warn(loc, f"antwoord '{a}' is bijna identiek aan '{prev_norm}' bij {prev_pakket}[{prev_idx}] (substring)")
+                    break
+                ratio = difflib.SequenceMatcher(None, key, prev_norm).ratio()
+                if ratio > 0.85:
+                    warn(loc, f"antwoord '{a}' lijkt op '{prev_norm}' bij {prev_pakket}[{prev_idx}] ({int(ratio*100)}% gelijk)")
+                    break
+        all_classic_answers_list.append((key, pakket_id, idx))
 
 
 def validate_statements(pakket_id, idx, item):
@@ -143,6 +165,31 @@ def validate_pakket(path):
             pakket_id,
             f"oneven aantal items ({len(questions)}) — voor fairness wordt het laatste item bij elke ronde geskipt; voeg 1 item toe of verwijder er 1."
         )
+
+    # Stellingen-balans: correctIndex-verdeling en prompt-verdeling
+    if mode == "statements":
+        idx_count = {0: 0, 1: 0, 2: 0}
+        prompt_count = {}
+        for item in questions:
+            if not isinstance(item, dict):
+                continue
+            ci = item.get("correctIndex")
+            if isinstance(ci, int) and 0 <= ci < 3:
+                idx_count[ci] += 1
+            p = item.get("prompt")
+            if isinstance(p, str):
+                prompt_count[p] = prompt_count.get(p, 0) + 1
+        total = sum(idx_count.values())
+        if total > 0:
+            for i, n in idx_count.items():
+                if n > total * 0.6:
+                    warn(pakket_id, f"correctIndex {i} wordt {n}/{total} keer gebruikt (>60%) — verdeel beter")
+        waar = prompt_count.get("Welke uitspraak is waar?", 0)
+        niet = prompt_count.get("Welke uitspraak is NIET waar?", 0)
+        if waar + niet > 0:
+            ratio = waar / (waar + niet)
+            if ratio < 0.3 or ratio > 0.7:
+                warn(pakket_id, f"prompt-balans scheef: 'waar?' {waar}x vs 'NIET waar?' {niet}x (mik op 50/50)")
 
     seen_questions = set()
     for idx, item in enumerate(questions):

@@ -74,6 +74,52 @@ Goede equivalenten:
 - "Hoeveel..." → hints die het getal vernauwen (groter/kleiner dan X, vergelijking met bekend aantal).
 - "Welk dier/plant/element..." → hints over kenmerken die dit specifieke ding onderscheiden van vergelijkbare alternatieven.
 
+### Subject vs antwoord (KRITIEK voor hint-kwaliteit)
+
+Onderscheid in elke vraag twee dingen:
+- **Subject** = wat letterlijk in de vraag genoemd staat (de persoon, het werk, de plaats, het getal). Dit weet de speler al.
+- **Antwoord** = wat de speler moet RADEN.
+
+**Hints moeten info geven over het antwoord**, niet over het subject. Een hint die uitsluitend iets vertelt over wat al in de vraag staat helpt niet, want de speler kent dat al.
+
+Voorbeelden:
+
+Vraag: "Welke sport speelt Tiger Woods?"  → Subject = Tiger Woods. Antwoord = Golf.
+- ❌ "Hij won meerdere Masters-toernooien in Augusta" — vertelt over Tiger (subject)
+- ✅ "Wordt gespeeld met clubs en een klein balletje" — over de sport (antwoord)
+- ✅ "Er wordt op een baan met 18 holes gespeeld" — over de sport
+
+Vraag: "Wie componeerde de Negende Symfonie?"  → Subject = Negende Symfonie. Antwoord = de componist.
+- ❌ "Het slotkoor is nu de hymne van de EU" — over de symfonie (subject)
+- ✅ "Hij werd doof tijdens het componeren" — over de componist (antwoord)
+
+Vraag: "In welk land vind je Porto?"  → Subject = Porto. Antwoord = het land.
+- ❌ "Porto ligt aan de Douro-rivier" — over Porto (subject)
+- ✅ "Officiële taal is een Romaanse taal" — over het land (antwoord)
+- ✅ "Grenst alleen aan Spanje en de Atlantische Oceaan" — over het land
+
+Vraag: "Wie was de eerste man op de maan?"  → Subject = de maanlanding. Antwoord = de astronaut.
+- ❌ "Hij zette voet op de maan op 20 juli 1969 tijdens Apollo 11" — louter een herhaling van wat al in de vraag staat
+- ✅ "Hij was de commandant van die missie" — over de astronaut
+- ✅ "Hij was eerder testpiloot bij de luchtmacht" — over de astronaut
+
+### Hint 4: ALLEEN format-based
+
+Hint 4 is de near-giveaway. **Alleen toegestaan**:
+- "Begint met de letter X"
+- "Heeft N letters"
+- "Initialen X.Y."
+- "Eindigt op X"
+- "Naam rijmt op Y"
+- Cryptische omschrijving zonder enig woord uit het antwoord
+
+**Verboden** in hint 4:
+- ❌ "Voornaam is William" voor antwoord "William Shakespeare" — leakt halve naam
+- ❌ "Achternaam telt 9 letters" — OK qua format, mag wel
+- ❌ Letterlijk welk woord dan ook uit het antwoord noemen
+
+Reden: hint 4 moet net niet het antwoord zelf zijn. Een halve naam (voornaam OF achternaam) van een persoon is in de praktijk al bijna het hele antwoord. Format-based hints (letters, telling, initialen) geven net genoeg om de twijfel weg te halen zonder echt te leaken.
+
 ### Dedup-regels
 
 - **Binnen je pakket**: alle 30 antwoorden moeten uniek zijn. Strict.
@@ -139,10 +185,11 @@ Geef een compact verslag:
 ## Belangrijke instructies
 
 - **Locked pakketten met rust laten**: pakketten met `"locked": true` mogen NIET worden aangepast (er kunnen spelers met opgeslagen voortgang zijn). Je hoeft ze niet te lezen voor dedup.
+- **Balans-regel**: na het opschonen van je nieuwe pakketten, check of ze in aantal binnen ±2 van elkaar liggen. Als ze meer dan 4 verschillen (bv. 24 vs 34), verdeel vragen tussen de nieuwe (niet-gelockte) pakketten zodat ze in lijn komen. Alle finale aantallen moeten EVEN zijn. Niet alle pakketten hoeven 30 te zijn — 28+28+30 of 26+28+28 is prima.
 - **Nieuwe pakketten worden NIET gelockt** — geen `locked` veld toevoegen. De gebruiker beslist later of/wanneer een nieuw pakket vergrendeld wordt.
 - **Output in het Nederlands** — content, hints, rapport.
 - **Niet liegen**: elk antwoord moet feitelijk juist zijn. Bij onzekerheid: kies een ander onderwerp.
-- **Vermijd recente gebeurtenissen** (afgelopen 2 jaar) — die verouderen snel.
+- **Vermijd gebeurtenissen van 2024 of later** — die verouderen snel of zijn nog niet algemeen bekend. Houd je aan feiten die minstens 2-3 jaar gevestigd zijn.
 - **Vermijd Nederland-only trivia** tenzij relevant; houd het breed.
 - **Variëer vraagstijl**: wie/wat/wanneer/waar/welke/hoe — niet alle 30 hetzelfde format.
 - **Geen meta-tekst** in de JSON-bestanden — alleen pure data.
