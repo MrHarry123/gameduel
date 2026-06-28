@@ -35,6 +35,52 @@ def norm(s):
     return " ".join(s.lower().split()).rstrip(".!?")
 
 
+def _check_qa_dedup(pakket_id, idx, a, loc):
+    """Gedeelde dedup-check voor klassieke en open modes (zelfde antwoord-pool)."""
+    if not (isinstance(a, str) and a.strip()):
+        return
+    key = norm(a)
+    if key in all_classic_answers:
+        other = all_classic_answers[key]
+        warn(loc, f"antwoord '{a}' lijkt op antwoord bij {other[0]}[{other[1]}]")
+    else:
+        all_classic_answers[key] = (pakket_id, idx)
+    if len(key) >= 5:
+        for prev_norm, prev_pakket, prev_idx in all_classic_answers_list:
+            if prev_pakket == pakket_id and prev_idx == idx:
+                continue
+            if prev_norm == key:
+                continue
+            if len(prev_norm) < 5:
+                continue
+            shorter, longer = (key, prev_norm) if len(key) < len(prev_norm) else (prev_norm, key)
+            if re.search(r"\b" + re.escape(shorter) + r"\b", longer):
+                warn(loc, f"antwoord '{a}' is bijna identiek aan '{prev_norm}' bij {prev_pakket}[{prev_idx}] (substring)")
+                break
+            ratio = difflib.SequenceMatcher(None, key, prev_norm).ratio()
+            if ratio > 0.85:
+                warn(loc, f"antwoord '{a}' lijkt op '{prev_norm}' bij {prev_pakket}[{prev_idx}] ({int(ratio*100)}% gelijk)")
+                break
+    all_classic_answers_list.append((key, pakket_id, idx))
+
+
+def validate_open(pakket_id, idx, item):
+    loc = f"{pakket_id}[{idx}]"
+    if not isinstance(item, dict):
+        err(loc, "is geen object")
+        return
+    for key in ("question", "answer"):
+        if key not in item:
+            err(loc, f"mist veld '{key}'")
+    q = item.get("question")
+    a = item.get("answer")
+    if not isinstance(q, str) or not q.strip():
+        err(loc, "vraag is leeg of geen string")
+    if not isinstance(a, str) or not a.strip():
+        err(loc, "antwoord is leeg of geen string")
+    _check_qa_dedup(pakket_id, idx, a, loc)
+
+
 def validate_classic(pakket_id, idx, item):
     loc = f"{pakket_id}[{idx}]"
     if not isinstance(item, dict):
@@ -58,33 +104,7 @@ def validate_classic(pakket_id, idx, item):
     for i, h in enumerate(hints):
         if not isinstance(h, str) or not h.strip():
             err(loc, f"hint {i+1} is leeg of geen string")
-    # Cross-pakket: duplicate answer (exact match) en near-dup detectie
-    if isinstance(a, str) and a.strip():
-        key = norm(a)
-        if key in all_classic_answers:
-            other = all_classic_answers[key]
-            warn(loc, f"antwoord '{a}' lijkt op antwoord bij {other[0]}[{other[1]}]")
-        else:
-            all_classic_answers[key] = (pakket_id, idx)
-        # Near-dup: word-bounded substring + ratio (catches "Rembrandt" vs "Rembrandt van Rijn"
-        # of "Tennis" vs "Lawn tennis"; mijdt false positives als "Groen" vs "Groenland")
-        if len(key) >= 5:
-            for prev_norm, prev_pakket, prev_idx in all_classic_answers_list:
-                if prev_pakket == pakket_id and prev_idx == idx:
-                    continue
-                if prev_norm == key:
-                    continue
-                if len(prev_norm) < 5:
-                    continue
-                shorter, longer = (key, prev_norm) if len(key) < len(prev_norm) else (prev_norm, key)
-                if re.search(r"\b" + re.escape(shorter) + r"\b", longer):
-                    warn(loc, f"antwoord '{a}' is bijna identiek aan '{prev_norm}' bij {prev_pakket}[{prev_idx}] (substring)")
-                    break
-                ratio = difflib.SequenceMatcher(None, key, prev_norm).ratio()
-                if ratio > 0.85:
-                    warn(loc, f"antwoord '{a}' lijkt op '{prev_norm}' bij {prev_pakket}[{prev_idx}] ({int(ratio*100)}% gelijk)")
-                    break
-        all_classic_answers_list.append((key, pakket_id, idx))
+    _check_qa_dedup(pakket_id, idx, a, loc)
 
 
 def validate_statements(pakket_id, idx, item):
@@ -151,7 +171,7 @@ def validate_pakket(path):
             all_ids[pid] = pakket_id
 
     mode = data.get("mode", "classic")
-    if mode not in ("classic", "statements"):
+    if mode not in ("classic", "statements", "open"):
         err(pakket_id, f"onbekende mode '{mode}'")
 
     questions = data.get("questions")
@@ -196,7 +216,10 @@ def validate_pakket(path):
         if mode == "statements":
             validate_statements(pid or pakket_id, idx, item)
         else:
-            validate_classic(pid or pakket_id, idx, item)
+            if mode == "open":
+                validate_open(pid or pakket_id, idx, item)
+            else:
+                validate_classic(pid or pakket_id, idx, item)
             q = item.get("question") if isinstance(item, dict) else None
             if isinstance(q, str):
                 k = norm(q)

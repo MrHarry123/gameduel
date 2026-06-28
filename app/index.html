@@ -48,9 +48,14 @@
         <p class="subtitle" id="select-subtitle">—</p>
       </header>
 
+      <nav class="games-tabs" id="games-tabs">
+        <button class="games-tab" data-tab="classic">Hints</button>
+        <button class="games-tab" data-tab="open">Open vragen</button>
+        <button class="games-tab" data-tab="statements">Stellingen</button>
+      </nav>
+
       <div id="games-container">
         <section class="games-section" id="games-section-classic" hidden>
-          <h2 class="games-section-title">Hints</h2>
           <ul class="games-section-rules">
             <li>Je stelt om de beurt een vraag aan de ander.</li>
             <li>Beantwoord in 1 keer goed: <strong>5 punten</strong>.</li>
@@ -59,8 +64,15 @@
           </ul>
           <div class="games-grid" id="games-grid-classic"></div>
         </section>
+        <section class="games-section" id="games-section-open" hidden>
+          <ul class="games-section-rules">
+            <li>Je stelt om de beurt een open vraag aan de ander.</li>
+            <li>Geen hints — gewoon weten of niet weten.</li>
+            <li>Goed beantwoord: <strong>1 punt</strong>. Mis: 0 punten.</li>
+          </ul>
+          <div class="games-grid" id="games-grid-open"></div>
+        </section>
         <section class="games-section" id="games-section-statements" hidden>
-          <h2 class="games-section-title">Stellingen</h2>
           <ul class="games-section-rules">
             <li>Je krijgt om de beurt 3 stellingen.</li>
             <li>Kies de uitspraak die <strong>waar</strong> is — of juist <strong>niet waar</strong>, afhankelijk van de vraag.</li>
@@ -128,6 +140,26 @@
             </div>
             <div class="hints-grid" id="hints-grid">
               <!-- hints worden hier ingevoegd -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Open-vragen-modus -->
+        <div class="open-content">
+          <div class="question-card" id="open-question-card" role="button" tabindex="0">
+            <span class="card-label">Vraag</span>
+            <h2 id="open-question-text">—</h2>
+            <span class="tap-hint">Tik om groot te tonen</span>
+          </div>
+
+          <div class="answer-card">
+            <div class="answer-row">
+              <button id="open-correct-btn" class="judge-btn correct" title="Goed">✓</button>
+              <div class="answer-content">
+                <span class="card-label">Antwoord</span>
+                <h2 id="open-answer-text">—</h2>
+              </div>
+              <button id="open-wrong-btn" class="judge-btn wrong" title="Fout">✗</button>
             </div>
           </div>
         </div>

@@ -232,6 +232,38 @@ body::before {
   margin-bottom: 4px;
 }
 
+.games-tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-card);
+  padding: 4px;
+  border-radius: 12px;
+}
+
+.games-tab {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 8px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.games-tab:hover:not(.active) {
+  color: var(--text);
+}
+
+.games-tab.active {
+  background: var(--primary);
+  color: white;
+}
+
 #games-container {
   display: flex;
   flex-direction: column;
@@ -244,16 +276,8 @@ body::before {
   gap: 10px;
 }
 
-.games-section-title {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  padding-left: 4px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 4px;
+.games-section[hidden] {
+  display: none;
 }
 
 .games-section-rules {
@@ -892,17 +916,25 @@ body::before {
   }
 }
 
-/* ===== Quiz modus-toggle (klassiek vs stellingen) ===== */
-#quiz-screen[data-mode="classic"] .statements-content {
+/* ===== Quiz modus-toggle (klassiek / open / stellingen) ===== */
+#quiz-screen[data-mode="classic"] .statements-content,
+#quiz-screen[data-mode="classic"] .open-content {
   display: none;
 }
 
-#quiz-screen[data-mode="statements"] .classic-content {
+#quiz-screen[data-mode="statements"] .classic-content,
+#quiz-screen[data-mode="statements"] .open-content {
+  display: none;
+}
+
+#quiz-screen[data-mode="open"] .classic-content,
+#quiz-screen[data-mode="open"] .statements-content {
   display: none;
 }
 
 .classic-content,
-.statements-content {
+.statements-content,
+.open-content {
   display: flex;
   flex-direction: column;
   gap: 16px;

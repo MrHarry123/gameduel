@@ -6,6 +6,7 @@ const state = {
     players: ["Speler 1", "Speler 2"],
     games: {},
     namesConfirmed: false,
+    activeTab: "classic",
   },
   currentGame: null,
   turn: {
@@ -44,6 +45,7 @@ function loadSaved() {
         players: parsed.players || ["Speler 1", "Speler 2"],
         games: parsed.games || {},
         namesConfirmed: parsed.namesConfirmed === true,
+        activeTab: parsed.activeTab || "classic",
       };
     }
   } catch (e) {
@@ -130,10 +132,12 @@ function renderSelectScreen() {
   const [p1, p2] = state.saved.players;
   document.getElementById("select-subtitle").textContent = `${p1} vs ${p2}`;
 
-  const gridClassic = document.getElementById("games-grid-classic");
-  const gridStatements = document.getElementById("games-grid-statements");
-  gridClassic.innerHTML = "";
-  gridStatements.innerHTML = "";
+  const grids = {
+    classic: document.getElementById("games-grid-classic"),
+    open: document.getElementById("games-grid-open"),
+    statements: document.getElementById("games-grid-statements"),
+  };
+  Object.values(grids).forEach((g) => (g.innerHTML = ""));
 
   state.games.forEach((game) => {
     const status = gameStatus(game);
@@ -158,11 +162,26 @@ function renderSelectScreen() {
       <div class="game-status">${status.label}</div>
     `;
     card.addEventListener("click", () => selectGame(game));
-    (mode === "statements" ? gridStatements : gridClassic).appendChild(card);
+    (grids[mode] || grids.classic).appendChild(card);
   });
 
-  document.getElementById("games-section-classic").hidden = gridClassic.children.length === 0;
-  document.getElementById("games-section-statements").hidden = gridStatements.children.length === 0;
+  applyActiveTab();
+}
+
+function applyActiveTab() {
+  const tab = state.saved.activeTab || "classic";
+  document.querySelectorAll(".games-tab").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.tab === tab);
+  });
+  ["classic", "open", "statements"].forEach((m) => {
+    document.getElementById(`games-section-${m}`).hidden = m !== tab;
+  });
+}
+
+function setActiveTab(tab) {
+  state.saved.activeTab = tab;
+  persist();
+  applyActiveTab();
 }
 
 function selectGame(game) {
@@ -220,6 +239,10 @@ function startTurn() {
   if (mode === "statements") {
     document.getElementById("statements-prompt-text").textContent = item.prompt;
     renderStatements(item);
+  } else if (mode === "open") {
+    document.getElementById("open-question-text").textContent = item.question;
+    document.getElementById("fullscreen-question-text").textContent = item.question;
+    document.getElementById("open-answer-text").textContent = item.answer;
   } else {
     document.getElementById("question-text").textContent = item.question;
     document.getElementById("fullscreen-question-text").textContent = item.question;
@@ -244,6 +267,16 @@ function renderStatements(item) {
 }
 
 function judgeStatement(correct) {
+  const gs = state.saved.games[state.currentGame.id];
+  const answererIndex = 1 - gs.askerIndex;
+  if (correct) gs.scores[answererIndex] += 1;
+  gs.currentIndex++;
+  gs.askerIndex = 1 - gs.askerIndex;
+  persist();
+  showPassScreen();
+}
+
+function judgeOpen(correct) {
   const gs = state.saved.games[state.currentGame.id];
   const answererIndex = 1 - gs.askerIndex;
   if (correct) gs.scores[answererIndex] += 1;
@@ -380,6 +413,12 @@ document.getElementById("replay-btn").addEventListener("click", replayGame);
 document.getElementById("back-from-end-btn").addEventListener("click", backToSelect);
 document.getElementById("statements-correct-btn").addEventListener("click", () => judgeStatement(true));
 document.getElementById("statements-wrong-btn").addEventListener("click", () => judgeStatement(false));
+document.getElementById("open-correct-btn").addEventListener("click", () => judgeOpen(true));
+document.getElementById("open-wrong-btn").addEventListener("click", () => judgeOpen(false));
+
+document.querySelectorAll(".games-tab").forEach((btn) => {
+  btn.addEventListener("click", () => setActiveTab(btn.dataset.tab));
+});
 
 /* ====== Fullscreen vraag-overlay ====== */
 const fullscreenEl = document.getElementById("question-fullscreen");
@@ -391,12 +430,14 @@ function closeQuestionFullscreen() {
   fullscreenEl.classList.remove("active");
   fullscreenEl.setAttribute("aria-hidden", "true");
 }
-document.getElementById("question-card").addEventListener("click", openQuestionFullscreen);
-document.getElementById("question-card").addEventListener("keydown", (e) => {
-  if (e.key === "Enter" || e.key === " ") {
-    e.preventDefault();
-    openQuestionFullscreen();
-  }
+[document.getElementById("question-card"), document.getElementById("open-question-card")].forEach((el) => {
+  el.addEventListener("click", openQuestionFullscreen);
+  el.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      openQuestionFullscreen();
+    }
+  });
 });
 fullscreenEl.addEventListener("click", closeQuestionFullscreen);
 

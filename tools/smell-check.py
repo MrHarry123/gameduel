@@ -277,6 +277,36 @@ def check_classic_item(item):
     return issues
 
 
+def check_open_item(item):
+    """Open vragen: zelfde vraag/antwoord-checks als klassiek, maar zonder hint-checks."""
+    issues = []
+    q = item.get("question", "") or ""
+    a = item.get("answer", "") or ""
+
+    for pat in META_QUESTION:
+        if pat.search(q):
+            issues.append(f"meta-vraag: \"{q[:80]}\"")
+            break
+
+    for pat in WORKAROUND_ANSWER:
+        if pat.search(a):
+            issues.append(f"workaround antwoord: \"{a}\"")
+            break
+
+    if len(a.split()) > 7:
+        issues.append(f"antwoord te lang (>7 woorden): \"{a}\"")
+    elif len(a) > 50:
+        issues.append(f"antwoord te lang (>50 tekens): \"{a}\"")
+
+    a_sig = _significant_words(a)
+    if a_sig and len(a_sig) >= 2:
+        q_lower = q.lower()
+        if all(re.search(r"\b" + re.escape(w) + r"\b", q_lower) for w in a_sig):
+            issues.append(f"vraag bevat het hele antwoord (circulair): \"{a}\"")
+
+    return issues
+
+
 def check_statement_item(item):
     issues = []
     statements = item.get("statements", []) or []
@@ -302,13 +332,14 @@ def check_statement_item(item):
 def check_pakket(path):
     data = json.loads(path.read_text(encoding="utf-8"))
     mode = data.get("mode", "classic")
+    check_func = {
+        "statements": check_statement_item,
+        "open": check_open_item,
+    }.get(mode, check_classic_item)
     items = data.get("questions", [])
     flagged = []
     for idx, item in enumerate(items):
-        if mode == "statements":
-            issues = check_statement_item(item)
-        else:
-            issues = check_classic_item(item)
+        issues = check_func(item)
         if issues:
             flagged.append((idx, issues))
     return flagged, mode, items

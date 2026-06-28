@@ -1,4 +1,4 @@
-const CACHE_NAME = "quiz-duel-v40";
+const CACHE_NAME = "quiz-duel-v41";
 
 const ASSETS = [
   "./",
@@ -22,6 +22,9 @@ const ASSETS = [
   "./games/pakket-7.json",
   "./games/pakket-8.json",
   "./games/pakket-9.json",
+  "./games/open-1.json",
+  "./games/open-2.json",
+  "./games/open-3.json",
 ];
 
 self.addEventListener("install", (event) => {
