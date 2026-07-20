@@ -16,6 +16,10 @@ Voer onderstaande stappen uit. Stop niet halverwege.
 2. Lees **alleen de laatste 1 à 2 klassieke pakketten** (het meest recent toegevoegde) om hun antwoorden te zien.
 3. Verzamel die antwoorden in een korte "liever niet"-lijst. **Cross-pakket overlap is acceptabel** — spelers spelen 1-2 pakketten per avond, niet alles tegelijk. Probeer alleen herhaling met het laatste pakket te vermijden.
 4. Bepaal het volgende beschikbare nummer.
+5. **Lees stijl-referenties** (niet voor dedup, wel voor toon):
+   - `tools/examples.csv` — door de gebruiker als goed aangemerkte voorbeelden.
+   - `app/games/pakket-10.json` en `app/games/pakket-11.json` — goedgekeurde klassieke pakketten die als kwaliteits-benchmark dienen (voor élke modus, dus ook als je later stellingen of open vragen bouwt).
+   Neem NIETS letterlijk over — leen alleen de toon: mix korte directe vragen ("Welke vrijdagen brengen ongeluk?") met vragen die wat context/setup hebben (halve alinea voor de vraag).
 
 ### Stap 2 — Genereer 3 pakketten
 
@@ -187,6 +191,7 @@ Geef een compact verslag:
 - **Locked pakketten met rust laten**: pakketten met `"locked": true` mogen NIET worden aangepast (er kunnen spelers met opgeslagen voortgang zijn). Je hoeft ze niet te lezen voor dedup.
 - **Balans-regel**: na het opschonen van je nieuwe pakketten, check of ze in aantal binnen ±2 van elkaar liggen. Als ze meer dan 4 verschillen (bv. 24 vs 34), verdeel vragen tussen de nieuwe (niet-gelockte) pakketten zodat ze in lijn komen. Alle finale aantallen moeten EVEN zijn. Niet alle pakketten hoeven 30 te zijn — 28+28+30 of 26+28+28 is prima.
 - **Nieuwe pakketten worden NIET gelockt** — geen `locked` veld toevoegen. De gebruiker beslist later of/wanneer een nieuw pakket vergrendeld wordt.
+- **"Nieuw"-badge conventie**: alléén de pakketten die JIJ in deze run toevoegt mogen de "Nieuw"-badge tonen. Vóór je jouw nieuwe bestanden schrijft: loop door alle bestaande niet-gelockte pakketten en zet `"launched": true` op elk pakket dat die vlag nog niet heeft. Jouw nieuw toegevoegde pakketten krijgen die vlag NIET (blijven dus "Nieuw"). Locked pakketten hoef je niet aan te raken. De UI toont "Nieuw" als `!game.locked && !game.launched`.
 - **Output in het Nederlands** — content, hints, rapport.
 - **Niet liegen**: elk antwoord moet feitelijk juist zijn. Bij onzekerheid: kies een ander onderwerp.
 - **Vermijd gebeurtenissen van 2024 of later** — die verouderen snel of zijn nog niet algemeen bekend. Houd je aan feiten die minstens 2-3 jaar gevestigd zijn.

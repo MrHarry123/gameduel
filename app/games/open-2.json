@@ -3,36 +3,127 @@
   "title": "Open vragen 2",
   "emoji": "🗯️",
   "mode": "open",
+  "launched": true,
   "questions": [
-    { "question": "Wie schreef het toneelstuk Romeo en Julia?", "answer": "William Shakespeare" },
-    { "question": "Welke Franse koning werd ook wel de Zonnekoning genoemd?", "answer": "Lodewijk XIV" },
-    { "question": "Welke vulkaan ligt op een eiland ten noorden van Sicilië en is bijna constant actief?", "answer": "Stromboli" },
-    { "question": "In welk jaar begon de Franse Revolutie?", "answer": "1789" },
-    { "question": "Welke Amerikaanse popart-kunstenaar maakte de zeefdrukken van Marilyn Monroe?", "answer": "Andy Warhol" },
-    { "question": "Wat is het langste bot in het menselijk lichaam?", "answer": "Het dijbeen" },
-    { "question": "Wat is de munteenheid van Zweden?", "answer": "Zweedse kroon" },
-    { "question": "Wie was de eerste vrouw die een Nobelprijs won?", "answer": "Marie Curie" },
-    { "question": "Welke Britse koningin regeerde van 1952 tot 2022?", "answer": "Elizabeth II" },
-    { "question": "Welk land is wereldwijd de grootste exporteur van koffie?", "answer": "Brazilië" },
-    { "question": "Wat is de hoofdstad van Kenia?", "answer": "Nairobi" },
-    { "question": "Welke Britse schrijver bedacht James Bond?", "answer": "Ian Fleming" },
-    { "question": "Welke planeet is bekend om zijn opvallende ringen?", "answer": "Saturnus" },
-    { "question": "Welke wetenschapper formuleerde de relativiteitstheorie?", "answer": "Albert Einstein" },
-    { "question": "Welke Italiaanse stad staat bekend om haar gondels?", "answer": "Venetië" },
-    { "question": "Wat is de hoogste berg van Afrika?", "answer": "Kilimanjaro" },
-    { "question": "Welke Britse band bracht het album Abbey Road uit?", "answer": "The Beatles" },
-    { "question": "Welke Spaanse architect ontwierp de Sagrada Família?", "answer": "Antoni Gaudí" },
-    { "question": "In welk land staat de Akropolis?", "answer": "Griekenland" },
-    { "question": "Welk dier symboliseert traditioneel wijsheid in de westerse cultuur?", "answer": "De uil" },
-    { "question": "Welke Nederlandse schilder maakte De Sterrennacht?", "answer": "Vincent van Gogh" },
-    { "question": "Welk continent is het droogste ter wereld?", "answer": "Antarctica" },
-    { "question": "Wat is de officiële taal van China?", "answer": "Mandarijn" },
-    { "question": "Welk knaagdier staat bekend om het bouwen van dammen?", "answer": "De bever" },
-    { "question": "Welke planeet staat het dichtst bij de zon?", "answer": "Mercurius" },
-    { "question": "Welk schaakstuk kan alleen diagonaal bewegen?", "answer": "De loper" },
-    { "question": "Welke Griekse godin van de jacht is de tweelingzus van Apollo?", "answer": "Artemis" },
-    { "question": "Welke schrijver bedacht De Hobbit en In de Ban van de Ring?", "answer": "J.R.R. Tolkien" },
-    { "question": "Welk land werd in 2010 wereldkampioen voetbal?", "answer": "Spanje" },
-    { "question": "Welke kleur staat traditioneel symbool voor onschuld?", "answer": "Wit" }
+    {
+      "question": "Wie schreef het toneelstuk Romeo en Julia?",
+      "answer": "William Shakespeare"
+    },
+    {
+      "question": "Welke Franse koning werd ook wel de Zonnekoning genoemd?",
+      "answer": "Lodewijk XIV"
+    },
+    {
+      "question": "Welke vulkaan ligt op een eiland ten noorden van Sicilië en is bijna constant actief?",
+      "answer": "Stromboli"
+    },
+    {
+      "question": "In welk jaar begon de Franse Revolutie?",
+      "answer": "1789"
+    },
+    {
+      "question": "Welke Amerikaanse popart-kunstenaar maakte de zeefdrukken van Marilyn Monroe?",
+      "answer": "Andy Warhol"
+    },
+    {
+      "question": "Wat is het langste bot in het menselijk lichaam?",
+      "answer": "Het dijbeen"
+    },
+    {
+      "question": "Wat is de munteenheid van Zweden?",
+      "answer": "Zweedse kroon"
+    },
+    {
+      "question": "Wie was de eerste vrouw die een Nobelprijs won?",
+      "answer": "Marie Curie"
+    },
+    {
+      "question": "Welke Britse koningin regeerde van 1952 tot 2022?",
+      "answer": "Elizabeth II"
+    },
+    {
+      "question": "Welk land is wereldwijd de grootste exporteur van koffie?",
+      "answer": "Brazilië"
+    },
+    {
+      "question": "Wat is de hoofdstad van Kenia?",
+      "answer": "Nairobi"
+    },
+    {
+      "question": "Welke Britse schrijver bedacht James Bond?",
+      "answer": "Ian Fleming"
+    },
+    {
+      "question": "Welke planeet is bekend om zijn opvallende ringen?",
+      "answer": "Saturnus"
+    },
+    {
+      "question": "Welke wetenschapper formuleerde de relativiteitstheorie?",
+      "answer": "Albert Einstein"
+    },
+    {
+      "question": "Welke Italiaanse stad staat bekend om haar gondels?",
+      "answer": "Venetië"
+    },
+    {
+      "question": "Wat is de hoogste berg van Afrika?",
+      "answer": "Kilimanjaro"
+    },
+    {
+      "question": "Welke Britse band bracht het album Abbey Road uit?",
+      "answer": "The Beatles"
+    },
+    {
+      "question": "Welke Spaanse architect ontwierp de Sagrada Família?",
+      "answer": "Antoni Gaudí"
+    },
+    {
+      "question": "In welk land staat de Akropolis?",
+      "answer": "Griekenland"
+    },
+    {
+      "question": "Welk dier symboliseert traditioneel wijsheid in de westerse cultuur?",
+      "answer": "De uil"
+    },
+    {
+      "question": "Welke Nederlandse schilder maakte De Sterrennacht?",
+      "answer": "Vincent van Gogh"
+    },
+    {
+      "question": "Welk continent is het droogste ter wereld?",
+      "answer": "Antarctica"
+    },
+    {
+      "question": "Wat is de officiële taal van China?",
+      "answer": "Mandarijn"
+    },
+    {
+      "question": "Welk knaagdier staat bekend om het bouwen van dammen?",
+      "answer": "De bever"
+    },
+    {
+      "question": "Welke planeet staat het dichtst bij de zon?",
+      "answer": "Mercurius"
+    },
+    {
+      "question": "Welk schaakstuk kan alleen diagonaal bewegen?",
+      "answer": "De loper"
+    },
+    {
+      "question": "Welke Griekse godin van de jacht is de tweelingzus van Apollo?",
+      "answer": "Artemis"
+    },
+    {
+      "question": "Welke schrijver bedacht De Hobbit en In de Ban van de Ring?",
+      "answer": "J.R.R. Tolkien"
+    },
+    {
+      "question": "Welk land werd in 2010 wereldkampioen voetbal?",
+      "answer": "Spanje"
+    },
+    {
+      "question": "Welke kleur staat traditioneel symbool voor onschuld?",
+      "answer": "Wit"
+    }
   ]
 }

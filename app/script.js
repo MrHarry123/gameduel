@@ -152,7 +152,7 @@ function renderSelectScreen() {
 
     const mode = game.mode || "classic";
     const itemLabel = mode === "statements" ? "stellingen" : "vragen";
-    const newBadge = game.locked ? "" : `<span class="game-new-badge">Nieuw</span>`;
+    const newBadge = (game.locked || game.launched) ? "" : `<span class="game-new-badge">Nieuw</span>`;
 
     const card = document.createElement("button");
     card.className = `game-card status-${status.state}`;

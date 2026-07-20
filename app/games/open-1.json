@@ -3,36 +3,127 @@
   "title": "Open vragen 1",
   "emoji": "💬",
   "mode": "open",
+  "launched": true,
   "questions": [
-    { "question": "Wat is de hoofdstad van Australië?", "answer": "Canberra" },
-    { "question": "Welke planeet wordt ook wel de Rode Planeet genoemd?", "answer": "Mars" },
-    { "question": "Wie schreef het boek 1984?", "answer": "George Orwell" },
-    { "question": "In welk land staan de piramides van Gizeh?", "answer": "Egypte" },
-    { "question": "Wat is de langste rivier van Europa?", "answer": "De Wolga" },
-    { "question": "Wie schilderde De Schreeuw?", "answer": "Edvard Munch" },
-    { "question": "Welk zoogdier kan actief vliegen?", "answer": "De vleermuis" },
-    { "question": "Welke band bracht het nummer Bohemian Rhapsody uit?", "answer": "Queen" },
-    { "question": "Welk element heeft het scheikundig symbool Ag?", "answer": "Zilver" },
-    { "question": "In welk jaar zette de mens voor het eerst voet op de maan?", "answer": "1969" },
-    { "question": "Welk landdier is het hoogste ter wereld?", "answer": "Giraf" },
-    { "question": "Wie was de eerste president van de Verenigde Staten?", "answer": "George Washington" },
-    { "question": "Welke Griekse godin staat symbool voor liefde en schoonheid?", "answer": "Aphrodite" },
-    { "question": "Wat is de munteenheid van Japan?", "answer": "Yen" },
-    { "question": "Welke Italiaanse componist schreef De Vier Jaargetijden?", "answer": "Antonio Vivaldi" },
-    { "question": "Welk metaal heeft het scheikundig symbool Cu?", "answer": "Koper" },
-    { "question": "In welk land ligt de stad Casablanca?", "answer": "Marokko" },
-    { "question": "Met welke kleine veren bal speel je badminton?", "answer": "Een shuttle" },
-    { "question": "Welke oceaan is de kleinste ter wereld?", "answer": "Noordelijke IJszee" },
-    { "question": "Welke Franse beeldhouwer maakte het beeld De Denker?", "answer": "Auguste Rodin" },
-    { "question": "Hoeveel poten heeft een spin?", "answer": "Acht" },
-    { "question": "Welke kleur ontstaat als je rood en blauw mengt?", "answer": "Paars" },
-    { "question": "Welke Britse schrijver bedacht het personage Sherlock Holmes?", "answer": "Arthur Conan Doyle" },
-    { "question": "Welk Aziatisch land staat bekend als 'het land van de rijzende zon'?", "answer": "Japan" },
-    { "question": "Welke Engelse natuurkundige formuleerde de drie bewegingswetten?", "answer": "Isaac Newton" },
-    { "question": "Op welk continent ligt het Amazonewoud?", "answer": "Zuid-Amerika" },
-    { "question": "Welke Italiaanse dichter schreef De Goddelijke Komedie?", "answer": "Dante Alighieri" },
-    { "question": "Welke vis kan een sterke elektrische schok geven?", "answer": "De sidderaal" },
-    { "question": "Welke kleur heeft het bloed van een octopus?", "answer": "Blauw" },
-    { "question": "Welk klassiek toetsinstrument heeft 88 toetsen?", "answer": "De piano" }
+    {
+      "question": "Wat is de hoofdstad van Australië?",
+      "answer": "Canberra"
+    },
+    {
+      "question": "Welke planeet wordt ook wel de Rode Planeet genoemd?",
+      "answer": "Mars"
+    },
+    {
+      "question": "Wie schreef het boek 1984?",
+      "answer": "George Orwell"
+    },
+    {
+      "question": "In welk land staan de piramides van Gizeh?",
+      "answer": "Egypte"
+    },
+    {
+      "question": "Wat is de langste rivier van Europa?",
+      "answer": "De Wolga"
+    },
+    {
+      "question": "Wie schilderde De Schreeuw?",
+      "answer": "Edvard Munch"
+    },
+    {
+      "question": "Welk zoogdier kan actief vliegen?",
+      "answer": "De vleermuis"
+    },
+    {
+      "question": "Welke band bracht het nummer Bohemian Rhapsody uit?",
+      "answer": "Queen"
+    },
+    {
+      "question": "Welk element heeft het scheikundig symbool Ag?",
+      "answer": "Zilver"
+    },
+    {
+      "question": "In welk jaar zette de mens voor het eerst voet op de maan?",
+      "answer": "1969"
+    },
+    {
+      "question": "Welk landdier is het hoogste ter wereld?",
+      "answer": "Giraf"
+    },
+    {
+      "question": "Wie was de eerste president van de Verenigde Staten?",
+      "answer": "George Washington"
+    },
+    {
+      "question": "Welke Griekse godin staat symbool voor liefde en schoonheid?",
+      "answer": "Aphrodite"
+    },
+    {
+      "question": "Wat is de munteenheid van Japan?",
+      "answer": "Yen"
+    },
+    {
+      "question": "Welke Italiaanse componist schreef De Vier Jaargetijden?",
+      "answer": "Antonio Vivaldi"
+    },
+    {
+      "question": "Welk metaal heeft het scheikundig symbool Cu?",
+      "answer": "Koper"
+    },
+    {
+      "question": "In welk land ligt de stad Casablanca?",
+      "answer": "Marokko"
+    },
+    {
+      "question": "Met welke kleine veren bal speel je badminton?",
+      "answer": "Een shuttle"
+    },
+    {
+      "question": "Welke oceaan is de kleinste ter wereld?",
+      "answer": "Noordelijke IJszee"
+    },
+    {
+      "question": "Welke Franse beeldhouwer maakte het beeld De Denker?",
+      "answer": "Auguste Rodin"
+    },
+    {
+      "question": "Hoeveel poten heeft een spin?",
+      "answer": "Acht"
+    },
+    {
+      "question": "Welke kleur ontstaat als je rood en blauw mengt?",
+      "answer": "Paars"
+    },
+    {
+      "question": "Welke Britse schrijver bedacht het personage Sherlock Holmes?",
+      "answer": "Arthur Conan Doyle"
+    },
+    {
+      "question": "Welk Aziatisch land staat bekend als 'het land van de rijzende zon'?",
+      "answer": "Japan"
+    },
+    {
+      "question": "Welke Engelse natuurkundige formuleerde de drie bewegingswetten?",
+      "answer": "Isaac Newton"
+    },
+    {
+      "question": "Op welk continent ligt het Amazonewoud?",
+      "answer": "Zuid-Amerika"
+    },
+    {
+      "question": "Welke Italiaanse dichter schreef De Goddelijke Komedie?",
+      "answer": "Dante Alighieri"
+    },
+    {
+      "question": "Welke vis kan een sterke elektrische schok geven?",
+      "answer": "De sidderaal"
+    },
+    {
+      "question": "Welke kleur heeft het bloed van een octopus?",
+      "answer": "Blauw"
+    },
+    {
+      "question": "Welk klassiek toetsinstrument heeft 88 toetsen?",
+      "answer": "De piano"
+    }
   ]
 }

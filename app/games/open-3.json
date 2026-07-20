@@ -3,36 +3,127 @@
   "title": "Open vragen 3",
   "emoji": "🎙️",
   "mode": "open",
+  "launched": true,
   "questions": [
-    { "question": "Welke wetenschapper ontdekte penicilline?", "answer": "Alexander Fleming" },
-    { "question": "In welk jaar werd Nelson Mandela vrijgelaten uit de gevangenis?", "answer": "1990" },
-    { "question": "Welke planeet heeft de maan Triton als grootste satelliet?", "answer": "Neptunus" },
-    { "question": "Wat is de chemische formule van keukenzout?", "answer": "NaCl" },
-    { "question": "In welke teamsport wordt gespeeld met een ovale bal?", "answer": "Rugby" },
-    { "question": "Welk land won als gastland het WK voetbal in 1998?", "answer": "Frankrijk" },
-    { "question": "Welk gas vormt ongeveer 78 procent van de aardatmosfeer?", "answer": "Stikstof" },
-    { "question": "Welke Zwitserse tennisser won acht keer Wimbledon?", "answer": "Roger Federer" },
-    { "question": "Welk orgaan in het menselijk lichaam produceert insuline?", "answer": "De alvleesklier" },
-    { "question": "Welke planeet rolt als enige als een tol op zijn zij om de zon?", "answer": "Uranus" },
-    { "question": "Op welk Amerikaans muziekfestival speelde Jimi Hendrix in 1969?", "answer": "Woodstock" },
-    { "question": "Wie vroeg in 1876 patent aan op de telefoon?", "answer": "Alexander Graham Bell" },
-    { "question": "Welk land was gastheer van de Olympische Spelen in 2008?", "answer": "China" },
-    { "question": "Welke Britse wetenschapper formuleerde de evolutietheorie?", "answer": "Charles Darwin" },
-    { "question": "Wat is het kleinste onafhankelijke land ter wereld?", "answer": "Vaticaanstad" },
-    { "question": "Welk kleurig boogfenomeen ontstaat door licht in regendruppels?", "answer": "De regenboog" },
-    { "question": "In welke vechtsport spelen twee atleten in een ring met handschoenen?", "answer": "Boksen" },
-    { "question": "Welk metaal is bij kamertemperatuur vloeibaar?", "answer": "Kwik" },
-    { "question": "Welke Amerikaanse uitvinder wordt geassocieerd met de gloeilamp?", "answer": "Thomas Edison" },
-    { "question": "Hoe heet het proces waarbij planten met zonlicht suikers maken?", "answer": "Fotosynthese" },
-    { "question": "Wat is het kleinste bot in het menselijk lichaam?", "answer": "Stijgbeugel" },
-    { "question": "In welke Amerikaanse sport speelt elk team negen spelers in het veld?", "answer": "Honkbal" },
-    { "question": "Welk hemellichaam is de belangrijkste oorzaak van eb en vloed?", "answer": "De maan" },
-    { "question": "Welk tennistoernooi wordt traditioneel op gras gespeeld?", "answer": "Wimbledon" },
-    { "question": "Hoeveel ribben heeft een mens normaal gesproken?", "answer": "24" },
-    { "question": "Welke Argentijnse voetballer won meermaals de Ballon d'Or?", "answer": "Lionel Messi" },
-    { "question": "Welke Britse wetenschapper bepaalde samen met James Watson de structuur van DNA?", "answer": "Francis Crick" },
-    { "question": "Welke wetenschap bestudeert het weer?", "answer": "Meteorologie" },
-    { "question": "Welke Spaanse stad is bekend om de onvoltooide kerk Sagrada Família?", "answer": "Barcelona" },
-    { "question": "Welke Britse natuurkundige werd beroemd door zijn onderzoek naar zwarte gaten?", "answer": "Stephen Hawking" }
+    {
+      "question": "Welke wetenschapper ontdekte penicilline?",
+      "answer": "Alexander Fleming"
+    },
+    {
+      "question": "In welk jaar werd Nelson Mandela vrijgelaten uit de gevangenis?",
+      "answer": "1990"
+    },
+    {
+      "question": "Welke planeet heeft de maan Triton als grootste satelliet?",
+      "answer": "Neptunus"
+    },
+    {
+      "question": "Wat is de chemische formule van keukenzout?",
+      "answer": "NaCl"
+    },
+    {
+      "question": "In welke teamsport wordt gespeeld met een ovale bal?",
+      "answer": "Rugby"
+    },
+    {
+      "question": "Welk land won als gastland het WK voetbal in 1998?",
+      "answer": "Frankrijk"
+    },
+    {
+      "question": "Welk gas vormt ongeveer 78 procent van de aardatmosfeer?",
+      "answer": "Stikstof"
+    },
+    {
+      "question": "Welke Zwitserse tennisser won acht keer Wimbledon?",
+      "answer": "Roger Federer"
+    },
+    {
+      "question": "Welk orgaan in het menselijk lichaam produceert insuline?",
+      "answer": "De alvleesklier"
+    },
+    {
+      "question": "Welke planeet rolt als enige als een tol op zijn zij om de zon?",
+      "answer": "Uranus"
+    },
+    {
+      "question": "Op welk Amerikaans muziekfestival speelde Jimi Hendrix in 1969?",
+      "answer": "Woodstock"
+    },
+    {
+      "question": "Wie vroeg in 1876 patent aan op de telefoon?",
+      "answer": "Alexander Graham Bell"
+    },
+    {
+      "question": "Welk land was gastheer van de Olympische Spelen in 2008?",
+      "answer": "China"
+    },
+    {
+      "question": "Welke Britse wetenschapper formuleerde de evolutietheorie?",
+      "answer": "Charles Darwin"
+    },
+    {
+      "question": "Wat is het kleinste onafhankelijke land ter wereld?",
+      "answer": "Vaticaanstad"
+    },
+    {
+      "question": "Welk kleurig boogfenomeen ontstaat door licht in regendruppels?",
+      "answer": "De regenboog"
+    },
+    {
+      "question": "In welke vechtsport spelen twee atleten in een ring met handschoenen?",
+      "answer": "Boksen"
+    },
+    {
+      "question": "Welk metaal is bij kamertemperatuur vloeibaar?",
+      "answer": "Kwik"
+    },
+    {
+      "question": "Welke Amerikaanse uitvinder wordt geassocieerd met de gloeilamp?",
+      "answer": "Thomas Edison"
+    },
+    {
+      "question": "Hoe heet het proces waarbij planten met zonlicht suikers maken?",
+      "answer": "Fotosynthese"
+    },
+    {
+      "question": "Wat is het kleinste bot in het menselijk lichaam?",
+      "answer": "Stijgbeugel"
+    },
+    {
+      "question": "In welke Amerikaanse sport speelt elk team negen spelers in het veld?",
+      "answer": "Honkbal"
+    },
+    {
+      "question": "Welk hemellichaam is de belangrijkste oorzaak van eb en vloed?",
+      "answer": "De maan"
+    },
+    {
+      "question": "Welk tennistoernooi wordt traditioneel op gras gespeeld?",
+      "answer": "Wimbledon"
+    },
+    {
+      "question": "Hoeveel ribben heeft een mens normaal gesproken?",
+      "answer": "24"
+    },
+    {
+      "question": "Welke Argentijnse voetballer won meermaals de Ballon d'Or?",
+      "answer": "Lionel Messi"
+    },
+    {
+      "question": "Welke Britse wetenschapper bepaalde samen met James Watson de structuur van DNA?",
+      "answer": "Francis Crick"
+    },
+    {
+      "question": "Welke wetenschap bestudeert het weer?",
+      "answer": "Meteorologie"
+    },
+    {
+      "question": "Welke Spaanse stad is bekend om de onvoltooide kerk Sagrada Família?",
+      "answer": "Barcelona"
+    },
+    {
+      "question": "Welke Britse natuurkundige werd beroemd door zijn onderzoek naar zwarte gaten?",
+      "answer": "Stephen Hawking"
+    }
   ]
 }

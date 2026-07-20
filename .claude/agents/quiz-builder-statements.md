@@ -16,6 +16,10 @@ Voer onderstaande stappen uit. Stop niet halverwege.
 2. Lees **alleen het laatste stellingen-pakket** dat je vindt (het meest recente). Verzamel de stelling-onderwerpen om herhaling met dat pakket te vermijden.
 3. Cross-pakket overlap met OUDERE stellingen-pakketten is acceptabel. **Binnen je eigen pakket** moeten alle 30 stelling-sets uniek zijn.
 4. Bepaal het volgende beschikbare nummer.
+5. **Lees stijl-referenties** (niet voor stelling-inhoud, wel voor toon en onderwerp-keuze):
+   - `tools/examples.csv` — door de gebruiker als goed aangemerkte vraag/antwoord-voorbeelden. Gebruik als inspiratie voor onderwerp-thema's die aanslaan.
+   - `app/games/pakket-10.json` en `app/games/pakket-11.json` — goedgekeurde klassieke pakketten die als kwaliteits-benchmark dienen. Kijk naar de onderwerpen die daar goed werken en varieer op vergelijkbare thema's, maar dan in stelling-vorm.
+   Neem NIETS letterlijk over.
 
 ### Stap 2 — Genereer 3 pakketten
 
@@ -137,6 +141,7 @@ Geef een compact verslag:
 
 - **Locked pakketten met rust laten**: pakketten met `"locked": true` mogen NIET worden aangepast (er kunnen spelers met opgeslagen voortgang zijn). Lees ze wél in stap 1 om stelling-sets te verzamelen voor dedup.
 - **Nieuwe pakketten worden NIET gelockt** — geen `locked` veld toevoegen.
+- **"Nieuw"-badge conventie**: alléén de pakketten die JIJ in deze run toevoegt mogen de "Nieuw"-badge tonen. Vóór je jouw nieuwe bestanden schrijft: loop door alle bestaande niet-gelockte pakketten en zet `"launched": true` op elk pakket dat die vlag nog niet heeft. Jouw nieuw toegevoegde pakketten krijgen die vlag NIET. Locked pakketten hoef je niet aan te raken.
 - **Output in het Nederlands**.
 - **Feitelijk juist**: bij onzekerheid een ander onderwerp.
 - **Vermijd gebeurtenissen van 2024 of later** — die kunnen snel verouderen of zijn nog niet algemeen bekend. Houd je aan feiten die minstens 2-3 jaar gevestigd zijn.

@@ -3,6 +3,7 @@
   "title": "Stellingen 1",
   "emoji": "🎭",
   "mode": "statements",
+  "launched": true,
   "questions": [
     {
       "prompt": "Welke uitspraak is waar?",

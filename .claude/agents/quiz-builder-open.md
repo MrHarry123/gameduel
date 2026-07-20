@@ -16,6 +16,10 @@ Voer onderstaande stappen uit. Stop niet halverwege.
 2. Lees **alleen het laatste open-vragen-pakket** (of het laatste klassieke pakket als er nog geen open-pakket bestaat) om hun antwoorden te zien.
 3. Verzamel die antwoorden in een "liever niet"-lijst. **Cross-pakket overlap is acceptabel** — spelers spelen 1-2 pakketten per avond. Probeer alleen herhaling met het meest recente pakket te vermijden.
 4. Bepaal het volgende beschikbare open-pakket-nummer (open-1.json, open-2.json, ...).
+5. **Lees stijl-referenties** (niet voor dedup, wel voor toon):
+   - `tools/examples.csv` — door de gebruiker als goed aangemerkte voorbeelden.
+   - `app/games/pakket-10.json` en `app/games/pakket-11.json` — goedgekeurde klassieke pakketten die als kwaliteits-benchmark dienen; alleen de `question`+`answer` velden zijn relevant voor open vragen.
+   Neem NIETS letterlijk over — leen alleen de toon: mix korte directe vragen met vragen die wat context/setup hebben.
 
 ### Stap 2 — Genereer 3 pakketten
 
@@ -95,6 +99,7 @@ Geef een compact verslag:
 - **Locked pakketten met rust laten**: pakketten met `"locked": true` mogen NIET worden aangepast.
 - **Balans-regel**: na het opschonen check je of de 3 pakketten binnen ±2 van elkaar liggen in aantal. Als ze meer dan 4 verschillen, verdeel vragen tussen de nieuwe pakketten. Alle finale aantallen moeten EVEN zijn.
 - **Nieuwe pakketten worden NIET gelockt** — geen `locked` veld toevoegen.
+- **"Nieuw"-badge conventie**: alléén de pakketten die JIJ in deze run toevoegt mogen de "Nieuw"-badge tonen. Vóór je jouw nieuwe bestanden schrijft: loop door alle bestaande niet-gelockte pakketten en zet `"launched": true` op elk pakket dat die vlag nog niet heeft. Jouw nieuw toegevoegde pakketten krijgen die vlag NIET. Locked pakketten hoef je niet aan te raken.
 - **Output in het Nederlands** — content en rapport.
 - **Vermijd gebeurtenissen van 2024 of later** — die verouderen snel of zijn nog niet algemeen bekend. Houd je aan feiten die minstens 2-3 jaar gevestigd zijn.
 - **Vermijd Nederland-only trivia** tenzij relevant; houd het breed.

@@ -1,4 +1,4 @@
-const CACHE_NAME = "quiz-duel-v44";
+const CACHE_NAME = "quiz-duel-v45";
 
 // Bestanden die altijd vers gehaald moeten worden bij internet (app shell).
 // Bij offline: fallback naar cache. Zonder deze regel zie je in een iOS PWA
