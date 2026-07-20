@@ -1,0 +1,308 @@
+{
+  "id": "pakket-10",
+  "title": "Pakket 10",
+  "emoji": "🎰",
+  "mode": "classic",
+  "questions": [
+    {
+      "question": "In welk jaar viel de Berlijnse Muur?",
+      "answer": "1989",
+      "hints": [
+        "Eind jaren tachtig van de twintigste eeuw",
+        "Datzelfde jaar demonstreerden studenten op het Tiananmenplein",
+        "Tsjecho-Slowakije doorstond datzelfde jaar de Fluwelen Revolutie",
+        "Eindigt op een negen"
+      ]
+    },
+    {
+      "question": "Welke Egyptische farao is bekend van zijn intacte grafkamer, ontdekt in 1922?",
+      "answer": "Toetanchamon",
+      "hints": [
+        "Een jonge farao uit de 18e dynastie",
+        "Regeerde slechts negen jaar en stierf zeer jong",
+        "Zijn gouden dodenmasker is wereldberoemd",
+        "Begint met een T en telt twaalf letters"
+      ]
+    },
+    {
+      "question": "In 1517 spijkerde deze Duitse theoloog volgens overlevering zijn 95 stellingen op een kerkdeur in Wittenberg, wat het startsein werd voor de Reformatie. Om wie gaat het?",
+      "answer": "Maarten Luther",
+      "hints": [
+        "Was augustijner monnik en Bijbelvertaler",
+        "Vertaalde de Bijbel in het Duits van gewone mensen",
+        "Zijn naam werd later verbonden aan een protestantse stroming",
+        "Voornaam telt zeven letters, achternaam zes"
+      ]
+    },
+    {
+      "question": "Welke Amerikaanse president werd op 22 november 1963 in Dallas doodgeschoten?",
+      "answer": "John F. Kennedy",
+      "hints": [
+        "Regeerde tijdens de Cubacrisis",
+        "Katholiek uit een Iers-Amerikaanse familie in Massachusetts",
+        "Zijn broer Bobby werd vijf jaar later ook vermoord",
+        "Initialen J.F.K."
+      ]
+    },
+    {
+      "question": "Welke rivier stroomt door Parijs?",
+      "answer": "Seine",
+      "hints": [
+        "Een Franse rivier van bijna 800 kilometer lang",
+        "Mondt uit in Het Kanaal bij Le Havre",
+        "Meer dan dertig bruggen overspannen deze rivier in de hoofdstad",
+        "Vijf letters, begint met een S"
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Australië?",
+      "answer": "Canberra",
+      "hints": [
+        "Ligt in het zuidoosten van het land",
+        "Niet Sydney of Melbourne, maar een compromis daartussen",
+        "Werd in de 20e eeuw ontworpen als planhoofdstad",
+        "Acht letters, begint met een C"
+      ]
+    },
+    {
+      "question": "In welk gebergte ligt de Mont Blanc?",
+      "answer": "Alpen",
+      "hints": [
+        "Een groot Europees gebergte",
+        "Strekt zich uit over onder meer Zwitserland, Frankrijk en Oostenrijk",
+        "Bevat ook de Matterhorn en de Grossglockner",
+        "Vijf letters, begint met een A"
+      ]
+    },
+    {
+      "question": "Deze eilandengroep in de Stille Oceaan werd wereldberoemd door de bevindingen van een Britse natuuronderzoeker die er in 1835 vinken en reuzenschildpadden bestudeerde. Om welke eilanden gaat het?",
+      "answer": "Galápagos",
+      "hints": [
+        "De eilanden behoren tot een Zuid-Amerikaans land",
+        "Vallen onder Ecuador en liggen op de evenaar",
+        "De naam komt uit het Spaans en verwijst naar reuzenschildpadden",
+        "Begint met de letter G"
+      ]
+    },
+    {
+      "question": "Welk metaal wordt aangeduid met het symbool Au?",
+      "answer": "Goud",
+      "hints": [
+        "Een edelmetaal met een gele glans",
+        "Het symbool komt van het Latijnse woord 'aurum'",
+        "Atoomnummer 79 in het periodiek systeem",
+        "Vier letters, begint met een G"
+      ]
+    },
+    {
+      "question": "Welke bloedgroep wordt beschouwd als de universele donor voor rode bloedcellen?",
+      "answer": "0-negatief",
+      "hints": [
+        "Een van de acht menselijke bloedgroepen",
+        "Bevat geen A- of B-antigenen op de rode bloedcellen",
+        "De resusfactor ontbreekt eveneens",
+        "Een cijfer gevolgd door een minteken"
+      ]
+    },
+    {
+      "question": "Hoeveel botten heeft een volwassen mens gemiddeld?",
+      "answer": "206",
+      "hints": [
+        "Meer dan tweehonderd, minder dan tweehonderdvijftig",
+        "Baby's hebben er meer omdat sommige nog fuseren",
+        "Meer dan de helft zit in handen en voeten",
+        "Een even getal net boven de tweehonderd"
+      ]
+    },
+    {
+      "question": "Hoeveel chromosomen heeft een gezonde menselijke cel?",
+      "answer": "46",
+      "hints": [
+        "Meer dan veertig, minder dan vijftig",
+        "Verdeeld in 23 paren",
+        "Het laatste paar bepaalt het geslacht",
+        "Even getal tussen 40 en 50"
+      ]
+    },
+    {
+      "question": "Wie schreef het boek 1984?",
+      "answer": "George Orwell",
+      "hints": [
+        "Britse schrijver uit de 20e eeuw",
+        "Schreef ook Animal Farm",
+        "Zijn echte naam was Eric Arthur Blair",
+        "Voornaam begint met G en achternaam met O"
+      ]
+    },
+    {
+      "question": "Welke schilder maakte De Sterrennacht?",
+      "answer": "Vincent van Gogh",
+      "hints": [
+        "Nederlandse postimpressionist uit de 19e eeuw",
+        "Verkocht tijdens zijn leven amper werken",
+        "Sneed een deel van zijn oor af tijdens een crisis in Arles",
+        "Initialen V.v.G."
+      ]
+    },
+    {
+      "question": "In welke Italiaanse stad speelt Shakespeares Romeo en Julia zich af?",
+      "answer": "Verona",
+      "hints": [
+        "Een stad in het noorden van Italië, regio Veneto",
+        "Bekend om een Romeinse arena die nog dienst doet als openluchttheater",
+        "Ligt tussen Milaan en Venetië, aan de rivier de Adige",
+        "Zes letters, begint met een V"
+      ]
+    },
+    {
+      "question": "Deze Zweedse schrijfster creëerde een tienjarig meisje met rode vlechten dat superkracht heeft en in villa Kakelbont woont. Wie is de auteur?",
+      "answer": "Astrid Lindgren",
+      "hints": [
+        "Werd geboren in 1907 en overleed in 2002",
+        "Schreef ook over meesterdetective Kalle Blomkwist en Karel de Uitvinder",
+        "Er is een prestigieuze Zweedse literatuurprijs naar haar vernoemd",
+        "Voornaam telt zes letters"
+      ]
+    },
+    {
+      "question": "Welke acteur speelt Jack Sparrow in de Pirates of the Caribbean-films?",
+      "answer": "Johnny Depp",
+      "hints": [
+        "Amerikaanse acteur geboren in 1963",
+        "Werkte veelvuldig samen met regisseur Tim Burton",
+        "Speelde ook Edward Scissorhands en de Mad Hatter",
+        "Voornaam telt zes letters"
+      ]
+    },
+    {
+      "question": "In welke stad speelt de tv-serie Friends zich af?",
+      "answer": "New York",
+      "hints": [
+        "Een grote metropool aan de Amerikaanse oostkust",
+        "Central Perk ligt in dezelfde wijk als Central Park",
+        "De skyline met wolkenkrabbers is wereldberoemd",
+        "Twee woorden, beginnen met N en Y"
+      ]
+    },
+    {
+      "question": "Welke film uit 1997 vertelt een fictieve romance aan boord van een gezonken luxeschip?",
+      "answer": "Titanic",
+      "hints": [
+        "Geregisseerd door James Cameron",
+        "Won elf Oscars, een gedeeld record met Ben-Hur en LOTR",
+        "Bevat het lied My Heart Will Go On van Céline Dion",
+        "Zeven letters, begint met een T"
+      ]
+    },
+    {
+      "question": "Deze Japanse animatiefilm uit 2001 won een Oscar en gaat over een tienjarig meisje dat in een geestenwereld verzeild raakt en werk moet doen in een badhuis. Welke titel heeft de film?",
+      "answer": "Spirited Away",
+      "hints": [
+        "Studio Ghibli-productie van regisseur Hayao Miyazaki",
+        "In het Japans heet de film 'Sen to Chihiro no Kamikakushi'",
+        "Kreeg de Oscar voor beste animatiefilm in 2003",
+        "Twee Engelse woorden, initialen S.A."
+      ]
+    },
+    {
+      "question": "Welke Britse band bracht het album The Dark Side of the Moon uit?",
+      "answer": "Pink Floyd",
+      "hints": [
+        "Progressieve rockband opgericht in de jaren 60",
+        "Andere bekende albums zijn The Wall en Wish You Were Here",
+        "Belangrijkste songwriters waren Roger Waters en David Gilmour",
+        "Twee woorden, telt samen negen letters"
+      ]
+    },
+    {
+      "question": "Welk instrument bespeelde Louis Armstrong voornamelijk?",
+      "answer": "Trompet",
+      "hints": [
+        "Een koperblaasinstrument uit de blaasfamilie",
+        "Wordt bediend met drie ventielen die met de vingers worden ingedrukt",
+        "Vaak gebruikt in jazz, fanfare en klassiek",
+        "Zeven letters, begint met een T"
+      ]
+    },
+    {
+      "question": "Deze Oostenrijkse componist werd in Salzburg geboren, was een wonderkind dat op zesjarige leeftijd al voor keizerin Maria Theresia speelde, en overleed op 35-jarige leeftijd. Om welke componist gaat het?",
+      "answer": "Wolfgang Amadeus Mozart",
+      "hints": [
+        "Componeerde meer dan 600 werken in slechts 35 levensjaren",
+        "Schreef opera's als Die Zauberflöte en Le nozze di Figaro",
+        "Zijn Requiem bleef onvoltooid bij zijn dood",
+        "Initialen W.A.M."
+      ]
+    },
+    {
+      "question": "In welke sport draagt de leider in het klassement de gele trui tijdens de grote ronde van Frankrijk?",
+      "answer": "Wielrennen",
+      "hints": [
+        "Een uithoudingssport op twee wielen",
+        "Grote rondes in Frankrijk, Italië en Spanje zijn de hoogtepunten",
+        "Combineert klimwerk, sprints en tijdritten",
+        "Tien letters, begint met een W"
+      ]
+    },
+    {
+      "question": "Welke Engelse voetbalclub wordt 'The Red Devils' genoemd?",
+      "answer": "Manchester United",
+      "hints": [
+        "De thuisstad ligt in Noordwest-Engeland",
+        "Thuisbasis heet Old Trafford, ook wel 'The Theatre of Dreams'",
+        "Werd van 1986 tot 2013 geleid door de legendarische Sir Alex Ferguson",
+        "Twee woorden, initialen M.U."
+      ]
+    },
+    {
+      "question": "Op welke ondergrond wordt het grandslamtoernooi Roland Garros gespeeld?",
+      "answer": "Gravel",
+      "hints": [
+        "Een van de vier gebruikelijke ondergronden in het tennis",
+        "Roodbruin van kleur",
+        "De bal stuitert er trager en hoger op dan op gras of hardcourt",
+        "Zes letters, begint met een G"
+      ]
+    },
+    {
+      "question": "Welke maand telt in een schrikkeljaar 29 dagen?",
+      "answer": "Februari",
+      "hints": [
+        "De tweede maand van het jaar",
+        "Ligt tussen januari en maart",
+        "Valentijnsdag valt in deze maand",
+        "Acht letters, begint met een F"
+      ]
+    },
+    {
+      "question": "In welke Europese hoofdstad ligt Vaticaanstad?",
+      "answer": "Rome",
+      "hints": [
+        "De hoofdstad van een Zuid-Europees land",
+        "Wordt ook wel 'De Eeuwige Stad' genoemd",
+        "Vroeger het centrum van een groot antiek keizerrijk",
+        "Vier letters, begint met een R"
+      ]
+    },
+    {
+      "question": "Wat betekent het Latijnse 'carpe diem' letterlijk vertaald in het Nederlands?",
+      "answer": "Pluk de dag",
+      "hints": [
+        "Een uitdrukking uit een gedicht van de Romeinse dichter Horatius",
+        "Spoort aan om het heden te benutten en niet uit te stellen",
+        "In het Nederlands bestaat de vertaling uit drie woorden",
+        "Drie woorden, begint met een P"
+      ]
+    },
+    {
+      "question": "Deze Nederlandse traditie kent een figuur die volgens de folklore uit Spanje komt, op een schimmel rijdt en op 5 december cadeaus brengt via de schoorsteen. Wie is de hoofdfiguur?",
+      "answer": "Sinterklaas",
+      "hints": [
+        "Wordt afgebeeld met een lange rode mantel en een mijter",
+        "Is gebaseerd op de vierde-eeuwse bisschop Nicolaas van Myra",
+        "Beschermheilige van kinderen en zeelieden",
+        "Elf letters, begint met een S"
+      ]
+    }
+  ]
+}

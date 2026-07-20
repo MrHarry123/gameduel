@@ -7,6 +7,7 @@ const state = {
     games: {},
     namesConfirmed: false,
     activeTab: "classic",
+    nextAskerIndex: 0,
   },
   currentGame: null,
   turn: {
@@ -46,6 +47,7 @@ function loadSaved() {
         games: parsed.games || {},
         namesConfirmed: parsed.namesConfirmed === true,
         activeTab: parsed.activeTab || "classic",
+        nextAskerIndex: parsed.nextAskerIndex === 1 ? 1 : 0,
       };
     }
   } catch (e) {
@@ -69,15 +71,17 @@ function ensureGameState(game) {
   let gs = state.saved.games[game.id];
   if (!gs) {
     const indices = game.questions.map((_, i) => i);
+    const askerIndex = state.saved.nextAskerIndex === 1 ? 1 : 0;
     gs = {
       shuffledOrder: shuffle(indices),
       currentIndex: 0,
       scores: [0, 0],
-      askerIndex: Math.random() < 0.5 ? 0 : 1,
+      askerIndex,
       completed: false,
       winner: null,
     };
     state.saved.games[game.id] = gs;
+    state.saved.nextAskerIndex = 1 - askerIndex;
     persist();
   }
   return gs;
@@ -390,6 +394,8 @@ function resetAll() {
     players: ["Speler 1", "Speler 2"],
     games: {},
     namesConfirmed: false,
+    activeTab: "classic",
+    nextAskerIndex: 0,
   };
   persist();
   initStartScreen();
