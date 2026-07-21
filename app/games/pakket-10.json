@@ -3,6 +3,7 @@
   "title": "Pakket 10",
   "emoji": "🎰",
   "mode": "classic",
+  "launched": true,
   "questions": [
     {
       "question": "In welk jaar viel de Berlijnse Muur?",

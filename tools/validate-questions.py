@@ -171,7 +171,7 @@ def validate_pakket(path):
             all_ids[pid] = pakket_id
 
     mode = data.get("mode", "classic")
-    if mode not in ("classic", "statements", "open"):
+    if mode not in ("classic", "statements", "open", "open-hints"):
         err(pakket_id, f"onbekende mode '{mode}'")
 
     questions = data.get("questions")
@@ -216,7 +216,7 @@ def validate_pakket(path):
         if mode == "statements":
             validate_statements(pid or pakket_id, idx, item)
         else:
-            if mode == "open":
+            if mode in ("open", "open-hints"):
                 validate_open(pid or pakket_id, idx, item)
             else:
                 validate_classic(pid or pakket_id, idx, item)

@@ -50,6 +50,7 @@
 
       <nav class="games-tabs" id="games-tabs">
         <button class="games-tab" data-tab="classic">Hints</button>
+        <button class="games-tab" data-tab="open-hints">Open Hints</button>
         <button class="games-tab" data-tab="open">Open vragen</button>
         <button class="games-tab" data-tab="statements">Stellingen</button>
       </nav>
@@ -63,6 +64,15 @@
             <li>Niet beantwoord? Geen punten.</li>
           </ul>
           <div class="games-grid" id="games-grid-classic"></div>
+        </section>
+        <section class="games-section" id="games-section-open-hints" hidden>
+          <ul class="games-section-rules">
+            <li>Je stelt om de beurt een vraag en verzint <strong>zelf</strong> tot 4 hints.</li>
+            <li>Beantwoord in 1 keer goed: <strong>5 punten</strong>.</li>
+            <li>Elke hint die je geeft kost <strong>1 punt</strong> (tik op de hint-knop om af te tellen).</li>
+            <li>Niet beantwoord? Geen punten.</li>
+          </ul>
+          <div class="games-grid" id="games-grid-open-hints"></div>
         </section>
         <section class="games-section" id="games-section-open" hidden>
           <ul class="games-section-rules">

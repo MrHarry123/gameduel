@@ -755,6 +755,15 @@ body::before {
   gap: 10px;
 }
 
+/* Sequential mode (open-hints): één knop per keer zichtbaar, full-width. */
+.hints-grid.sequential {
+  grid-template-columns: 1fr;
+}
+
+.hints-grid .hint-btn.hidden-hint {
+  display: none;
+}
+
 .hint-btn {
   background: var(--bg-card-2);
   border: 2px solid var(--border);
@@ -916,9 +925,15 @@ body::before {
   }
 }
 
-/* ===== Quiz modus-toggle (klassiek / open / stellingen) ===== */
+/* ===== Quiz modus-toggle (klassiek / open-hints / open / stellingen) =====
+   open-hints hergebruikt de classic UI (vraag + antwoord + 4 hint-knoppen). */
 #quiz-screen[data-mode="classic"] .statements-content,
 #quiz-screen[data-mode="classic"] .open-content {
+  display: none;
+}
+
+#quiz-screen[data-mode="open-hints"] .statements-content,
+#quiz-screen[data-mode="open-hints"] .open-content {
   display: none;
 }
 

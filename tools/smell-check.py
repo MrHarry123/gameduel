@@ -335,6 +335,7 @@ def check_pakket(path):
     check_func = {
         "statements": check_statement_item,
         "open": check_open_item,
+        "open-hints": check_open_item,
     }.get(mode, check_classic_item)
     items = data.get("questions", [])
     flagged = []

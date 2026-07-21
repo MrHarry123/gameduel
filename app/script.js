@@ -138,6 +138,7 @@ function renderSelectScreen() {
 
   const grids = {
     classic: document.getElementById("games-grid-classic"),
+    "open-hints": document.getElementById("games-grid-open-hints"),
     open: document.getElementById("games-grid-open"),
     statements: document.getElementById("games-grid-statements"),
   };
@@ -177,7 +178,7 @@ function applyActiveTab() {
   document.querySelectorAll(".games-tab").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.tab === tab);
   });
-  ["classic", "open", "statements"].forEach((m) => {
+  ["classic", "open-hints", "open", "statements"].forEach((m) => {
     document.getElementById(`games-section-${m}`).hidden = m !== tab;
   });
 }
@@ -248,10 +249,14 @@ function startTurn() {
     document.getElementById("fullscreen-question-text").textContent = item.question;
     document.getElementById("open-answer-text").textContent = item.answer;
   } else {
+    // classic + open-hints hergebruiken hetzelfde UI-blok
     document.getElementById("question-text").textContent = item.question;
     document.getElementById("fullscreen-question-text").textContent = item.question;
     document.getElementById("answer-text").textContent = item.answer;
-    renderHints(item.hints);
+    const hints = mode === "open-hints"
+      ? ["Hint 1", "Hint 2", "Hint 3", "Hint 4"]
+      : item.hints;
+    renderHints(hints, { sequential: mode === "open-hints" });
     updatePossiblePoints();
   }
 
@@ -290,12 +295,15 @@ function judgeOpen(correct) {
   showPassScreen();
 }
 
-function renderHints(hints) {
+function renderHints(hints, options = {}) {
   const grid = document.getElementById("hints-grid");
   grid.innerHTML = "";
+  const sequential = options.sequential === true;
+  grid.classList.toggle("sequential", sequential);
   hints.forEach((hint, idx) => {
     const btn = document.createElement("button");
     btn.className = "hint-btn";
+    if (sequential && idx > 0) btn.classList.add("hidden-hint");
     btn.innerHTML = `<span class="hint-number">${idx + 1}</span><span class="hint-text">${hint}</span>`;
     btn.addEventListener("click", () => revealHint(btn));
     grid.appendChild(btn);
@@ -307,6 +315,13 @@ function revealHint(btn) {
   btn.classList.add("revealed");
   state.turn.hintsUsed++;
   updatePossiblePoints();
+  const grid = document.getElementById("hints-grid");
+  if (grid.classList.contains("sequential")) {
+    // Verberg de zojuist gebruikte hint en toon de volgende (indien aanwezig)
+    btn.classList.add("hidden-hint");
+    const next = grid.querySelector(".hint-btn.hidden-hint:not(.revealed)");
+    if (next) next.classList.remove("hidden-hint");
+  }
 }
 
 function updatePossiblePoints() {
