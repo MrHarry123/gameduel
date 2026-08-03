@@ -1,4 +1,4 @@
-const CACHE_NAME = "quiz-duel-v48";
+const CACHE_NAME = "quiz-duel-v49";
 
 // Bestanden die altijd vers gehaald moeten worden bij internet (app shell).
 // Bij offline: fallback naar cache. Zonder deze regel zie je in een iOS PWA
@@ -39,6 +39,12 @@ const ASSETS = [
   "./games/open-hints-1.json",
   "./games/open-hints-2.json",
   "./games/open-hints-3.json",
+  "./games/open-hints-4.json",
+  "./games/open-hints-5.json",
+  "./games/open-hints-6.json",
+  "./games/open-hints-7.json",
+  "./games/open-hints-8.json",
+  "./games/open-hints-9.json",
 ];
 
 self.addEventListener("install", (event) => {

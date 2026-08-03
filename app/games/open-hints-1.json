@@ -3,6 +3,7 @@
   "title": "Open Hints 1",
   "emoji": "🎤",
   "mode": "open-hints",
+  "launched": true,
   "questions": [
     {
       "question": "Wie schilderde het plafond van de Sixtijnse Kapel?",
