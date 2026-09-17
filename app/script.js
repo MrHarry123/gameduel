@@ -136,18 +136,9 @@ function renderSelectScreen() {
   const [p1, p2] = state.saved.players;
   document.getElementById("select-subtitle").textContent = `${p1} vs ${p2}`;
 
-  // Aantal gewonnen pakketten per speler. Gelijkspel telt voor niemand mee.
-  // Loopt over ALLE gespeelde pakketten incl. gearchiveerde.
-  let total1 = 0, total2 = 0;
-  for (const gs of Object.values(state.saved.games || {})) {
-    if (!gs || !gs.completed) continue;
-    if (gs.winner === p1) total1 += 1;
-    else if (gs.winner === p2) total2 += 1;
-  }
   document.getElementById("total-name-1").textContent = p1;
   document.getElementById("total-name-2").textContent = p2;
-  document.getElementById("total-score-1").textContent = total1;
-  document.getElementById("total-score-2").textContent = total2;
+  updateTotalScores();
 
   const grids = {
     classic: document.getElementById("games-grid-classic"),
@@ -186,6 +177,32 @@ function renderSelectScreen() {
   applyActiveTab();
 }
 
+function modeFromGameId(id) {
+  if (typeof id !== "string") return null;
+  if (id.startsWith("open-hints-")) return "open-hints";
+  if (id.startsWith("open-")) return "open";
+  if (id.startsWith("stellingen-")) return "statements";
+  if (id.startsWith("dobbel-")) return "dice";
+  if (id.startsWith("pakket-")) return "classic";
+  return null;
+}
+
+function updateTotalScores() {
+  const tab = state.saved.activeTab || "classic";
+  const [p1, p2] = state.saved.players;
+  let wins1 = 0, wins2 = 0;
+  for (const [id, gs] of Object.entries(state.saved.games || {})) {
+    if (!gs || !gs.completed) continue;
+    if (modeFromGameId(id) !== tab) continue;
+    if (gs.winner === p1) wins1 += 1;
+    else if (gs.winner === p2) wins2 += 1;
+  }
+  const s1 = document.getElementById("total-score-1");
+  const s2 = document.getElementById("total-score-2");
+  if (s1) s1.textContent = wins1;
+  if (s2) s2.textContent = wins2;
+}
+
 function applyActiveTab() {
   let tab = state.saved.activeTab || "classic";
   // Als de tab in de UI verborgen is (bv. Stellingen tijdelijk uit), val terug op classic.
@@ -201,6 +218,7 @@ function applyActiveTab() {
   ["classic", "open-hints", "open", "statements"].forEach((m) => {
     document.getElementById(`games-section-${m}`).hidden = m !== tab;
   });
+  updateTotalScores();
 }
 
 function setActiveTab(tab) {
