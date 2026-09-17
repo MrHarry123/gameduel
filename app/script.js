@@ -136,13 +136,13 @@ function renderSelectScreen() {
   const [p1, p2] = state.saved.players;
   document.getElementById("select-subtitle").textContent = `${p1} vs ${p2}`;
 
-  // Totaalscores over ALLE pakketten die ooit gespeeld zijn (incl. gearchiveerde).
+  // Aantal gewonnen pakketten per speler. Gelijkspel telt voor niemand mee.
+  // Loopt over ALLE gespeelde pakketten incl. gearchiveerde.
   let total1 = 0, total2 = 0;
   for (const gs of Object.values(state.saved.games || {})) {
-    if (gs && Array.isArray(gs.scores)) {
-      total1 += Number(gs.scores[0]) || 0;
-      total2 += Number(gs.scores[1]) || 0;
-    }
+    if (!gs || !gs.completed) continue;
+    if (gs.winner === p1) total1 += 1;
+    else if (gs.winner === p2) total2 += 1;
   }
   document.getElementById("total-name-1").textContent = p1;
   document.getElementById("total-name-2").textContent = p2;
