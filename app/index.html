@@ -52,8 +52,21 @@
         <button class="games-tab" data-tab="classic">Hints</button>
         <button class="games-tab" data-tab="open-hints">Open Hints</button>
         <button class="games-tab" data-tab="open">Open vragen</button>
-        <button class="games-tab" data-tab="statements">Stellingen</button>
+        <!-- Stellingen-tab tijdelijk verborgen (mode nog actief, verwijder `hidden` om terug te zetten) -->
+        <button class="games-tab" data-tab="statements" hidden>Stellingen</button>
       </nav>
+
+      <div class="total-scores" id="total-scores">
+        <div class="total-score-card">
+          <span class="total-score-name" id="total-name-1">Speler 1</span>
+          <span class="total-score-value" id="total-score-1">0</span>
+        </div>
+        <div class="total-score-divider">vs</div>
+        <div class="total-score-card">
+          <span class="total-score-name" id="total-name-2">Speler 2</span>
+          <span class="total-score-value" id="total-score-2">0</span>
+        </div>
+      </div>
 
       <div id="games-container">
         <section class="games-section" id="games-section-classic" hidden>

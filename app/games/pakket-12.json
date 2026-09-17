@@ -1,0 +1,308 @@
+{
+  "id": "pakket-12",
+  "title": "Pakket 12",
+  "emoji": "🧩",
+  "mode": "classic",
+  "questions": [
+    {
+      "question": "In welk jaar landde de eerste mens op de maan?",
+      "answer": "1969",
+      "hints": [
+        "Eind jaren zestig van de twintigste eeuw",
+        "Datzelfde jaar vond het Woodstock-festival plaats in de staat New York",
+        "Vier jaar voor het definitieve terugtrekken van Amerikaanse troepen uit Vietnam",
+        "Eindigt op een negen"
+      ]
+    },
+    {
+      "question": "Wie was de eerste keizer van het Romeinse Rijk?",
+      "answer": "Augustus",
+      "hints": [
+        "Regeerde vanaf 27 v.Chr. tot zijn dood in 14 n.Chr.",
+        "Aangenomen zoon en erfgenaam van Julius Caesar",
+        "Naar hem is een zomermaand vernoemd",
+        "Acht letters, begint met een A"
+      ]
+    },
+    {
+      "question": "In welk jaar begon de Tweede Wereldoorlog?",
+      "answer": "1939",
+      "hints": [
+        "Eind jaren dertig van de vorige eeuw",
+        "Datzelfde jaar sloten Duitsland en de Sovjet-Unie het Molotov-Ribbentroppact",
+        "Zes jaar voor de bevrijding en het einde van de oorlog",
+        "De middelste twee cijfers vormen samen 93"
+      ]
+    },
+    {
+      "question": "Welke veldheer verloor in 1815 de slag bij Waterloo?",
+      "answer": "Napoleon",
+      "hints": [
+        "Werd geboren op Corsica en groeide uit tot keizer van een groot Europees rijk",
+        "Werd na zijn nederlaag verbannen naar het afgelegen eiland Sint-Helena",
+        "Op klassieke portretten steekt hij zijn rechterhand in zijn vest",
+        "Acht letters, begint met een N"
+      ]
+    },
+    {
+      "question": "Wat is de hoofdstad van Argentinië?",
+      "answer": "Buenos Aires",
+      "hints": [
+        "Ligt aan de brede riviermonding van de Río de la Plata",
+        "Bekend om tangocafés en de kleurrijke wijk La Boca",
+        "Een miljoenenstad aan de oostkust in plaats van in het binnenland",
+        "Twee Spaanse woorden, initialen B.A."
+      ]
+    },
+    {
+      "question": "Op welk continent ligt het grootste deel van de Sahara?",
+      "answer": "Afrika",
+      "hints": [
+        "Het tweede grootste continent qua oppervlakte",
+        "Wordt in het noorden begrensd door de Middellandse Zee",
+        "Bevat landen als Marokko, Egypte, Nigeria en Kenia",
+        "Zes letters, begint met een A"
+      ]
+    },
+    {
+      "question": "Welke oceaan is qua oppervlakte de grootste ter wereld?",
+      "answer": "Stille Oceaan",
+      "hints": [
+        "Beslaat ongeveer een derde van het aardoppervlak",
+        "Wordt in het oosten begrensd door Zuid-Amerika en in het westen door Azië en Australië",
+        "De Marianentrog, het diepste punt op aarde, ligt in deze oceaan",
+        "Twee woorden, initialen S.O."
+      ]
+    },
+    {
+      "question": "In welk land staat de Taj Mahal?",
+      "answer": "India",
+      "hints": [
+        "Een land in Zuid-Azië met meer dan een miljard inwoners",
+        "De grote rivier de Ganges stroomt door dit land",
+        "Hoofdstad is New Delhi, grootste stad Mumbai",
+        "Vijf letters, begint met een I"
+      ]
+    },
+    {
+      "question": "Welke planeet staat het dichtst bij de zon?",
+      "answer": "Mercurius",
+      "hints": [
+        "Een van de vier binnenste rotsachtige planeten",
+        "Heeft nauwelijks atmosfeer en enorme temperatuurverschillen tussen dag en nacht",
+        "Vernoemd naar de Romeinse boodschappergod",
+        "Negen letters, begint met een M"
+      ]
+    },
+    {
+      "question": "Welk metaal is als enige element bij kamertemperatuur vloeibaar?",
+      "answer": "Kwik",
+      "hints": [
+        "Chemisch symbool is Hg, van het Latijnse 'hydrargyrum'",
+        "Vroeger algemeen gebruikt in koortsthermometers en barometers",
+        "Dampen ervan zijn zeer giftig bij inademing",
+        "Vier letters, begint met een K"
+      ]
+    },
+    {
+      "question": "Welk dier is het grootste zoogdier ter wereld?",
+      "answer": "Blauwe vinvis",
+      "hints": [
+        "Een zeezoogdier dat zich vooral voedt met krill",
+        "Kan meer dan dertig meter lang worden en tot 200 ton wegen",
+        "Behoort tot de baleinwalvissen en heeft geen tanden",
+        "Twee woorden, initialen B.V."
+      ]
+    },
+    {
+      "question": "Hoeveel toetsen heeft een standaard piano?",
+      "answer": "88",
+      "hints": [
+        "Meer dan tachtig, minder dan honderd",
+        "Verdeeld over witte en zwarte toetsen in vaste patronen",
+        "Bestrijkt iets meer dan zeven octaven",
+        "Twee gelijke cijfers, hoger dan tachtig"
+      ]
+    },
+    {
+      "question": "Wie schilderde Het Melkmeisje?",
+      "answer": "Johannes Vermeer",
+      "hints": [
+        "Nederlandse meester uit de Gouden Eeuw, geboren in Delft",
+        "Bekend om zijn intieme binnenhuistaferelen met veel natuurlijk licht",
+        "Schilderde ook Meisje met de parel en Het straatje",
+        "Voornaam telt acht letters, achternaam zeven"
+      ]
+    },
+    {
+      "question": "Wie schreef de roman Oorlog en Vrede?",
+      "answer": "Leo Tolstoj",
+      "hints": [
+        "Russische schrijver uit de 19e eeuw",
+        "Schreef ook de tragische roman Anna Karenina",
+        "Woonde op zijn landgoed Jasnaja Poljana ten zuiden van Moskou",
+        "Voornaam telt drie letters, achternaam zeven"
+      ]
+    },
+    {
+      "question": "Welk marmeren beeld van Michelangelo staat in Florence?",
+      "answer": "David",
+      "hints": [
+        "Toont een Bijbelse figuur uit het Oude Testament",
+        "De figuur is naakt afgebeeld, klaar om Goliath te bestrijden",
+        "Staat sinds 1873 in de Galleria dell'Accademia",
+        "Vijf letters, begint met een D"
+      ]
+    },
+    {
+      "question": "Welke Deense schrijver bedacht De Kleine Zeemeermin?",
+      "answer": "Hans Christian Andersen",
+      "hints": [
+        "Sprookjesschrijver uit de 19e eeuw",
+        "Bedacht ook De Nieuwe Kleren van de Keizer en Het Lelijke Eendje",
+        "Werd geboren in Odense en overleed in Kopenhagen",
+        "Initialen H.C.A."
+      ]
+    },
+    {
+      "question": "Wie regisseerde de filmtrilogie The Lord of the Rings?",
+      "answer": "Peter Jackson",
+      "hints": [
+        "Regisseur en producent uit Nieuw-Zeeland",
+        "Filmde de trilogie grotendeels in eigen land met veel lokale crew",
+        "Regisseerde later ook een driedelige verfilming van The Hobbit",
+        "Voornaam telt vijf letters, achternaam zeven"
+      ]
+    },
+    {
+      "question": "Welke Amerikaanse animatiestudio maakte de film Toy Story?",
+      "answer": "Pixar",
+      "hints": [
+        "Werd in de jaren tachtig mede-gefinancierd door Steve Jobs",
+        "Werd in 2006 overgenomen door The Walt Disney Company",
+        "Maakte ook Finding Nemo, Up en WALL-E",
+        "Vijf letters, begint met een P"
+      ]
+    },
+    {
+      "question": "Welke acteur speelt James Bond in de film Casino Royale uit 2006?",
+      "answer": "Daniel Craig",
+      "hints": [
+        "Britse acteur, geboren in 1968 in Chester",
+        "Vertolkte deze rol uiteindelijk in vijf films",
+        "Speelde ook detective Benoit Blanc in de Knives Out-reeks",
+        "Voornaam telt zes letters, achternaam vijf"
+      ]
+    },
+    {
+      "question": "In welke fictieve Amerikaanse stad woont de familie Simpson?",
+      "answer": "Springfield",
+      "hints": [
+        "De naam komt in tientallen Amerikaanse staten voor",
+        "Wordt in de serie bewust nooit aan één specifieke staat gekoppeld",
+        "Bevat een kerncentrale waar de vader van het gezin werkt",
+        "Elf letters, begint met een S"
+      ]
+    },
+    {
+      "question": "Welke Amerikaanse zanger werd 'The King of Rock and Roll' genoemd?",
+      "answer": "Elvis Presley",
+      "hints": [
+        "Geboren in Tupelo, Mississippi in 1935",
+        "Doorbrak in de jaren vijftig met hits als Heartbreak Hotel en Jailhouse Rock",
+        "Zijn villa Graceland in Memphis is nu een pelgrimsoord",
+        "Voornaam telt vijf letters, achternaam zeven"
+      ]
+    },
+    {
+      "question": "Uit welk land komt de popgroep ABBA?",
+      "answer": "Zweden",
+      "hints": [
+        "Een groot land in het noorden van Europa",
+        "Grenst aan Noorwegen en Finland",
+        "Heeft een constitutionele monarchie met koning Carl XVI Gustaf",
+        "Zes letters, begint met een Z"
+      ]
+    },
+    {
+      "question": "Van welke muziekstijl was Bob Marley een boegbeeld?",
+      "answer": "Reggae",
+      "hints": [
+        "Muziekstijl uit Jamaica, ontstaan eind jaren zestig",
+        "Kenmerkt zich door offbeat gitaarritmes en een trage basslijn",
+        "Nauw verbonden met de Rastafari-beweging",
+        "Zes letters, begint met een R"
+      ]
+    },
+    {
+      "question": "Hoeveel spelers heeft een voetbalelftal op het veld?",
+      "answer": "11",
+      "hints": [
+        "Meer dan tien, minder dan twaalf",
+        "Een van hen staat op de doellijn als keeper",
+        "Volgt uit klassieke opstellingen zoals 4-4-2 of 4-3-3",
+        "Twee identieke cijfers"
+      ]
+    },
+    {
+      "question": "In welk land werden in 1896 de eerste moderne Olympische Spelen gehouden?",
+      "answer": "Griekenland",
+      "hints": [
+        "Een land op de zuidpunt van de Balkan",
+        "In de oudheid vonden hier al vergelijkbare sportspelen plaats",
+        "Hoofdstad is Athene, waar het Panathenaic Stadion in gebruik werd genomen",
+        "Tien letters, begint met een G"
+      ]
+    },
+    {
+      "question": "Welke Amerikaanse zwemmer won 23 gouden olympische medailles?",
+      "answer": "Michael Phelps",
+      "hints": [
+        "Geboren in Baltimore in 1985",
+        "Was op zijn hoogtepunt vooral sterk in de vlinderslag en de wisselslag",
+        "Kwam uit op vijf opeenvolgende Olympische Zomerspelen tussen 2000 en 2016",
+        "Voornaam telt zeven letters, achternaam zes"
+      ]
+    },
+    {
+      "question": "Welk edelmetaal heeft het chemisch symbool Ag?",
+      "answer": "Zilver",
+      "hints": [
+        "Een grijswit metaal met een hoge glans",
+        "Het Latijnse woord waar het symbool van komt is 'argentum'",
+        "Wordt onder meer gebruikt in sieraden, bestek en munten",
+        "Zes letters, begint met een Z"
+      ]
+    },
+    {
+      "question": "Welke Griekse godin symboliseert wijsheid?",
+      "answer": "Athena",
+      "hints": [
+        "Dochter van Zeus, volgens de mythe geboren uit zijn hoofd",
+        "Behoort tot de twaalf goden op de Olympus",
+        "Haar heilige dier is de uil en haar heilige boom de olijf",
+        "Zes letters, begint met een A"
+      ]
+    },
+    {
+      "question": "Wie was de eerste vrouw die de ruimte inging?",
+      "answer": "Valentina Teresjkova",
+      "hints": [
+        "Sovjetkosmonaute uit de jaren zestig",
+        "Vloog in juni 1963 alleen in het ruimtevaartuig Vostok 6",
+        "Was voor haar carrière parachutespringster en textielarbeidster",
+        "Voornaam telt negen letters, achternaam tien"
+      ]
+    },
+    {
+      "question": "Wat is de grootste maan van Saturnus?",
+      "answer": "Titan",
+      "hints": [
+        "Groter dan de planeet Mercurius maar toch een maan",
+        "Heeft een dichte atmosfeer met stikstof en methaan",
+        "Werd al in 1655 ontdekt door Christiaan Huygens",
+        "Vijf letters, begint met een T"
+      ]
+    }
+  ]
+}

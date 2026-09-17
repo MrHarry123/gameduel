@@ -264,6 +264,52 @@ body::before {
   color: white;
 }
 
+.total-scores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.total-score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.total-score-name {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.total-score-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.total-score-divider {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
 #games-container {
   display: flex;
   flex-direction: column;

@@ -136,6 +136,19 @@ function renderSelectScreen() {
   const [p1, p2] = state.saved.players;
   document.getElementById("select-subtitle").textContent = `${p1} vs ${p2}`;
 
+  // Totaalscores over ALLE pakketten die ooit gespeeld zijn (incl. gearchiveerde).
+  let total1 = 0, total2 = 0;
+  for (const gs of Object.values(state.saved.games || {})) {
+    if (gs && Array.isArray(gs.scores)) {
+      total1 += Number(gs.scores[0]) || 0;
+      total2 += Number(gs.scores[1]) || 0;
+    }
+  }
+  document.getElementById("total-name-1").textContent = p1;
+  document.getElementById("total-name-2").textContent = p2;
+  document.getElementById("total-score-1").textContent = total1;
+  document.getElementById("total-score-2").textContent = total2;
+
   const grids = {
     classic: document.getElementById("games-grid-classic"),
     "open-hints": document.getElementById("games-grid-open-hints"),
@@ -174,9 +187,16 @@ function renderSelectScreen() {
 }
 
 function applyActiveTab() {
-  const tab = state.saved.activeTab || "classic";
-  document.querySelectorAll(".games-tab").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.tab === tab);
+  let tab = state.saved.activeTab || "classic";
+  // Als de tab in de UI verborgen is (bv. Stellingen tijdelijk uit), val terug op classic.
+  const btn = document.querySelector(`.games-tab[data-tab="${tab}"]`);
+  if (!btn || btn.hidden) {
+    tab = "classic";
+    state.saved.activeTab = tab;
+    persist();
+  }
+  document.querySelectorAll(".games-tab").forEach((b) => {
+    b.classList.toggle("active", b.dataset.tab === tab);
   });
   ["classic", "open-hints", "open", "statements"].forEach((m) => {
     document.getElementById(`games-section-${m}`).hidden = m !== tab;
